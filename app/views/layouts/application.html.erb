@@ -3,33 +3,34 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>UpfrontwichitaCom</title>
-				<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-				<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-				<%= javascript_include_tag "modernizr" %>
-				<%= stylesheet_link_tag    "application", :media => "all" %>
-				<%= csrf_meta_tags %>
-    </head>
-    <body>
-
-    <section id="user">
-        <% if user_signed_in? %>
-            <nav id="nav_user">
-                <ul>
-                    <span><%= current_user.email %></span>
-                    <li><%= link_to "Settings", services_path %></li>
-                    <li><%= link_to "Sign out", signout_services_path %></li>
-                </ul>
-            </nav>
-        <% else %>
-            <span><%= link_to "Sign in", signin_services_path %></span>
-        <% end %>
-    </section>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>UpfrontwichitaCom</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <%= javascript_include_tag "modernizr" %>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="nav nav-pills pull-right">
+            <% if user_signed_in? %>
+                <nav id="nav_user">
+                    <ul>
+                        <span><%= current_user.email %></span>
+                        <li><%= link_to "Settings", services_path %></li>
+                        <li><%= link_to "Sign out", signout_services_path %></li>
+                    </ul>
+                </nav>
+            <% else %>
+                <span><%= link_to "Sign in", signin_services_path %></span>
+            <% end %>
+        </nav>
+    </div>
 
     <%= yield %>
-		<%= javascript_include_tag "application" %>
-    </body>
+    <%= javascript_include_tag "application" %>
+</body>
 </html>
