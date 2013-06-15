@@ -2,13 +2,12 @@
 
 <section id="irc_users">
   <p>Members on IRC in #upfrontwichita</p>
-  <% irc_users = IrcUser.all() %>
-  <% if 0 == irc_users.length %>
+  <% if 0 == @irc_users.length %>
   <p>No users are currently online</p>
   <span><%= link_to "Be The First In the Channel", irc_index_path %></span>
   <% else %>
   <ul>
-    <% irc_users.each do |user| %>
+    <% @irc_users.each do |user| %>
     <li><%= user.handle %></li>
     <% end %>
   </ul>
