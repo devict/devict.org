@@ -23,6 +23,11 @@ UpfrontwichitaCom::Application.routes.draw do
       get 'test'
     end
   end
+  get "irc/index"
+
+  get "irc/alt"
+
+  get "irc/alt2"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -30,6 +35,8 @@ UpfrontwichitaCom::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
+
+  match "/irc", :to => 'irc#index'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
