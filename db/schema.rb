@@ -11,7 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130615144423) do
+ActiveRecord::Schema.define(:version => 20130615184041) do
+
+  create_table "irc_users", :force => true do |t|
+    t.string "handle"
+  end
+
+  add_index "irc_users", ["handle"], :name => "index_irc_users_on_handle"
 
   create_table "services", :force => true do |t|
     t.integer  "user_id"

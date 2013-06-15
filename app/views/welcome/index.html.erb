@@ -1,2 +1,17 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<h1>UpFront Wichita</h1>
+
+<section id="irc_users">
+  <p>Members on IRC in #upfrontwichita</p>
+  <% irc_users = IrcUser.all() %>
+  <% if 0 == irc_users.length %>
+  <p>No users are currently online</p>
+  <span><%= link_to "Be The First In the Channel", irc_index_path %></span>
+  <% else %>
+  <ul>
+    <% irc_users.each do |user| %>
+    <li><%= user.handle %></li>
+    <% end %>
+  </ul>
+  <span><%= link_to "Come Idle With Us", irc_index_path %></span>
+  <% end %>
+</section>
