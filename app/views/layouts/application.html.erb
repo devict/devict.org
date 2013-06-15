@@ -14,6 +14,21 @@
 				<%= csrf_meta_tags %>
     </head>
     <body>
+
+    <section id="user">
+        <% if user_signed_in? %>
+            <nav id="nav_user">
+                <ul>
+                    <span><%= current_user.email %></span>
+                    <li><%= link_to "Settings", services_path %></li>
+                    <li><%= link_to "Sign out", signout_services_path %></li>
+                </ul>
+            </nav>
+        <% else %>
+            <span><%= link_to "Sign in", signin_services_path %></span>
+        <% end %>
+    </section>
+
     <%= yield %>
 		<%= javascript_include_tag "application" %>
     </body>
