@@ -1,36 +1,45 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>UpfrontwichitaCom</title>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+  	<meta charset="utf-8" />
+
+  	<!-- Uncomment to make IE8 render like IE7 -->
+  	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+
+  	<!-- Set the viewport width to device width for mobile -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <%= javascript_include_tag "modernizr" %>
-    <%= stylesheet_link_tag    "application", :media => "all" %>
+  	<%= stylesheet_link_tag    "application" %>
+  	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
-</head>
-<body>
-    <div class="container-fluid">
-        <nav class="nav nav-pills pull-right">
-            <% if user_signed_in? %>
-                <nav id="nav_user">
-                    <ul>
-                        <span><%= current_user.email %></span>
-                        <li><%= link_to "Settings", services_path %></li>
-                        <li><%= link_to "Sign out", signout_services_path %></li>
-                    </ul>
-                </nav>
-            <% else %>
-                <span><%= link_to "Sign in", signin_services_path %></span>
-            <% end %>
-        </nav>
+  </head>
+
+  <body>
+    <div>
+      <h1 id="logo">UpFront Wichita</h1>
     </div>
+    <% if user_signed_in? %>
+      <nav id="nav_user">
+        <ul>
+          <span><%= current_user.email %></span>
+          <li><%= link_to "Settings", services_path %></li>
+          <li><%= link_to "Sign out", signout_services_path %></li>
+        </ul>
+      </nav>
+    <% else %>
+      <span><%= link_to "Sign in", signin_services_path %></span>
+    <% end %>
 
     <%= yield %>
+    
     <%= javascript_include_tag "application" %>
-</body>
+  </body>
 </html>
