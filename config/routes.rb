@@ -1,6 +1,12 @@
 UpfrontwichitaCom::Application.routes.draw do
   root :to => "welcome#index"
 
+  get "irc/index"
+
+  get "irc/alt"
+
+  get "irc/alt2"
+
   match "/signin" => "services#signin"
   match "/signout" => "services#signout"
 
@@ -23,11 +29,6 @@ UpfrontwichitaCom::Application.routes.draw do
       get 'test'
     end
   end
-  get "irc/index"
-
-  get "irc/alt"
-
-  get "irc/alt2"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

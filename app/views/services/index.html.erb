@@ -7,7 +7,7 @@
     <% @services.each do |service| %>  
           <div class="service_in_use round">  
               <div class="service_img">
-                    <% if ['aol', 'facebook', 'github', 'google', 'openid', 'twitter', 'yahoo'].index(service.provider) %>
+                    <% if ['aol', 'facebook', 'github', 'google_oauth2', 'openid', 'twitter', 'yahoo'].index(service.provider) %>
                         <%= image_tag "#{service.provider}_64.png", :size => "64x64" %>
                     <% else %>
                         <%= image_tag "openid_64.png", :size => "64x64" %>
