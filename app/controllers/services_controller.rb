@@ -57,7 +57,7 @@ class ServicesController < ApplicationController
             # create a new hash
             @authhash = Hash.new
 
-            if service_route == 'twitter'
+            if ['twitter', 'google_oauth2'].index(service_route) != nil
                 omniauth['info']['email'] ? @authhash[:email] =  omniauth['info']['email'] : @authhash[:email] = ''
                 omniauth['info']['name'] ? @authhash[:name] =  omniauth['info']['name'] : @authhash[:name] = ''
                 omniauth['uid'] ? @authhash[:uid] = omniauth['uid'].to_s : @authhash[:uid] = ''
