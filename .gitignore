@@ -13,4 +13,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore asset stuff
 .sass-cache
+public/assets/*
+
+
