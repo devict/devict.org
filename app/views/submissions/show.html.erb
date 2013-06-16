@@ -1,0 +1,11 @@
+<h2><%= @submission.challenge.title %></h2>
+
+<p>Submitted by <%= @submission.user.name %> on <%= l @submission.created_at, :format => :date %></p>
+
+<p><%= simple_format(strip_tags(@submission.code)) %></p>
+
+<% if current_user == @submission.user %>
+  <%= link_to 'Edit', edit_challenge_submission_path(@submission) %> |
+  <%= link_to 'Delete', challenge_submission_path(@submission.challenge, @submission), method: :delete, data: { confirm: 'Are you sure?' } %> |
+<% end %>
+<%= link_to 'Back to Solutions', challenge_submissions_path(@submission.challenge) %>

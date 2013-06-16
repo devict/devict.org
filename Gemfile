@@ -32,6 +32,9 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-github'
 gem 'omniauth-google-oauth2'
+gem 'redcarpet'
+gem 'truncate_html'
+gem 'kaminari'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

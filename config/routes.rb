@@ -1,7 +1,4 @@
 UpfrontwichitaCom::Application.routes.draw do
-  # See how all your routes lay out with "rake routes"
-
-  # / (Root)
   root :to => "welcome#index"
 
   # IRC Chat Client
@@ -28,4 +25,9 @@ UpfrontwichitaCom::Application.routes.draw do
 
   # Service for our IRC bot to update the list of logged in IRC users
   resources :irc_users, :only => [:create, :destroy]
+
+  resources :challenges do
+      resources :submissions
+  end
+
 end

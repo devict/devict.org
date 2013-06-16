@@ -29,6 +29,13 @@
         <% end %>
     </section>
 
+    <% if flash[:error] %>
+      <p id='error'><%=h flash[:error] %></p>
+    <% end -%>
+    <% if flash[:notice] %>
+      <p id='notice'><%=h flash[:notice] %></p>
+    <% end %>
+
     <%= yield %>
     <%= javascript_include_tag "application" %>
     </body>

@@ -1,0 +1,20 @@
+<h1>Submissions for <%= @challenge.title %></h1>
+
+<%= paginate @submissions %>
+
+<% @submissions.each do |submission| %>
+  <p>Submission for <%= submission.user.name %> at <%= l submission.created_at, :format => :date %></p>
+  <%= snippet(sanitize(simple_format(submission.code)), link_to(' . . . (continue)', challenge_submission_path(@challenge, submission))) %>
+  <p>
+    <%= link_to 'Show', challenge_submission_path(submission.challenge, submission) %>
+    <% if current_user == submission.user %>
+      <%= link_to 'Edit', edit_challenge_submission_path(submission.challenge, submission) %>
+      <%= link_to 'Delete', challenge_submission_path(submission.challenge, submission), method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
+    <%= link_to 'Back to Challenge', challenge_path(@challenge) %>
+  </p>
+<% end %>
+
+<br />
+
+<%= link_to 'Submit a solution', new_challenge_submission_path %>
