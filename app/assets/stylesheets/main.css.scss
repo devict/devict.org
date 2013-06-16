@@ -97,18 +97,88 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@font-face {
+  font-family: '[set]Foundicons';
+  src: url('fonts/[set]_foundicons.eot');
+  src: url('fonts/[set]_foundicons.eot?#iefix') format('embedded-opentype'),
+       url('fonts/[set]_foundicons.woff') format('woff'),
+       url('fonts/[set]_foundicons.ttf') format('truetype'),
+       url('fonts/[set]_foundicons.svg#[set]Foundicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*="foundicon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+[class*="foundicon-"]:before {
+  font-family: "[set]Foundicons";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Oswald', sans-serif;
 	font-weight:normal;
 } 
 
+.row {
+  max-width:75em;
+}
 
+.main-nav{
+  padding-top:33px;
+}
 
+.social-tab{
+  background:#EEE;
+  border-radius:0 0 10px 10px;
+}
 
+.featured-event{
+  background: url("/assets/ruby-screenshot-tilt.png") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display:block;
+  height:300px;
+  width:100%;
+  position:relative;
+}
+.featured-event .screen-blk{
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+.screen-blk{
+  background:rgba(0,0,0,0.75);
+}
+.featured-event h2{
+  font-size:medium;
+  color:#f1822d;  
+}
+.featured-event h3{
+  color:#DDD;  
+}
 
+.sub-nav dt, .sub-nav dd{
+	margin-left:1em;
+}
 
-
-
+.userIO dd:first-child{
+	border-left:2px solid #999;
+	padding-left:1em;
+}
 
 
 
