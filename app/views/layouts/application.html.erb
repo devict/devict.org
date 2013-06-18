@@ -24,9 +24,7 @@
 
 <body>
   <div class="row top-banner">
-    <div class="large-2 columns">
-      <%= image_tag "logo-200.png", alt:"Upfront Wichita", width:"200", height: "100" %>  
-    </div>
+    <div class="small-2 large-2 large-uncentered columns"><%= image_tag "logo.png", alt:"Upfront Wichita" %></div>
     <dl class="sub-nav large-6 large-offset-1 columns main-nav">
       <dd class="active"><a href="#">About/Member List</a></dd>
       <dd><a href="#">Code Challenge</a></dd>
@@ -34,46 +32,29 @@
       <dd><a href="#">IRC</a></dd>
       <dd><a href="#">Blog</a></dd>
       <% if user_signed_in? %>
-      <div id="nav_user" class="userIO">
+      <div id="nav_user" class="userLogin">
         <dd><span><%= current_user.email %></span></dd>
-        <dd><%= link_to "Settings", services_path %></li></dd>
+        <dd><%= link_to "Settings", services_path %></dd>
         <dd><%= link_to "Sign out", signout_services_path %></dd>
+      </div>
       <% else %>
-      <div class="userIO">
+      <div class="userLogged">
         <dd><%= link_to "Sign in", signin_services_path %></dd>
       </div>
       <% end %>
-      </dd>
     </dl>
-    <dl class="sub-nav large-2 large-offset-1 columns social-tab">
-      <!--
-      <dd><a href="#"><i class="foundicon-twitter"></i></a></dd>
-      <dd><a href="#"><i class="foundicon-chat"></i></a></dd>
-      -->
-      <dd><a href="#">Twitter</a></dd>
-      <dd><a href="#">IRC</a></dd>
-    </dl>
+    <div class="small-3"></div>
   </div>
-  <div class="featured-event">
-    <div class="screen-blk">
-      <div class="row">
-        <h2>Featured event:</h2>
-        <h3>Event title here</h2>
-      </div>
-    </div>
+  <nav class="sub-nav large-2 large-offset-1 columns social-tab">
+    <a href="#"><i class="foundicon-twitter"></i></a> 
+    <a href="#"><i class="foundicon-chat"></i></a> 
+    <a href="#">Twitter</a> 
+    <a href="#">IRC</a> 
+  </nav>
+  <div class="social-dropdown">
+    <div class="content-wrapper"></div>
   </div>
-  <div class="row">
-    <p class="feature-descript"> Featured event description would go here. Aliquam aliquet, est a ullamcorper condimentum, tellus nulla fringilla elit, a iaculis nulla turpis sed wisi. Fusce volutpat. Etiam sodales ante id nunc. Proin ornare dignissim lacus. Nunc porttitor nunc a sem. Sed sollicitudin velit eu magna. Aliquam erat volutpat.</p>
-    <h2>Some of our recent events:</h2>
-    <ul class="small-block-grid-2 large-block-grid-4">
-      <li><h4>Title here</h4><%= image_tag "logo.png", alt:"Upfront Wichita" %></li>
-      <li><h4>Title here</h4><%= image_tag "logo.png", alt:"Upfront Wichita" %></li>
-      <li><h4>Title here</h4><%= image_tag "logo.png", alt:"Upfront Wichita" %></li>
-      <li><h4>Title here</h4><%= image_tag "logo.png", alt:"Upfront Wichita" %></li>
-    </ul>
-
-    <%= yield %>
-  </div>
+  <%= yield %>
 
   <%= javascript_include_tag "application" %>
 </body>

@@ -142,6 +142,25 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .social-tab{
   background:#EEE;
   border-radius:0 0 10px 10px;
+  position:fixed;
+  top:0;
+  right:5%;
+  width:11em;
+  text-align:center;
+  box-shadow:0 4px 10px #999;
+}
+
+.social-dropdown{
+  	background:#EEE;
+	position:absolute;
+	top:-30em;
+	display:block;
+	width:22em;
+	height:30em;
+	right:5%;
+	background:red;
+	border-radius:0 0 0 10px;
+	z-index:999;
 }
 
 .featured-event{
@@ -163,11 +182,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .screen-blk{
   background:rgba(0,0,0,0.75);
 }
-.featured-event h2{
+.screen-blk h2{
   font-size:medium;
   color:#f1822d;  
 }
-.featured-event h3{
+.screen-blk h3, .screen-blk p{
   color:#DDD;  
 }
 
@@ -175,7 +194,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-left:1em;
 }
 
-.userIO dd:first-child{
+.userLogged dd:first-child{
 	border-left:2px solid #999;
 	padding-left:1em;
 }
