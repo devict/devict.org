@@ -24,7 +24,11 @@ UpfrontwichitaCom::Application.routes.draw do
   end
 
   # Service for our IRC bot to update the list of logged in IRC users
-  resources :irc_users, :only => [:create, :destroy]
+  resources :irc_users, :only => [:create, :destroy] do
+      collection do
+          post 'batch'
+      end
+  end
 
   resources :challenges do
       resources :submissions
