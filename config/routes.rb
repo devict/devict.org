@@ -1,4 +1,6 @@
 UpfrontwichitaCom::Application.routes.draw do
+  match "videos" => "video#index"
+
   root :to => "welcome#index"
 
   # IRC Chat Client
