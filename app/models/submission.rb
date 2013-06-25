@@ -5,4 +5,6 @@ class Submission < ActiveRecord::Base
   attr_accessible :challenge_id, :code
 
   validates :code, :presence => true
+
+  has_many :comments
 end
