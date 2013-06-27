@@ -23,27 +23,29 @@
 </head>
 
 <body>
-  <div class="row top-banner">
-    <div class="small-2 large-2 large-uncentered columns"><%= image_tag "logo.png", alt:"Upfront Wichita" %></div>
-    <dl class="sub-nav large-6 large-offset-1 columns main-nav">
-      <dd class="active"><a href="#">About/Member List</a></dd>
-      <dd><a href="#">Code Challenge</a></dd>
-      <dd><a href="#">Talks/Videos</a></dd>
-      <dd><a href="#">IRC</a></dd>
-      <dd><a href="#">Blog</a></dd>
-      <% if user_signed_in? %>
-      <div id="nav_user" class="userLogin">
-        <dd><span><%= current_user.email %></span></dd>
-        <dd><%= link_to "Settings", services_path %></dd>
-        <dd><%= link_to "Sign out", signout_services_path %></dd>
-      </div>
-      <% else %>
-      <div class="userLogged">
-        <dd><%= link_to "Sign in", signin_services_path %></dd>
-      </div>
-      <% end %>
-    </dl>
-    <div class="small-3"></div>
+  <div class="top-banner">
+    <div class="row">
+      <div class="small-2 large-2 large-uncentered columns"><%= image_tag "logo.png", alt:"Upfront Wichita" %></div>
+      <dl class="sub-nav large-6 large-offset-1 columns main-nav">
+        <dd class="active"><a href="#">About/Member List</a></dd>
+        <dd><a href="#">Code Challenge</a></dd>
+        <dd><a href="#">Talks/Videos</a></dd>
+        <dd><a href="#">IRC</a></dd>
+        <dd><a href="#">Blog</a></dd>
+        <% if user_signed_in? %>
+        <div id="nav_user" class="userLogin">
+          <dd><span><%= current_user.email %></span></dd>
+          <dd><%= link_to "Settings", services_path %></dd>
+          <dd><%= link_to "Sign out", signout_services_path %></dd>
+        </div>
+        <% else %>
+        <div class="userLogged">
+          <dd><%= link_to "Sign in", signin_services_path %></dd>
+        </div>
+        <% end %>
+      </dl>
+      <div class="small-3"></div>
+    </div>
   </div>
   <nav class="sub-nav large-2 large-offset-1 columns social-tab">
     <a href="#"><i class="foundicon-twitter"></i></a> 
