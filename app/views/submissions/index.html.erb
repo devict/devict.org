@@ -2,43 +2,47 @@
 
 <%= paginate @submissions %>
 
-<% if @comment.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(@comment.errors.count, "error") %> prohibited your comment from being saved:</h2>
-    <ul>
-    <% @comment.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-    </ul>
+<%# we might put more detailed error handling for comments here eventually. for now, just using flash[:error]. %>
+  <div class="row">
+    <div class="span2 offset2">
+      Testing.
+    </div>
   </div>
-<% end %>
 
 <% @submissions.each do |submission| %>
-  <p>Submission for <%= submission.user.name %> at <%= l submission.created_at, :format => :date %></p>
-  <%= snippet(sanitize(simple_format(submission.code)), link_to(' . . . (continue)', challenge_submission_path(@challenge, submission))) %>
-
+  <div class="submission">
+    <p>Submission for <%= submission.user.name %> at <%= l submission.created_at, :format => :date %></p>
+    <%= snippet(sanitize(simple_format(submission.code)), link_to(' . . . (continue)', challenge_submission_path(@challenge, submission))) %>
+  </div>
   <% submission.comments.each do |comment| %>
     <div>
-      <p><%= snippet(sanitize(simple_format(comment.body))) %></p>
-      <% if current_user == comment.user %>
+      <div class="indent comment">
         <p>
-          <%= link_to 'Edit', edit_comment_path(comment, submission) %>
-          <%= link_to 'Delete', comment_path(comment, submission), method: :delete, data: { confirm: 'Are you sure?' } %>
+          <em><%= l comment.created_at, :format => :date %>:</em>
+          <%= snippet(sanitize(simple_format(comment.body))) %>
         </p>
-      <% end %>
+        <% if current_user == comment.user %>
+          <p>
+            <%= link_to 'Edit', edit_comment_path(comment, submission) %>
+            <%= link_to 'Delete', comment_path(comment, submission), method: :delete, data: { confirm: 'Are you sure?' } %>
+          </p>
+        <% end %>
+      </div>
     </div>
   <% end %>
 
-  <%= form_for(@comment) do |f| %>
-    <%= f.hidden_field :submission_id, :value=>submission.id %>
-    <div class="field">
-      <%= f.text_area :body, size:"50x2" %>
-    </div>
+  <div class="indent">
+    <%= form_for(@comment) do |f| %>
+      <%= f.hidden_field :submission_id, :value=>submission.id %>
+      <div class="field">
+        <%= f.text_area :body, size:"50x2", id: 'comment_body_' + submission.id.to_s %>
+      </div>
 
-    <div class="actions">
-      <%= submit_tag "Add A Comment" %>
-    </div>
-  <% end %>
+      <div class="actions">
+        <%= submit_tag "Add A Comment" %>
+      </div>
+    <% end %>
+  </div>
   <p>
     <%= link_to 'Show', challenge_submission_path(submission.challenge, submission) %>
     <% if current_user == submission.user %>
@@ -47,8 +51,7 @@
     <% end %>
     <%= link_to 'Back to Challenge', challenge_path(@challenge) %>
   </p>
+  <br>
 <% end %>
-
-<br />
 
 <%= link_to 'Submit a solution', new_challenge_submission_path %>
