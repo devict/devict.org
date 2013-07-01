@@ -3,11 +3,6 @@
 <%= paginate @submissions %>
 
 <%# we might put more detailed error handling for comments here eventually. for now, just using flash[:error]. %>
-  <div class="row">
-    <div class="span2 offset2">
-      Testing.
-    </div>
-  </div>
 
 <% @submissions.each do |submission| %>
   <div class="submission">
