@@ -1,5 +1,4 @@
 <h1>Video Presentations</h1>
-<%= paginate @videos %>
 
 <% @videos.each do |entry| %>
   <h2><%= entry.title %></h2>
@@ -9,3 +8,4 @@
     <iframe title="<%= entry.title %>" width="480" height="390" src="<%= entry.link %>" frameborder="0" allowfullscreen></iframe>
   </div>
 <% end %>
+<%= paginate @videos %>
