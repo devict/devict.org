@@ -75,12 +75,6 @@ GEM
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
-    less (2.3.2)
-      commonjs (~> 0.2.6)
-    less-rails (2.3.3)
-      actionpack (>= 3.1)
-      less (~> 2.3.1)
-    libv8 (3.11.8.17)
     loofah (1.2.1)
       nokogiri (>= 1.4.4)
     mail (2.5.4)
@@ -143,7 +137,6 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     redcarpet (2.3.0)
-    ref (1.0.5)
     sass (3.2.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -163,11 +156,6 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     truncate_html (0.9.2)
-    twitter-bootstrap-rails (2.2.7)
-      actionpack (>= 3.1)
-      execjs
-      rails (>= 3.1)
-      railties (>= 3.1)
     tzinfo (0.3.37)
     uglifier (2.1.1)
       execjs (>= 0.3.0)
@@ -184,7 +172,6 @@ DEPENDENCIES
   feedzirra!
   jquery-rails
   kaminari
-  less-rails
   omniauth
   omniauth-github
   omniauth-google-oauth2
@@ -194,8 +181,6 @@ DEPENDENCIES
   redcarpet
   sass-rails (~> 3.2.3)
   sqlite3
-  therubyracer
   truncate_html
-  twitter-bootstrap-rails
   uglifier (>= 1.0.3)
   zurb-foundation (~> 4.0.0)
