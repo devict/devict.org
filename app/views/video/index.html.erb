@@ -5,7 +5,7 @@
   <p><%= entry.content %></p>
   <p>Published on <%= l entry.published_at, :format => :date %></p>
   <div>
-    <iframe title="<%= entry.title %>" width="480" height="390" src="<%= entry.link %>" frameborder="0" allowfullscreen></iframe>
+    <iframe title="<%= entry.title %>" width="480" height="390" src="<%= entry.link %>&wmode=transparent" frameborder="0" allowfullscreen></iframe>
   </div>
 <% end %>
 <%= paginate @videos %>
