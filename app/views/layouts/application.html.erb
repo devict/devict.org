@@ -25,7 +25,7 @@
 <body>
   <div class="top-banner">
     <div class="row">
-      <div class="small-2 large-2 large-uncentered columns"><%= image_tag "logo.png", alt:"Upfront Wichita" %></div>
+      <div class="small-2 large-2 large-uncentered columns"><%= link_to image_tag("logo.png", alt:"Upfront Wichita"), root_path %></div>
       <dl class="sub-nav large-6 large-offset-1 columns main-nav">
         <dd class="active"><a href="#">About/Member List</a></dd>
         <dd><%= link_to "Code Challenge", challenges_path %></dd>
@@ -64,7 +64,13 @@
       <p id='notice'><%=h flash[:notice] %></p>
     <% end %>
 
+  <%= yield :feature %>
+  <div class="row">
+    <div class="small-12">
     <%= yield %>
+    </div>
+  </div>
+
 
     <%= javascript_include_tag "application" %>
     </body>
