@@ -27,11 +27,11 @@
     <div class="row">
       <div class="small-2 large-2 large-uncentered columns"><%= link_to image_tag("logo.png", alt:"Upfront Wichita"), root_path %></div>
       <dl class="sub-nav large-6 large-offset-1 columns main-nav">
-        <dd class="active"><a href="#">About/Member List</a></dd>
-        <dd><%= link_to "Code Challenge", challenges_path %></dd>
-        <dd><%= link_to "Talks/Videos", videos_path %></dd>
-        <dd><%= link_to "IRC", irc_index_path %></dd>
-        <dd><a href="#">Blog</a></dd>
+        <%= nav_link "About/Member List", '404'%>
+        <%= nav_link "Code Challenge", challenges_path %>
+        <%= nav_link "Talks/Videos", videos_path %>
+        <%= nav_link "IRC", irc_index_path %>
+        <%= nav_link "Blog", '404'%>
         <% if user_signed_in? %>
         <div id="nav_user" class="userLogin">
           <dd><span><%= current_user.email %></span></dd>
