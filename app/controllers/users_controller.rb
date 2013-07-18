@@ -24,7 +24,7 @@ class UsersController < ApplicationController
     end
 
     def redirect_unless_same_user
-      if current_user.id != @user.id
+      if ! user_signed_in? || current_user.id != @user.id
         redirect_to users_path, :flash => { :error => "You do not have permission to edit users other than yourself." }
       end
     end

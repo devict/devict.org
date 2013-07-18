@@ -3,7 +3,7 @@
 <% @users.each do |user| %>
     <dd><%= user.name %></dd>
     <dt><%= link_to "View", "#{users_path}/#{user.id}" %></dt>
-    <% if current_user.id == user.id %>
+    <% if user_signed_in? && current_user.id == user.id %>
         <dt><%= link_to "Edit", "#{users_path}/#{user.id}/edit" %></dt>
     <% end %>
 <% end %>
