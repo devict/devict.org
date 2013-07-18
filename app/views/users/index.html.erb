@@ -1,0 +1,10 @@
+<h1>UpFront Members</h1>
+<dl id="user_list">
+<% @users.each do |user| %>
+    <dd><%= user.name %></dd>
+    <dt><%= link_to "View", "#{users_path}/#{user.id}" %></dt>
+    <% if current_user.id == user.id %>
+        <dt><%= link_to "Edit", "#{users_path}/#{user.id}/edit" %></dt>
+    <% end %>
+<% end %>
+</dl>
