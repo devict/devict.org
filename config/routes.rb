@@ -36,4 +36,7 @@ UpfrontwichitaCom::Application.routes.draw do
       resources :submissions
   end
 
+  #i don't think we need to nest comments under submissions.
+  resources :comments
+
 end
