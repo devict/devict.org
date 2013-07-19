@@ -13,3 +13,8 @@ For Linux and Mac you can meet these requirements by running `curl -L https://ge
 * Install dependencies by running `bundle install --without=production`
 * Start serving up the app with `rails server`
 * Browse to http://localhost:3000
+
+# Production deployment
+    cap deploy:setup
+    cap deploy:check
+    cap deploy:cold

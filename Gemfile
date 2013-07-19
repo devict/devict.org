@@ -47,7 +47,8 @@ gem "feedzirra", git: "https://github.com/pauldix/feedzirra.git" # The feedzirra
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
+gem 'rvm-capistrano'
 
 # To use debugger
 # gem 'debugger'
