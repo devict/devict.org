@@ -8,6 +8,7 @@ gem 'rails', '3.2.13'
 
 group :development, :test do
     gem 'sqlite3'
+    gem 'guard-test'
 end
 
 group :production do
@@ -36,6 +37,8 @@ gem 'redcarpet'
 gem 'truncate_html'
 gem 'kaminari'
 gem "feedzirra", git: "https://github.com/pauldix/feedzirra.git" # The feedzirra gem requires a broken version of loofah, so let's run bleeding edge.
+gem 'rMeetup2', git: 'https://github.com/antoinemenini/rMeetup2'
+gem 'nestful'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
