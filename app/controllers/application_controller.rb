@@ -6,11 +6,11 @@ class ApplicationController < ActionController::Base
 
   private
   def current_user
-    @current_user ||= User.find_by_id(session[:user_id]) if session[:user_id]  
+    @current_user ||= User.find_by_id(session[:user_id]) if session[:user_id]
   end
 
   def user_signed_in?
-    return 1 if current_user 
+    return 1 if current_user
   end
 
   def authenticate_user!
@@ -18,5 +18,5 @@ class ApplicationController < ActionController::Base
     flash[:error] = 'You need to sign in before accessing this page!'
     redirect_to signin_services_path
     end
-  end 
+  end
 end

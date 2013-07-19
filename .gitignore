@@ -18,4 +18,6 @@
 .sass-cache
 public/assets/*
 
+# Keep your swap files to yourself
+*.swp
 

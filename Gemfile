@@ -32,6 +32,10 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-github'
 gem 'omniauth-google-oauth2'
+gem 'redcarpet'
+gem 'truncate_html'
+gem 'kaminari'
+gem "feedzirra", git: "https://github.com/pauldix/feedzirra.git" # The feedzirra gem requires a broken version of loofah, so let's run bleeding edge.
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -43,15 +47,12 @@ gem 'omniauth-google-oauth2'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
+gem 'rvm-capistrano'
 
 # To use debugger
 # gem 'debugger'
 
-#To use Bootstrap
-gem "therubyracer"
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem "twitter-bootstrap-rails"
-
 #Compass
 gem 'compass-rails'
+gem 'zurb-foundation', '~> 4.0.0'

@@ -1,0 +1,24 @@
+<h1>Coding Challenges</h1>
+
+<% if 0 < @challenges.size %>
+  <%= paginate @challenges %>
+
+  <% @challenges.each do |challenge| %>
+      <h3><%= link_to sanitize(challenge.title), challenge %></h3>
+      <p>By <%= challenge.user.name %> on <%= l challenge.created_at, :format => :date %></p>
+      <%= snippet(markdown(challenge.description), link_to(' . . . (continued)', challenge)) %>
+
+      <%- if current_user == challenge.user %>
+        <p>
+          <%= link_to 'Edit', edit_challenge_path(challenge) %> |
+          <%= link_to 'Delete', challenge, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </p>
+      <%- end %>
+  <% end %>
+
+  <br />
+<% else %>
+  <p>There are currently no challenges.</p>
+<% end %>
+
+<%= link_to 'Create a new challenge', new_challenge_path if current_user %>

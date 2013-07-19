@@ -24,10 +24,11 @@ textarea {
 }
 
 body {
+    padding-top:70px;  /*to account for fixed navigation bar*/
     font-size: 1em;
     line-height: 1.4;
+    background:url("/assets/cream_pixels.png") top center repeat #FFF;
 }
-
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -102,14 +103,103 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight:normal;
 } 
 
+.sub-nav .userLogged dd a{
+  color:#f1822d;
+}
 
+.row {
+  max-width:75em;
+}
 
+.top-banner{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#FFF;
+  z-index:100;
+  box-shadow: 0 -5px 82px #CFCFCF;
+background: rgb(239,239,239); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(239,239,239,1) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 85%, rgba(239,239,239,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(239,239,239,1)), color-stop(15%,rgba(255,255,255,1)), color-stop(85%,rgba(255,255,255,1)), color-stop(100%,rgba(239,239,239,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(239,239,239,1) 0%,rgba(255,255,255,1) 15%,rgba(255,255,255,1) 85%,rgba(239,239,239,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(239,239,239,1) 0%,rgba(255,255,255,1) 15%,rgba(255,255,255,1) 85%,rgba(239,239,239,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(239,239,239,1) 0%,rgba(255,255,255,1) 15%,rgba(255,255,255,1) 85%,rgba(239,239,239,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(239,239,239,1) 0%,rgba(255,255,255,1) 15%,rgba(255,255,255,1) 85%,rgba(239,239,239,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#efefef',GradientType=1 ); /* IE6-9 */
 
+}
+.main-nav{
+  padding-top:33px;
+}
 
+.social-tab{
+  background:#FCFCFC;
+  color:#333;
+  border-radius:0 0 10px 10px;
+  position:fixed;
+  top:0;
+  right:5%;
+  width:11em;
+  text-align:center;
+  box-shadow:0 3px 8px #999;
+  z-index:101;
+}
 
+.social-tab a{
+  color:#333;
+}
+.social-dropdown{
+  background:#EEE;
+  position:absolute;
+  top:-30em;
+  display:block;
+  width:22em;
+  height:30em;
+  right:5%;
+  background:red;
+  border-radius:0 0 0 10px;
+  z-index:999;
+}
 
+.featured-event{
+  background: url("/assets/ruby-screenshot-tilt.png") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display:block;
+  height:400px;
+  width:100%;
+  position:relative;
+  margin-bottom:12px;
+}
+.featured-event .screen-blk{
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+.screen-blk{
+  background:rgba(0,0,0,0.75);
+}
+.screen-blk h2{
+  font-size:medium;
+  color:#f1822d;  
+}
+.screen-blk h3, .screen-blk p{
+  color:#DDD;  
+}
 
+.sub-nav dt, .sub-nav dd{
+  margin-left:1em;
+}
 
+.userLogged dd:first-child{
+  border-left:2px solid #CDCDCD;
+  padding-left:1em;
+}
+.userLogged a{
+  color:#f1822d;
+}
 
 
 

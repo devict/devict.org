@@ -1,0 +1,9 @@
+<h2><%= @challenge.title %></h2>
+Posted by <%= @challenge.user.name %> on <%= l @challenge.created_at, :format => :date %>
+
+<p><%= markdown(@challenge.description) %></p>
+
+<%= link_to('View Solutions', challenge_submissions_path(@challenge)) + ' | ' if 0 < @challenge.submissions.size %>
+<%= link_to('Submit a solution', new_challenge_submission_path(@challenge)) + ' | ' if current_user %>
+<%= link_to('Edit', edit_challenge_path(@challenge)) + " |"  if current_user == @challenge.user %>
+<%= link_to 'Back to Challenges', challenges_path %>
