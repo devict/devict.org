@@ -3,8 +3,8 @@
   <div class="screen-blk">
     <div class="row">
       <h2>Featured event:</h2>
-      <h3>Intro to Web Applications with Angular JS</h3>
-      <p class="feature-descript">With the ever-increasing functionality available on the client side of our websites there has been a steady shift away from simple web-'sites' towards more complex and interactive web-'apps'. This need for complexity on the client side has spawned several Javascript application frameworks. Some of the big names are Backbone, Ember, and the one we will be covering, Angular.</p>
+      <h3><a href="<%= @featured_event.url %>" title="<%=@featured_event.title %>"><%= @featured_event.title %></a></h3>
+      <div class="feature-descript"><%= first_p(@featured_event.description).html_safe %></div>
       </div>
     </div>
   </div>
@@ -13,10 +13,20 @@
 
 <div class="row">
   <h2>Some of our recent events:</h2>
-  <ul class="small-block-grid-2 large-block-grid-4">
-    <li><h4>Hackathon</h4><%= image_tag "hackathon.jpg", alt:"Hackathon" %></li>
-    <li><h4>Git Part II</h4><%= image_tag "gitII.jpg", alt:"Git Part 2" %></li>
-    <li><h4>Git Part I</h4><%= image_tag "gitI.jpg", alt:"Git Part 1" %></li>
-    <li><h4>Regex 101</h4><%= image_tag "regex101.jpg", alt:"Regular Expressions 101" %></li>
+  <ul class="small-block-grid-2 large-block-grid-4 event-list">
+    <% @events.each do |event| %>
+      <li>
+        <h4>
+          <a href="<%= @featured_event.url %>" title="<%=@featured_event.title %>">
+            <%= snippet(event.title, '..', 25) %>
+          </a>
+        </h4>
+        <%= image_tag event.photo_url, alt: event.title %>
+      </li>
+    <% end %>
+    <!-- <li><h4>Hackathon</h4><%= image_tag "hackathon.jpg", alt:"Hackathon" %></li> -->
+    <!-- <li><h4>Git Part II</h4><%= image_tag "gitII.jpg", alt:"Git Part 2" %></li> -->
+    <!-- <li><h4>Git Part I</h4><%= image_tag "gitI.jpg", alt:"Git Part 1" %></li> -->
+    <!-- <li><h4>Regex 101</h4><%= image_tag "regex101.jpg", alt:"Regular Expressions 101" %></li> -->
   </ul>
 </div>

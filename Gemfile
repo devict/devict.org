@@ -39,6 +39,7 @@ gem 'kaminari'
 gem "feedzirra", git: "https://github.com/pauldix/feedzirra.git" # The feedzirra gem requires a broken version of loofah, so let's run bleeding edge.
 gem 'rMeetup2', git: 'https://github.com/antoinemenini/rMeetup2'
 gem 'nestful'
+gem 'nokogiri'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

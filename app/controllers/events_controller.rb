@@ -4,14 +4,15 @@ class EventsController < ApplicationController
   end
 
   def show
-    @event = Event.first(params[:id])
+    @event = Event.find(params[:id])
   end
 
   def sync
     RMeetup2::Client.api_key = "7c4d734c35c43246e1c3086d2c754d"
 
     @remote_events = RMeetup2::Request.new(:events, {
-      group_urlname: 'upfrontwichita'
+      group_urlname: 'upfrontwichita',
+      status: 'upcoming,past'
     }).execute()
 
     @remote_events.each do |event|
@@ -26,14 +27,14 @@ class EventsController < ApplicationController
         venue_zip: event['venue']['zip'],
         date: event['time'],
         url: event['event_url'],
-        photo_url: event['photo_url']
+        photo_url: event['photo_url'] || 'hackathon.jpg'
       }
       if local_event == nil
         # event has not been saved locally
         Event.create(params)
       else
         local_event.update_attributes(params)
-        local_event.save()
+        local_event.save
       end
     end
 

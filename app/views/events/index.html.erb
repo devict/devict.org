@@ -1,0 +1,7 @@
+<% @events.each do |event| %>
+  <h1>
+    <%= event.title %>
+    <span class="event-date"><small><%= Time.at(event.date.to_i/1000).strftime('%m/%d/%y %I:%M%P') %></small></span>
+  </h1>
+  <%= event.description.html_safe %>
+<% end %>
