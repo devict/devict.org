@@ -57,12 +57,14 @@
     <div class="content-wrapper"></div>
   </div>
 
+  <div id="notifications">
     <% if flash[:error] %>
       <p id='error'><%=h flash[:error] %></p>
     <% end -%>
     <% if flash[:notice] %>
       <p id='notice'><%=h flash[:notice] %></p>
     <% end %>
+  </div>
 
   <%= yield :feature %>
   <div class="row content">

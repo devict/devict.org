@@ -171,6 +171,21 @@ h3 a:hover, h3 a:active {
   z-index:999;
 }
 
+#notifications {
+  text-align: center;
+  height: 30px;
+}
+#notifications p {
+  line-height: 30px;
+  color: #fff;
+}
+#notifications #error {
+  background: rgba(200, 0, 0, .8);
+}
+#notifications #notice {
+  background: rgba(0, 0, 200, .8);
+}
+
 .content {
   padding-top: 15px;
 }
