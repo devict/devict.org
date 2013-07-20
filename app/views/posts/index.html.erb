@@ -1,0 +1,7 @@
+<h1>Member Blog Posts</h1>
+<% @posts.each do |entry| %>
+  <h2><%= link_to entry.title, entry.url %></h2>
+  <p>Published on <%= l entry.published_at, :format => :date %></p>
+  <p><%= entry.summary.html_safe %></p>
+<% end %>
+<%= paginate @posts %>

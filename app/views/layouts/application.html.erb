@@ -31,7 +31,7 @@
         <%= nav_link "Code Challenge", challenges_path %>
         <%= nav_link "Talks/Videos", videos_path %>
         <%= nav_link "IRC", irc_index_path %>
-        <%= nav_link "Blog", '404'%>
+        <%= nav_link "Blog", posts_index_path %>
         <% if user_signed_in? %>
         <div id="nav_user" class="userLogin">
           <dd><span><%= current_user.email %></span></dd>

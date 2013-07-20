@@ -40,6 +40,7 @@ gem "feedzirra", git: "https://github.com/pauldix/feedzirra.git" # The feedzirra
 gem 'rMeetup2', git: 'https://github.com/antoinemenini/rMeetup2'
 gem 'nestful'
 gem 'nokogiri'
+gem 'whenever'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

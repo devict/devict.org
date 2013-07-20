@@ -1,4 +1,6 @@
 UpfrontwichitaCom::Application.routes.draw do
+  get "posts/index"
+
   match "videos" => "video#index"
 
   root :to => "welcome#index"
