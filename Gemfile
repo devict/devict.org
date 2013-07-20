@@ -36,6 +36,7 @@ gem 'redcarpet'
 gem 'truncate_html'
 gem 'kaminari'
 gem "feedzirra", git: "https://github.com/pauldix/feedzirra.git" # The feedzirra gem requires a broken version of loofah, so let's run bleeding edge.
+gem 'whenever'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

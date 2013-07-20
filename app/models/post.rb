@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
   attr_accessible :guid, :published_at, :summary, :title, :url
 
-  def self.update_from_feed
+  def self.update_posts
     feed = Feedzirra::Feed.fetch_and_parse("pipes.yahoo.com/pipes/pipe.run?_id=135445826f5a0387e81f341b1f194a51&_render=rss")
 
     feed.entries.each do |entry|
