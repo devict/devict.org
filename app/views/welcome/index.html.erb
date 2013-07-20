@@ -17,7 +17,7 @@
     <% @events.each do |event| %>
       <li>
         <h4>
-          <a href="<%= @featured_event.url %>" title="<%=@featured_event.title %>">
+          <a href="<%= event.url %>" title="<%= event.title %>">
             <%= snippet(event.title, '..', 25) %>
           </a>
         </h4>

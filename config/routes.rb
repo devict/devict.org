@@ -38,7 +38,6 @@ UpfrontwichitaCom::Application.routes.draw do
       end
   end
 
-  match 'events/sync', to: 'events#sync'
   resources :events, :only => [:index, :show]
 
   # The priority is based upon order of creation:
