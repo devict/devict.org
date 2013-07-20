@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130718132205) do
+ActiveRecord::Schema.define(:version => 20130720020315) do
 
   create_table "challenges", :force => true do |t|
     t.string   "title"
@@ -37,6 +37,16 @@ ActiveRecord::Schema.define(:version => 20130718132205) do
   end
 
   add_index "irc_users", ["handle"], :name => "index_irc_users_on_handle"
+
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.text     "summary"
+    t.string   "url"
+    t.datetime "published_at"
+    t.string   "guid"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "services", :force => true do |t|
     t.integer  "user_id"
