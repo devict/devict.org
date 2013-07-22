@@ -20,9 +20,6 @@
           <a href="<%= event.url %>" title="<%= event.title %>">
             <%= snippet(event.title, '..', 25) %>
           </a>
-          <% if permission?(3) %>
-            <%= link_to 'Edit', edit_event_path(event), class: 'pull-right' %>
-          <% end %>
         </h4>
         <%= image_tag event.photo_url, alt: event.title %>
       </li>
