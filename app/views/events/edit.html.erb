@@ -1,0 +1,16 @@
+<h1>Edit: <%= @event.title %></h1>
+<%= form_for @event, url: {action: 'update'}, html: {class: ''} do |f| %>
+  <p>
+    <label>Title: </label>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <label>Description: </label>
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <label>Photo URL: </label>
+    <%= f.text_field :photo_url %>
+  </p>
+  <%= f.submit 'Update' %>
+<% end %>

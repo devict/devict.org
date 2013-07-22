@@ -38,7 +38,8 @@ UpfrontwichitaCom::Application.routes.draw do
       end
   end
 
-  resources :events, :only => [:index, :show]
+  resources :events, :only => [:index, :show, :edit, :update] do
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

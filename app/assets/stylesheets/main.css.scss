@@ -176,6 +176,7 @@ h3 a:hover, h3 a:active {
   height: 30px;
   line-height: 30px;
   color: #fff;
+  margin-bottom: 0;
 }
 #notifications #error {
   background: rgba(200, 0, 0, .8);
@@ -349,6 +350,14 @@ h3 a:hover, h3 a:active {
 
 .clearfix {
     *zoom: 1;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
 }
 
 /* ==========================================================================
