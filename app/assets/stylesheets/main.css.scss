@@ -237,7 +237,8 @@ h3 a:hover, h3 a:active {
   margin-left:1em;
 }
 
-.userLogged dd:first-child{
+.userLogged dd:first-child, 
+.userLogin dd:first-child {
   border-left:2px solid #CDCDCD;
   padding-left:1em;
 }

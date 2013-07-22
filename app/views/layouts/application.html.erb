@@ -26,7 +26,11 @@
   <div class="top-banner">
     <div class="row">
       <div class="small-2 large-2 large-uncentered columns"><%= link_to image_tag("logo.png", alt:"Upfront Wichita"), root_path %></div>
+      <% if session[:user_id] %>
+      <dl class="sub-nav large-8 large-offset-2 columns main-nav">
+      <% else %>
       <dl class="sub-nav large-6 large-offset-4 columns main-nav">
+      <% end %>
         <%= nav_link "About/Member List", users_path %>
         <%= nav_link "Code Challenge", challenges_path %>
         <%= nav_link "Talks/Videos", videos_path %>
