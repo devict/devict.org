@@ -233,6 +233,9 @@ h3 a:hover, h3 a:active {
   background:rgba(0,0,0,0.75);
 }
 
+.event-list a h4, .event-list a:visited h4{
+  color:#FFF;
+}
 .sub-nav dt, .sub-nav dd{
   margin-left:1em;
 }
