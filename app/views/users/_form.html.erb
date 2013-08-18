@@ -15,7 +15,7 @@
     <%= f.text_field :name%>
   </div>
   <div class="field">
-    <%= f.label :info %><br />
+    <%= f.label :info, :info.to_s.capitalize + " - supports markdown" %><br />
     <%= f.text_area :info %>
   </div>
   <div class="actions">
