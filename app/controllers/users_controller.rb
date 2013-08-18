@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   before_filter :redirect_unless_same_user, :only => [:edit, :update]
 
   def index
-    @users = User.all
+    @users = User.order("name")
   end
 
   def update
