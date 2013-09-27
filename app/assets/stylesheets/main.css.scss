@@ -207,6 +207,9 @@ h3 a:hover, h3 a:active {
   width:100%;
   padding: 10px 0;
 }
+.featured-event img {
+  margin-bottom: 10px;
+}
 .screen-blk{
   background:rgba(0,0,0,0.75);
 }
@@ -249,8 +252,19 @@ h3 a:hover, h3 a:active {
   color:#f1822d;
 }
 
-
-
+/* Services */
+#services_list li {
+  list-style: none;
+  float: left;
+  transition: 0.5s all;
+}
+#services_list li:hover {
+  margin-top: -5px;
+}
+#services_list li img {
+  margin: 0;
+  padding: 0;
+}
 
 
 
@@ -361,6 +375,11 @@ h3 a:hover, h3 a:active {
 }
 
 .pull-left {
+  float: left;
+}
+
+.float-list li {
+  list-style: none;
   float: left;
 }
 
