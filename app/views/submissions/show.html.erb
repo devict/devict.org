@@ -1,5 +1,6 @@
 <h1>Submission for: '<%= @submission.challenge.title %>'</h1>
 
+<p class="pull-right"><strong>Language: <%= @submission.language %></strong></p>
 <p class="small">Submitted by <%= @submission.user.name %> on <%= l @submission.created_at, :format => :date %></p>
 
 <pre class="prettyprint"><%= simple_format(strip_tags(@submission.code)) %></pre>
@@ -41,10 +42,10 @@
   <%= link_to 'Back to Solutions', challenge_submissions_path(@submission.challenge), class: 'button small secondary pull-right' %>
 
   <% if current_user == @submission.user %>
-    <%= link_to 'Edit', edit_challenge_submission_path(@submission), class: 'button primary' %>
+    <%= link_to 'Edit Submission', edit_challenge_submission_path(@submission), class: 'button primary' %>
     <%= link_to 'Delete', challenge_submission_path(@submission.challenge, @submission), method: :delete, data: { confirm: 'Are you sure?' }, class: 'button alert' %>
   <% end %>
 </p>
 
 <link rel="stylesheet" href="https://google-code-prettify.googlecode.com/svn/loader/skins/sons-of-obsidian.css" />
-<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=javascript"></script>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=<%= @submission.language %>"></script>
