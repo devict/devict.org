@@ -6,7 +6,7 @@
 
 <% @submissions.each do |submission| %>
   <div class="submission">
-    <h4 class="pull-left"><%= link_to submission.user.name, challenge_submission_path(submission.challenge, submission) %> (<%= l submission.created_at, :format => :date %>)</h4>
+    <h4 class="pull-left"><%= link_to submission.user.name + " (#{l submission.created_at, :format => :date})", challenge_submission_path(submission.challenge, submission) %></h4>
     <p class="submission-actions">
       <% if current_user == submission.user %>
         <%= link_to 'Edit', edit_challenge_submission_path(submission.challenge, submission), class: 'button tiny primary' %>
