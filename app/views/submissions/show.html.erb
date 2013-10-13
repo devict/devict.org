@@ -42,7 +42,7 @@
   <%= link_to 'Back to Solutions', challenge_submissions_path(@submission.challenge), class: 'button small secondary pull-right' %>
 
   <% if current_user == @submission.user %>
-    <%= link_to 'Edit Submission', edit_challenge_submission_path(@submission), class: 'button primary' %>
+    <%= link_to 'Edit Submission', edit_challenge_submission_path(@submission.challenge, @submission), class: 'button primary' %>
     <%= link_to 'Delete', challenge_submission_path(@submission.challenge, @submission), method: :delete, data: { confirm: 'Are you sure?' }, class: 'button alert' %>
   <% end %>
 </p>
