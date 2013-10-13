@@ -11,10 +11,10 @@
       <div class="row">
     <% end %>
       <div class="columns small-6">
-        <div class="challenge">
-          <h2><%= link_to sanitize(challenge.title), challenge %></h2>
+        <a class="challenge" href="<%= challenge_path(challenge) %>">
+          <h2><%= sanitize(challenge.title) %></h2>
           <p>By <%= challenge.user.name %> on <%= l challenge.created_at, :format => :date %></p>
-        </div>
+        </a>
       </div>
     <% if idx % 2 != 0 %>
       </div>

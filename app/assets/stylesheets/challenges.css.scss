@@ -11,6 +11,7 @@
 }
 
 .challenge {
+  display: block;
   padding: 5px 15px;
   margin-bottom: 25px;
   background: #fff;
@@ -20,11 +21,13 @@
 
 .challenge:hover {
   cursor: pointer;
-  box-shadow: 0 0 10px -3px #f1822d;
+  box-shadow: 0 0 10px -2px #f1822d;
 }
 
 .challenge h2 {
+  color: #555;
   font-size: 1.6em;
+  margin-top: 10px;
   margin-bottom: 5px;
 }
 
