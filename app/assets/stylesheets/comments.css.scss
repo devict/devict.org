@@ -14,7 +14,12 @@
 }
 
 .comment {
-  background-color: #DDD;
-  padding-left: .5em;
+  border: 1px solid #ddd;
+  background-color: #eee;
+  padding: 15px 15px 5px 15px;
   margin-bottom: .5em;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }

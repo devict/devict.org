@@ -3,20 +3,22 @@
 <p class="small">Submitted by <%= @submission.user.name %> on <%= l @submission.created_at, :format => :date %></p>
 
 <pre class="prettyprint"><%= simple_format(strip_tags(@submission.code)) %></pre>
+
 <div class="comments">
+  <h4>Comments</h4>
   <% @submission.comments.each do |comment| %>
     <div>
       <div class="comment">
         <p>
-        <em><%= l comment.created_at, :format => :date %>:</em>
-        <%= snippet(sanitize(simple_format(comment.body))) %>
-      </p>
-      <% if current_user == comment.user %>
-        <p>
-          <%= link_to 'Edit', edit_comment_path(comment, @submission), class: 'button primary tiny' %>
-          <%= link_to 'Delete', comment_path(comment, @submission), method: :delete, data: { confirm: 'Are you sure?' }, class: 'button alert tiny' %>
+          <em><%= comment.user.name %> (<%= l comment.created_at, :format => :date %>):</em>
+          <%= snippet(sanitize(simple_format(comment.body))) %>
         </p>
-      <% end %>
+        <% if current_user == comment.user %>
+          <p>
+            <%= link_to 'Edit', edit_comment_path(comment, @submission), class: 'button primary tiny' %>
+            <%= link_to 'Delete', comment_path(comment, @submission), method: :delete, data: { confirm: 'Are you sure?' }, class: 'button alert tiny' %>
+          </p>
+        <% end %>
       </div>
     </div>
   <% end %>
@@ -29,7 +31,7 @@
       </div>
 
       <div class="actions">
-        <%= submit_tag "Add A Comment", class: 'button tiny success' %>
+        <%= submit_tag "Add A Comment", class: 'button small success' %>
       </div>
     <% end %>
   </div>
