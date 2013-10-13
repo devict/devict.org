@@ -58,10 +58,11 @@ class SubmissionsController < ApplicationController
 
   def update
     @submission = Submission.find(params[:id])
+    @challenge = @submission.challenge
 
     respond_to do |format|
       if @submission.update_attributes(params[:submission])
-        format.html { redirect_to challenge_submission_url(@submission), notice: 'Submission was successfully updated.' }
+        format.html { redirect_to challenge_submission_url(@challenge, @submission), notice: 'Submission was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
