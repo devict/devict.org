@@ -12,10 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :code %><br />
+    <h3>Enter your submission for: <%= @challenge.title %></h3>
     <%= f.text_area :code %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= link_to 'Back to Challenge', challenge_path(@challenge), class: 'button secondary small pull-right' %>
+    <%= f.submit class: 'button success' %>
   </div>
 <% end %>

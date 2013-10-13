@@ -116,7 +116,7 @@
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: normal;
-// $paragraph-font-size: 1em;
+// $paragraph-font-size: 1.1em;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: emCalc(20px);
 // $paragraph-aside-font-size: emCalc(14px);
@@ -185,17 +185,17 @@
 //
 
 // We use this to set the base for lots of form spacing and positioning styles
-// $form-spacing: emCalc(16px);
+$form-spacing: emCalc(18px);
 
 // We use these to style the labels in different ways
 // $label-pointer: pointer;
-// $label-font-size: emCalc(14px);
-// $label-font-weight: 500;
+$label-font-size: emCalc(20px);
+$label-font-weight: bold;
 // $label-font-color: lighten(#000, 30%);
-// $label-bottom-margin: emCalc(3px);
+$label-bottom-margin: emCalc(10px);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
-// $input-font-size: emCalc(14px);
+$input-font-size: emCalc(18px);
 // $input-bg-color: #fff;
 // $input-focus-bg-color: darken(#fff, 2%);
 // $input-border-color: darken(#fff, 20%);

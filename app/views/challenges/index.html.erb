@@ -1,19 +1,24 @@
+<% if current_user %>
+  <%= link_to 'Create a new challenge', new_challenge_path, class: 'button success pull-right header-button'  %>
+<% end %>
 <h1>Coding Challenges</h1>
-
+<br />
 <% if 0 < @challenges.size %>
   <%= paginate @challenges %>
 
-  <% @challenges.each do |challenge| %>
-      <h3><%= link_to sanitize(challenge.title), challenge %></h3>
-      <p>By <%= challenge.user.name %> on <%= l challenge.created_at, :format => :date %></p>
-      <%= snippet(markdown(challenge.description), link_to(' . . . (continued)', challenge)) %>
-
-      <%- if current_user == challenge.user %>
-        <p>
-          <%= link_to 'Edit', edit_challenge_path(challenge) %> |
-          <%= link_to 'Delete', challenge, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </p>
-      <%- end %>
+  <% @challenges.each_with_index do |challenge, idx| %>
+    <% if idx % 2 == 0 %>
+      <div class="row">
+    <% end %>
+      <div class="columns small-6">
+        <div class="challenge">
+          <h2><%= link_to sanitize(challenge.title), challenge %></h2>
+          <p>By <%= challenge.user.name %> on <%= l challenge.created_at, :format => :date %></p>
+        </div>
+      </div>
+    <% if idx % 2 != 0 %>
+      </div>
+    <% end %>
   <% end %>
 
   <br />
@@ -21,4 +26,3 @@
   <p>There are currently no challenges.</p>
 <% end %>
 
-<%= link_to 'Create a new challenge', new_challenge_path if current_user %>

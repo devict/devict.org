@@ -12,14 +12,14 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br />
+    <%= f.label :title %>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
+    <%= f.label :description, class: 'pull-left' %>&nbsp;<%= image_tag 'markdown-mark.png' %>
+    <%= f.text_area :description, rows: '50' %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: 'button large success pull-right' %>
   </div>
 <% end %>

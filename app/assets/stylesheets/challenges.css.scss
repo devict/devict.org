@@ -1,3 +1,40 @@
 // Place all the styles related to the challenges controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#challenge_title {
+  font-size: 1.5em;
+}
+
+#challenge_description {
+  height: 200px;
+}
+
+.challenge {
+  padding: 5px 15px;
+  margin-bottom: 25px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px #eee;
+}
+
+.challenge:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px -3px #f1822d;
+}
+
+.challenge h2 {
+  font-size: 1.6em;
+  margin-bottom: 5px;
+}
+
+.challenge p {
+  color: #888;
+  font-size: 0.8em;
+}
+
+.challenge-single p.credit {
+  color: #777;
+  font-size: 0.8em;
+}
+

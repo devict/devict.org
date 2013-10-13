@@ -7,7 +7,6 @@ class SubmissionsController < ApplicationController
     @submissions = Submission.where("challenge_id = ?", params[:challenge_id]).order("created_at").page(params[:page]).per(5)
     @challenge = Challenge.find(params[:challenge_id])
     #including a new, empty comment here allows us to use form_for(@comment) in the view.
-    @comment = Comment.new
 
     respond_to do |format|
       format.html # index.html.erb
@@ -17,6 +16,7 @@ class SubmissionsController < ApplicationController
 
   def show
     @submission = Submission.find(params[:id])
+    @comment = Comment.new
 
     respond_to do |format|
       format.html # show.html.erb

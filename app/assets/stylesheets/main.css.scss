@@ -103,14 +103,23 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight:normal;
 } 
 
-h3 a:link, h3 a:visited,
-h4 a:link, h4 a:visited {
+h1 a {
+	font-family: 'Oswald', sans-serif;
+}
+
+a.button.primary:link,
+a.button.primary:visited {
+  color: #fff;
+}
+
+.featured-event h3 a:link, .featured-event h3 a:visited,
+.featured-event h4 a:link, .featured-event h4 a:visited {
 	font-family: 'Oswald', sans-serif;
 	font-weight:normal;
   color: #fff;
 }
 
-h3 a:hover, h3 a:active {
+.featured-event h3 a:hover, .featured-event h3 a:active {
   color: #666;
 }
 
@@ -139,6 +148,7 @@ h3 a:hover, h3 a:active {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#efefef',GradientType=1 ); /* IE6-9 */
 }
 .main-nav{
+  font-size: 0.9em;
   padding-top:33px;
 }
 
@@ -187,6 +197,23 @@ h3 a:hover, h3 a:active {
 
 .content {
   padding-top: 15px;
+}
+
+.content h1 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.content h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+p.pull-right {
+  margin-left: 10px;
+}
+
+.header-button {
+  margin-top: 10px;
 }
 
 .featured-event{
@@ -266,6 +293,10 @@ h3 a:hover, h3 a:active {
   padding: 0;
 }
 
+p.actions {
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
 
 
 
