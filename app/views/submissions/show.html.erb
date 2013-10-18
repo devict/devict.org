@@ -32,14 +32,14 @@
       </div>
 
       <div class="actions">
-        <%= submit_tag "Add A Comment", class: 'button small success' %>
+        <%= submit_tag "Add A Comment", class: 'button success' %>
       </div>
     <% end %>
   </div>
 </div>
 
 <p class="actions">
-  <%= link_to 'Back to Solutions', challenge_submissions_path(@submission.challenge), class: 'button small secondary pull-right' %>
+  <%= link_to 'Back to Solutions', challenge_submissions_path(@submission.challenge), class: 'button secondary pull-right' %>
 
   <% if current_user == @submission.user %>
     <%= link_to 'Edit Submission', edit_challenge_submission_path(@submission.challenge, @submission), class: 'button primary' %>

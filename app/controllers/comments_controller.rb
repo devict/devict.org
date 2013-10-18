@@ -25,11 +25,11 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to challenge_submissions_path(:challenge_id => @comment.submission.challenge.id), notice: 'Comment added.' }
+        format.html { redirect_to challenge_submission_path(@comment.submission.challenge, @comment.submission), notice: 'Comment added.' }
       else
         # ideally we'd push back @comment with actual errors. not sure possible/advisable thru redirect.
         flash[:error] = 'Your comment could not be saved. Comments may not be empty.'
-        format.html { redirect_to challenge_submissions_path(:challenge_id => @comment.submission.challenge.id) }
+        format.html { redirect_to challenge_submission_path(@comment.submission.challenge, @comment.submission) }
       end
     end
   end
@@ -40,7 +40,7 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.update_attributes(params[:comment])
-        format.html { redirect_to challenge_submissions_path(:challenge_id => @comment.submission.challenge.id), notice: 'Comment was revised.' }
+        format.html { redirect_to challenge_submission_path(@comment.submission.challenge, @comment.submission), notice: 'Comment was revised.' }
       else
         format.html { render action: "edit" }
       end
@@ -50,11 +50,12 @@ class CommentsController < ApplicationController
   # DELETE /comments/1
   def destroy
     @comment = Comment.find(params[:id])
-    @challenge_id = @comment.submission.challenge.id
+    @challenge = @comment.submission.challenge
+    @submission = @comment.submission
 
     @comment.destroy
 
-    redirect_to challenge_submissions_path(:challenge_id => @challenge_id), notice: 'Comment was removed.'
+    redirect_to challenge_submission_path(@challenge, @submission), notice: 'Comment was removed.'
   end
 
   def owns_comment
@@ -62,7 +63,7 @@ class CommentsController < ApplicationController
 
     if current_user != @comment.user
       flash[:error] = 'You cannot modify a comment you did not create.'
-      redirect_to challenge_submissions_path(:challenge_id => @comment.submission.challenge.id)
+      redirect_to challenge_submission_path(@comment.submission.challenge, @comment.submission)
     end
   end
 end
