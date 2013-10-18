@@ -2,4 +2,6 @@
 <% if user_signed_in? && current_user.id == @user.id %>
   <%= link_to "Edit", "#{users_path}/#{@user.id}/edit" %>
 <% end %>
-<p><%= markdown(@user.info) %></p>
+<% if @user.info %>
+  <p><%= markdown(@user.info) %></p>
+<% end %>
