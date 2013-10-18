@@ -2,4 +2,5 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Back', challenge_submissions_path(:challenge_id => @comment.submission.challenge.id) %>
+<%= link_to 'Back',
+    challenge_submission_path(@comment.submission.challenge, @comment.submission), class: 'button secondary' %>
