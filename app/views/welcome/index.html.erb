@@ -26,7 +26,11 @@
           <h4>
             <%= snippet(event.title, '..', 25) %>
           </h4>
-          <%= image_tag event.photo_url, alt: event.title %>
+          <% if event.photo_url %>
+            <%= image_tag event.photo_url, alt: event.title %>
+          <% else %>
+            <%= image_tag 'hackathon.jpg', alt: event.title %>
+          <% end %>
         </a>
       </li>
     <% end %>

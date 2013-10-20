@@ -20,8 +20,7 @@ class Event < ActiveRecord::Base
         venue_state: event['venue']['state'],
         venue_zip: event['venue']['zip'],
         date: event['time'],
-        url: event['event_url'],
-        photo_url: 'hackathon.jpg'
+        url: event['event_url']
       }
 
       if local_event == nil
