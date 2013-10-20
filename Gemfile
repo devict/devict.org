@@ -41,6 +41,7 @@ gem 'rMeetup2', git: 'https://github.com/antoinemenini/rMeetup2'
 gem 'nestful'
 gem 'nokogiri'
 gem 'whenever'
+gem 'gravtastic'
 #gem 'i18n',   '>= 0.6.4'
 
 # To use ActiveModel has_secure_password
