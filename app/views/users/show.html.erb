@@ -1,6 +1,6 @@
 <h1><%= @user.name %></h1>
 <% if user_signed_in? && current_user.id == @user.id %>
-  <%= link_to "Edit", "#{users_path}/#{@user.id}/edit" %>
+  <%= link_to "Edit your profile", "#{users_path}/#{@user.id}/edit", class: 'button success large' %>
 <% end %>
 <% if @user.info %>
   <p><%= markdown(@user.info) %></p>
