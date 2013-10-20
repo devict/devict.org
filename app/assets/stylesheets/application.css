@@ -12,3 +12,4 @@
  *= require_tree .
  *= require main
  */
+.clear { clear: both; }

@@ -13,6 +13,13 @@
         <%= link_to 'Delete', challenge_submission_path(submission.challenge, submission), method: :delete, data: { confirm: 'Are you sure?' }, class: 'button tiny alert' %>
       <% end %>
     </p>
+    <p class="clear subheader">
+      <% if 0 < submission.comments.size %>
+         <%= submission.comments.size %> comment(s)
+      <% else %>
+         No comments
+      <% end %>
+    </p>
   </div>
 <% end %>
 
