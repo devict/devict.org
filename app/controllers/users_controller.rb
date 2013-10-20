@@ -18,6 +18,11 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+    @user = User.find(params[:id])
+    @services = current_user.services.order('provider asc')
+  end
+
   protected
     def find_user
       @user = User.find(params[:id])
