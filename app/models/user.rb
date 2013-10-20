@@ -7,5 +7,5 @@ class User < ActiveRecord::Base
 
   attr_accessible :email, :name, :info
 
-  gravtastic
+  gravtastic size: 200
 end
