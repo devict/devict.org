@@ -15,10 +15,10 @@
     <%= f.text_field :name%>
   </div>
   <div class="field">
-    <%= f.label :info, :info.to_s.capitalize + " - supports markdown" %><br />
+    <%= f.label :info, class: 'pull-left' %>&nbsp;<%= image_tag 'markdown-mark.png' %>
     <%= f.text_area :info %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: 'button large success' %>
   </div>
 <% end %>
