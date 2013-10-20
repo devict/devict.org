@@ -15,7 +15,7 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :email %>
+    <%= f.label :email, "Email Address (Used for #{link_to 'Gravatar', 'http://gravatar.com'})".html_safe %>
     <%= f.text_field :email %>
   </div>
   <div class="field">
