@@ -39,7 +39,7 @@
         <% if user_signed_in? %>
         <div id="nav_user" class="userLogin">
           <dd><span><%= current_user.email %></span></dd>
-          <dd><%= link_to "Settings", services_path %></dd>
+          <dd><%= link_to "My Profile", edit_user_path(current_user) %></dd>
           <dd><%= link_to "Sign out", signout_services_path %></dd>
         </div>
         <% else %>
