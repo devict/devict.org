@@ -1,0 +1,21 @@
+<% users.each_with_index do |user, idx| %>
+  <% if idx % 6 == 0 %>
+    <div class="row">
+  <% end %>
+      <div class="columns small-2">
+        <a href="<%= user_path(user) %>" title="View <%= user.name %>'s profile">
+          <%= image_tag user.gravatar_url %>
+          <h4><%= user.name %></h4>
+        </a>
+      </div>
+      <!-- If we're looking at the last user, and there aren't enough --
+        -- users to fill our 12 column layout, fill it with nothing -->
+      <% if idx == users.count - 1 && idx % 6 != 0 %>
+          <div class="columns small-<%= 12 - ( users.count % 6 ) * 2 %>"></div>
+      <% end %>
+  <!-- We need to close the row after we've displayed 6 users, or if --
+    -- we're on the last user -->
+  <% if idx % 6 == 5 || idx == users.count - 1 %>
+    </div>
+  <% end %>
+<% end %>
