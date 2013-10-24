@@ -1,15 +1,5 @@
+<h1>UpFront Charter Members</h1>
+<%= render partial: 'member_list', locals: { users: @charter } %>
+
 <h1>UpFront Members</h1>
-<% @users.each_with_index do |user, idx| %>
-  <% if idx % 6 == 0 %>
-    <div class="row">
-  <% end %>
-      <div class="columns small-2">
-        <a href="<%= user_path(user) %>" title="View <%= user.name %>'s profile">
-          <%= image_tag user.gravatar_url %>
-          <h4><%= user.name %></h4>
-        </a>
-      </div>
-  <% if idx % 6 == 5 %>
-    </div>
-  <% end %>
-<% end %>
+<%= render partial: 'member_list', locals: { users: @users } %>
