@@ -20,17 +20,17 @@ class ServicesController < ApplicationController
             @service.destroy
         end
 
-        redirect_to services_path
+        redirect_to root_url
     end
 
-    def signout 
+    def signout
         if current_user
             session[:user_id] = nil
             session[:service_id] = nil
             session.delete :user_id
             session.delete :service_id
             flash[:notice] = 'You have been signed out!'
-        end  
+        end
         redirect_to root_url
     end
 
@@ -66,12 +66,12 @@ class ServicesController < ApplicationController
                 omniauth['info']['email'] ? @authhash[:email] =  omniauth['info']['email'] : @authhash[:email] = ''
                 omniauth['info']['name'] ? @authhash[:name] =  omniauth['info']['name'] : @authhash[:name] = ''
                 omniauth['extra']['raw_info']['id'] ? @authhash[:uid] =  omniauth['extra']['raw_info']['id'].to_s : @authhash[:uid] = ''
-                omniauth['provider'] ? @authhash[:provider] =  omniauth['provider'] : @authhash[:provider] = ''  
+                omniauth['provider'] ? @authhash[:provider] =  omniauth['provider'] : @authhash[:provider] = ''
             else
                 # debug to output the hash that has been returned when adding new services
                 render :text => omniauth.to_yaml
                 return
-            end 
+            end
 
             if @authhash[:uid] != '' and @authhash[:provider] != ''
 
@@ -81,11 +81,11 @@ class ServicesController < ApplicationController
                 if user_signed_in?
                     if auth
                         flash[:notice] = 'Your account at ' + @authhash[:provider].capitalize + ' is already connected with this site.'
-                        redirect_to services_path
+                        redirect_to root_url
                     else
                         current_user.services.create!(:provider => @authhash[:provider], :uid => @authhash[:uid], :uname => @authhash[:name], :uemail => @authhash[:email])
                         flash[:notice] = 'Your ' + @authhash[:provider].capitalize + ' account has been added for signing in at this site.'
-                        redirect_to services_path
+                        redirect_to root_url
                     end
                 else
                     if auth
