@@ -1,11 +1,13 @@
 <h1>Video Presentations</h1>
 
 <% @videos.each do |entry| %>
-  <h2><%= entry.title %></h2>
-  <p><%= entry.content %></p>
-  <p>Published on <%= l entry.published_at, :format => :date %></p>
-  <div>
-    <iframe title="<%= entry.title %>" width="480" height="390" src="<%= entry.link %>&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+  <div class="video-div">
+    <h2><%= entry.title %></h2>
+    <p><%= entry.content %></p>
+    <p>Published on <%= l entry.published_at, :format => :date %></p>
+    <div class="video">
+      <iframe title="<%= entry.title %>" width="480" height="390" src="<%= entry.link %>&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
-<% end %>
+  <% end %>
 <%= paginate @videos %>
