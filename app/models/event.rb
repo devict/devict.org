@@ -20,13 +20,15 @@ class Event < ActiveRecord::Base
         venue_state: event['venue']['state'],
         venue_zip: event['venue']['zip'],
         date: event['time'],
-        url: event['event_url']
+        url: event['event_url'],
+        photo_url: 'hackathon.jpg'
       }
 
       if local_event == nil
         # event has not been saved locally
         Event.create(params)
       else
+        params.delete(:photo_url)
         local_event.update_attributes(params)
         local_event.save
       end
