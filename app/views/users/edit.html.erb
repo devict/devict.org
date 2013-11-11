@@ -1,46 +1,58 @@
 <h1>Edit Profile: <%= @user.name %></h1>
-<%= render 'form' %>
+<div class="section-container accordion" data-section="accordion">
 
-<h1>Authentication Services - Settings</h1>
-<section id="services_manage" class="services row">
-
-  <div class="large-10 columns">
-    <div id="services_available">
-      <h3>Connect More Accounts</h3>
-
-      <%= render 'services/services_list'%>
+  <section class="active">
+    <p class="title" data-section-title><a href="#">Basic Information</a></p>
+    <div class="content" data-section-content>
+      <%= render 'form' %>
     </div>
-  </div>
+  </section>
 
-  <div class="large-2 columns">
-    <h3>Your Accounts</h3>
+  <section>
+    <p class="title" data-section-title><a href="#">Authentication Services - Settings</a></p>
+    <div class="content" data-section-content>
+      <section id="services_manage" class="services row">
 
-    <% @services.each do |service| %>
-      <div class="service_in_use round">
-        <div class="service_img">
-          <% if ['aol', 'facebook', 'github', 'google_oauth2', 'openid', 'twitter', 'yahoo'].index(service.provider) %>
-            <%= image_tag "social_#{service.provider}_48.png", :size => "64x64" %>
-          <% else %>
-            <%= image_tag "openid_64.png", :size => "64x64" %>
-          <% end %>
+        <div class="large-10 columns">
+          <div id="services_available">
+            <h3>Connect More Accounts</h3>
+
+            <%= render 'services/services_list'%>
+          </div>
         </div>
 
-        <div class="service_userdata">
-          <% if service.uid.starts_with?('http') %>
-            <%= service.uid.scan(/http[s]*:\/\/.*?\//)[0] %>
-          <% else %>
-            <%= service.provider.capitalize %>: <%= service.uid %>
-          <% end %>
-          <br />
-          <%= service.uname if service.uname != '' %><br />
-          <%= service.uemail if service.uemail != '' %><br />
-          <% if session[:service_id] == service.id %>
-            <span>Signed in</span>
-          <% else %>
-            <%= link_to "Remove this service", service, :confirm => 'Are you sure you want to remove this authentication?', :method => :delete, :class => "remove" %>
+        <div class="large-2 columns">
+          <h3>Your Accounts</h3>
+
+          <% @services.each do |service| %>
+            <div class="service_in_use round">
+              <div class="service_img">
+                <% if ['aol', 'facebook', 'github', 'google_oauth2', 'openid', 'twitter', 'yahoo'].index(service.provider) %>
+                  <%= image_tag "social_#{service.provider}_48.png", :size => "64x64" %>
+                <% else %>
+                  <%= image_tag "openid_64.png", :size => "64x64" %>
+                <% end %>
+              </div>
+
+              <div class="service_userdata">
+                <% if service.uid.starts_with?('http') %>
+                  <%= service.uid.scan(/http[s]*:\/\/.*?\//)[0] %>
+                <% else %>
+                  <%= service.provider.capitalize %>: <%= service.uid %>
+                <% end %>
+                <br />
+                <%= service.uname if service.uname != '' %><br />
+                <%= service.uemail if service.uemail != '' %><br />
+                <% if session[:service_id] == service.id %>
+                  <span>Signed in</span>
+                <% else %>
+                  <%= link_to "Remove this service", service, :confirm => 'Are you sure you want to remove this authentication?', :method => :delete, :class => "remove" %>
+                <% end %>
+              </div>
+            </div>
           <% end %>
         </div>
-      </div>
-    <% end %>
-  </div>
-</section>
+      </section>
+    </div>
+  </section>
+</div>
