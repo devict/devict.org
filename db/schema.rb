@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131022001847) do
+ActiveRecord::Schema.define(:version => 20131117061013) do
 
   create_table "challenges", :force => true do |t|
     t.string   "title"
@@ -47,6 +47,14 @@ ActiveRecord::Schema.define(:version => 20131022001847) do
     t.datetime "updated_at",    :null => false
   end
 
+  create_table "feeds", :force => true do |t|
+    t.string   "url",                           :null => false
+    t.integer  "user_id"
+    t.boolean  "approved",   :default => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+  end
+
   create_table "irc_users", :force => true do |t|
     t.string "handle"
   end
@@ -61,6 +69,7 @@ ActiveRecord::Schema.define(:version => 20131022001847) do
     t.string   "guid"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.integer  "feed_id"
   end
 
   create_table "services", :force => true do |t|
@@ -85,11 +94,12 @@ ActiveRecord::Schema.define(:version => 20131022001847) do
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
     t.text     "info"
     t.integer  "permission"
     t.boolean  "isCharter",  :default => false
+    t.string   "color",      :default => "#ccc"
   end
 
   create_table "videos", :force => true do |t|

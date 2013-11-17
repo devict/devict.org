@@ -15,3 +15,5 @@
 .clear { clear: both; }
 
 .section-container .title { font-size: 1.3em; font-weight: bold; }
+
+table { width: 100%; }

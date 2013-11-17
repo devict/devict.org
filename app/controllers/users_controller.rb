@@ -22,6 +22,8 @@ class UsersController < ApplicationController
   def edit
     @user = User.find(params[:id])
     @services = current_user.services.order('provider asc')
+    @feed = Feed.new
+    @feed.user = @user
   end
 
   protected

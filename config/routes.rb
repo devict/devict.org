@@ -29,6 +29,7 @@ UpfrontwichitaCom::Application.routes.draw do
 
   # Members pages
   resources :users, :only => [:index, :show, :edit, :update] do
+    resources :feed, :only => [:new, :create, :delete]
   end
 
   # Service for our IRC bot to update the list of logged in IRC users

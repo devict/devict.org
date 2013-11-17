@@ -55,4 +55,33 @@
       </section>
     </div>
   </section>
+
+  <section>
+    <p class="title" data-section-title><a href="#">RSS / ATOM Feeds</a></p>
+    <div class="content" data-section-content>
+      <%= render partial: '/feed/form', locals: { feed: @feed } %>
+
+      <h2>Existing RSS / ATOM Feeds</h2>
+      <% if 0 < @user.feeds.count %>
+        <table>
+          <thead>
+            <tr>
+              <th>Url</th>
+              <th>Approved</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @user.feeds.each do |feed| %>
+              <tr>
+                <td><%= feed.url %></td>
+                <td><%= feed.approved ? "Yes" : "No" %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      <% else %>
+        <span>There are no existing configured feeds</span>
+      <% end %>
+    </div>
+  </section>
 </div>
