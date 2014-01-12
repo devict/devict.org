@@ -11,8 +11,8 @@
    Base styles: opinionated defaults
    ========================================================================== */
 * {
-	@include box-sizing(border-box);
-	font-family: 'Open Sans', sans-serif;
+  @include box-sizing(border-box);
+  font-family: 'Open Sans', sans-serif;
 }
 
 html,
@@ -99,12 +99,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: 'Oswald', sans-serif;
-	font-weight:normal;
-} 
+  font-family: 'Oswald', sans-serif;
+  font-weight:normal;
+}
 
 h1 a {
-	font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 a.button.primary:link,
@@ -114,8 +114,8 @@ a.button.primary:visited {
 
 .featured-event h3 a:link, .featured-event h3 a:visited,
 .featured-event h4 a:link, .featured-event h4 a:visited {
-	font-family: 'Oswald', sans-serif;
-	font-weight:normal;
+  font-family: 'Oswald', sans-serif;
+  font-weight:normal;
   color: #fff;
 }
 
@@ -217,7 +217,7 @@ p.pull-right {
 }
 
 .featured-event{
-  background: url("/assets/ruby-screenshot-tilt.png") no-repeat center center; 
+  background: url("/assets/ruby-screenshot-tilt.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -242,10 +242,18 @@ p.pull-right {
 }
 .screen-blk h2{
   font-size:medium;
-  color:#f1822d;  
+  color:#f1822d;
 }
 .screen-blk h3, .screen-blk p{
-  color:#DDD;  
+  color:#DDD;
+}
+.screen-blk a:link,
+.screen-blk a:visited {
+  color: #f1822d;
+}
+.screen-blk a:hover,
+.screen-blk a:active {
+  color: #fff;
 }
 
 .event-list li {
@@ -270,7 +278,7 @@ p.pull-right {
   margin-left:1em;
 }
 
-.userLogged dd:first-child, 
+.userLogged dd:first-child,
 .userLogin dd:first-child {
   border-left:2px solid #CDCDCD;
   padding-left:1em;
