@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
   def index
     @irc_users = IrcUser.order('handle')
-    @events = Event.order('date DESC').all(limit: 5)
-    @featured_event = @events.slice!(0)
+    @events = Event.where(upcoming: false).order('date DESC').limit(4)
+    @featured_event = Event.where(upcoming: true).order('date DESC').first
   end
 end

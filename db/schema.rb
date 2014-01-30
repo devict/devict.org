@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131117061013) do
+ActiveRecord::Schema.define(:version => 20140130132542) do
 
   create_table "challenges", :force => true do |t|
     t.string   "title"
@@ -43,8 +43,9 @@ ActiveRecord::Schema.define(:version => 20131117061013) do
     t.string   "date"
     t.string   "url"
     t.string   "photo_url"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",                       :null => false
+    t.datetime "updated_at",                       :null => false
+    t.boolean  "upcoming",      :default => false
   end
 
   create_table "feeds", :force => true do |t|

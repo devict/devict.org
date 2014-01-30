@@ -1,5 +1,15 @@
 class Event < ActiveRecord::Base
-  attr_accessible :date, :description, :photo_url, :title, :url, :venue_address, :venue_city, :venue_name, :venue_state, :venue_zip
+  attr_accessible :date,
+    :description,
+    :photo_url,
+    :title,
+    :url,
+    :venue_address,
+    :venue_city,
+    :venue_name,
+    :venue_state,
+    :venue_zip,
+    :upcoming
 
   def self.update_events
     RMeetup2::Client.api_key = "7c4d734c35c43246e1c3086d2c754d"
@@ -21,7 +31,8 @@ class Event < ActiveRecord::Base
         venue_zip: event['venue']['zip'],
         date: event['time'],
         url: event['event_url'],
-        photo_url: 'hackathon.jpg'
+        photo_url: 'hackathon.jpg',
+        upcoming: event['time']/1000 > Time.now.to_i ? true : false
       }
 
       if local_event == nil
