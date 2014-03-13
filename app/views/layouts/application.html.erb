@@ -13,7 +13,7 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title><%= content_for?(:title) ? yield(:title) : "UpFront Wichita" %></title>
+  <title><%= content_for?(:title) ? yield(:title) : "DevICT - Wichita, KS Developer Group" %></title>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -25,7 +25,7 @@
 <body>
   <div class="top-banner">
     <div class="row">
-      <div class="small-2 large-2 large-uncentered columns"><%= link_to image_tag("logo.png", alt:"Upfront Wichita"), root_path %></div>
+      <div class="small-2 large-2 large-uncentered columns"><%= link_to image_tag("devict_logo.png", alt:"Upfront Wichita"), root_path %></div>
       <% if session[:user_id] %>
       <dl class="sub-nav large-8 large-offset-2 columns main-nav">
       <% else %>

@@ -3,8 +3,8 @@ require 'bundler/capistrano'
 set :whenever_command, "bundle exec whenever"
 require 'whenever/capistrano'
 
-set :application, "upfrontwichita.com"
-set :repository,  "git://github.com/upfrontwichita/upfrontwichita.com.git"
+set :application, "devict.org"
+set :repository,  "git://github.com/devict/devict.com.git"
 set :deploy_to, "/home/upfront/upfrontwichita/"
 set :rvm_ruby_string, "2.0.0@upfrontwichita.com"
 set :user, "upfront"
@@ -13,9 +13,9 @@ set :use_sudo, false
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-role :web, "upfrontwichita.com"                          # Your HTTP server, Apache/etc
-role :app, "upfrontwichita.com"                          # This may be the same as your `Web` server
-role :db,  "upfrontwichita.com", :primary => true # This is where Rails migrations will run
+role :web, "devict.org"                          # Your HTTP server, Apache/etc
+role :app, "devict.org"                          # This may be the same as your `Web` server
+role :db,  "devict.org", :primary => true # This is where Rails migrations will run
 
 # if you want to clean up old releases on each deploy uncomment this:
 after "deploy:restart", "deploy:cleanup", "deploy:update_crontab"
