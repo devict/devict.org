@@ -4,7 +4,7 @@ set :whenever_command, "bundle exec whenever"
 require 'whenever/capistrano'
 
 set :application, "devict.org"
-set :repository,  "git://github.com/devict/devict.com.git"
+set :repository,  "git://github.com/devict/devict.org.git"
 set :deploy_to, "/home/upfront/upfrontwichita/"
 set :rvm_ruby_string, "2.0.0@upfrontwichita.com"
 set :user, "upfront"
