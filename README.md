@@ -1,6 +1,6 @@
-# upfrontwichita.com
+# devict.org
 
-The web home for UpFront Wichita
+The web home for DevICT
 
 # Requirements
 * Ruby 2
