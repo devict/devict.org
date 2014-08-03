@@ -244,8 +244,14 @@ p.pull-right {
   font-size:medium;
   color:#f1822d;
 }
-.screen-blk h3, .screen-blk p{
-  color:#DDD;
+.screen-blk h3 {
+  font-size: 4em;
+  color: #ddd;
+}
+.screen-blk p {
+  color: #bbb;
+  font-size: 20px;
+  line-height: 1.3em;
 }
 .screen-blk a:link,
 .screen-blk a:visited {
@@ -272,8 +278,11 @@ p.pull-right {
   background:rgba(0,0,0,0.75);
 }
 
-.event-list a h4, .event-list a:visited h4{
-  color:#FFF;
+.event-list a h4, .event-list a:visited h4 {
+  color:#999;
+}
+.event-list a:hover h4 {
+  color: #fff;
 }
 .sub-nav dt, .sub-nav dd{
   margin-left:1em;

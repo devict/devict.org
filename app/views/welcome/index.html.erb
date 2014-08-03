@@ -5,10 +5,7 @@
       <h2>Featured event:</h2>
       <div class="row">
         <% if @featured_event %>
-          <a href="<%= @featured_event.url %>" title="<%=@featured_event.title %>" class="small-3 columns">
-            <%= image_tag @featured_event.photo_url, alt: @featured_event.title %>
-          </a>
-          <div class="small-9 columns">
+          <div class="small-12 columns">
             <h3><a href="<%= @featured_event.url %>" title="<%=@featured_event.title %>"><%= @featured_event.title %></a></h3>
             <div class="feature-descript"><%= first_p(@featured_event.description).html_safe %></div>
           </div>
