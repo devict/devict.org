@@ -10,10 +10,7 @@
             <div class="feature-descript"><%= first_p(@featured_event.description).html_safe %></div>
           </div>
         <% else %>
-          <a href="#" class="small-3 columns">
-            <%= image_tag 'hackathon.jpg' %>
-          </a>
-          <div class="small-9 columns">
+          <div class="small-12 columns">
             <h3>No current upcoming event. Check back soon!</h3>
             <div class="feature-descript">
               <p>Chances are we just haven't put the next events on the schedule yet. Check back soon to see what's next!</p>
