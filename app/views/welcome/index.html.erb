@@ -36,7 +36,7 @@
       <li>
         <a href="<%= event.url %>" title="<%= event.title %>">
           <h4>
-            <%= snippet(event.title, '..', 25) %>
+            <%= event.title %>
           </h4>
           <% if event.photo_url %>
             <%= image_tag event.photo_url, alt: event.title %>
