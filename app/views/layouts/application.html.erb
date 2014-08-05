@@ -13,7 +13,7 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title><%= content_for?(:title) ? yield(:title) : "DevICT - Wichita, KS Developer Group" %></title>
+  <title><%= content_for?(:title) ? yield(:title) : "devICT - Wichita, KS Developer Group" %></title>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -25,7 +25,7 @@
 <body>
   <div class="top-banner">
     <div class="row">
-      <div class="small-2 large-2 large-uncentered columns"><%= link_to image_tag("devict_logo.png", alt:"DevICT"), root_path %></div>
+      <div class="small-2 large-2 large-uncentered columns"><%= link_to image_tag("devict_logo.png", alt:"devICT"), root_path %></div>
       <% if session[:user_id] %>
       <dl class="sub-nav large-8 large-offset-2 columns main-nav">
       <% else %>
@@ -90,11 +90,11 @@
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
           </form>
         </li>
-        <li><%= link_to "https://plus.google.com/communities/109960336067004386127" do %><%= image_tag "social_google_oauth2_48.png", :size => "32x32", :alt => "DevICT on Google Plus" %><% end %></li>
-        <li><%= link_to "http://twitter.com/dev_ict" do %><%= image_tag "social_twitter_48.png", :size => "32x32", :alt => "DevICT on Twitter" %><% end %></li>
-        <li><%= link_to "http://meetup.com/devict" do %><%= image_tag "social_meetup_48.png", :size => "32x32", :alt => "DevICT on Meetup" %><% end %></li>
+        <li><%= link_to "https://plus.google.com/communities/109960336067004386127" do %><%= image_tag "social_google_oauth2_48.png", :size => "32x32", :alt => "devICT on Google Plus" %><% end %></li>
+        <li><%= link_to "http://twitter.com/dev_ict" do %><%= image_tag "social_twitter_48.png", :size => "32x32", :alt => "devICT on Twitter" %><% end %></li>
+        <li><%= link_to "http://meetup.com/devict" do %><%= image_tag "social_meetup_48.png", :size => "32x32", :alt => "devICT on Meetup" %><% end %></li>
       </ul>
-      <h4>2014 DevICT</h4>
+      <h4>2014 devICT</h4>
     </div>
   </footer>
 
