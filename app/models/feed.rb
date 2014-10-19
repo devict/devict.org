@@ -1,6 +1,6 @@
 class Feed < ActiveRecord::Base
   attr_accessible :url, :user, :approved
-  
+
   belongs_to :user
-  has_many :post
+  has_many :post, dependent: :destroy
 end

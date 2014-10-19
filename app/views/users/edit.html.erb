@@ -68,6 +68,7 @@
             <tr>
               <th>Url</th>
               <th>Approved</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -75,6 +76,9 @@
               <tr>
                 <td><%= feed.url %></td>
                 <td><%= feed.approved ? "Yes" : "No" %></td>
+                <td>
+                  <%= link_to('Delete Feed', user_feed_path(@user, feed), method: :delete, data: { confirm: "Are you sure you want to delete this feed and all of the associated posts?" }, class: 'button alert small') %>
+                </td>
               </tr>
             <% end %>
           </tbody>

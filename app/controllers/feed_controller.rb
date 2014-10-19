@@ -1,5 +1,6 @@
 class FeedController < ApplicationController
   before_filter :find_user
+  before_filter :redirect_unless_same_user
 
   def create
     @feed = Feed.new()
@@ -18,8 +19,21 @@ class FeedController < ApplicationController
     end
   end
 
+  def destroy
+      @feed = Feed.find(params[:id])
+      @feed.destroy
+
+      redirect_to edit_user_path(@user), notice: 'Feed successfully deleted.'
+  end
+
   protected
   def find_user
     @user = User.find(params[:user_id])
+  end
+
+  def redirect_unless_same_user
+    if ! user_signed_in? || current_user.id != @user.id
+      redirect_to users_path, :flash => { :error => "You do not have permission to edit users other than yourself." }
+    end
   end
 end
