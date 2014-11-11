@@ -1,3 +1,12 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.conduct {
+  p, li {
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+  ul {
+    padding-left: 1.33em;
+  }
+}

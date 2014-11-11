@@ -29,8 +29,9 @@
       <% if session[:user_id] %>
       <dl class="sub-nav large-8 large-offset-2 columns main-nav">
       <% else %>
-      <dl class="sub-nav large-6 large-offset-4 columns main-nav">
+      <dl class="sub-nav large-7 large-offset-3 columns main-nav">
       <% end %>
+        <%= nav_link "Code of Conduct", conduct_path %>
         <%= nav_link "About/Member List", users_path %>
         <%= nav_link "Code Challenge", challenges_path %>
         <%= nav_link "Talks/Videos", videos_path %>
