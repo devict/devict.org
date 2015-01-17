@@ -1,3 +1,23 @@
 // Place all the styles related to the events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.past {
+  margin-top: 25px;
+}
+
+.event-date {
+  margin: 0;
+  position: relative;
+  top: -3px;
+}
+
+.event-date small {
+  background: #EE802B;
+  padding: 5px 10px;
+  margin: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.5em;
+}
+

@@ -103,8 +103,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight:normal;
 }
 
-h1 a {
+h1 a,
+h2 a,
+h3 a,
+h4 a {
   font-family: 'Oswald', sans-serif;
+}
+
+h1 a:link, h1 a:visited, h1 a:active,
+h2 a:link, h2 a:visited, h2 a:active,
+h3 a:link, h3 a:visited, h3 a:active {
+  color: #333;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+  color: #888;
 }
 
 a.button.primary:link,
@@ -282,6 +295,31 @@ p.pull-right {
 }
 .sub-nav dt, .sub-nav dd{
   margin-left:1em;
+}
+
+/**
+ * Pagination Styles
+ */
+.pagination {
+  float:right;
+  font-size: 1.2em;
+  border: 1px solid #eee;
+  background: #fff;
+  padding: 10px;
+  height: 40px;
+}
+.pagination .page {
+  margin-right: 7px;
+}
+.pagination .current {
+  background: #EE802B;
+  color: #fff;
+  border-radius: 3px;
+  padding: 3px 3px 3px 8px;
+}
+.pagination .first,
+.pagination .last {
+  display: none;
 }
 
 /* Services */

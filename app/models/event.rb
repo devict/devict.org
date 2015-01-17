@@ -11,6 +11,9 @@ class Event < ActiveRecord::Base
     :venue_zip,
     :upcoming
 
+  scope :upcoming, where(upcoming: true)
+  scope :past, where(upcoming: false)
+
   def self.update_events
     RMeetup2::Client.api_key = "7c4d734c35c43246e1c3086d2c754d"
 
@@ -32,7 +35,7 @@ class Event < ActiveRecord::Base
         date: event['time'],
         url: event['event_url'],
         photo_url: 'hackathon.jpg',
-        upcoming: event['time']/1000 > Time.now.to_i ? true : false
+        upcoming: event['time']/1000 >= Time.now.to_i ? true : false
       }
 
       if local_event == nil

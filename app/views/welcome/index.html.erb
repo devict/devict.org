@@ -7,14 +7,16 @@
         <% if @featured_event %>
           <div class="small-12 columns">
             <h3><a href="<%= @featured_event.url %>" title="<%=@featured_event.title %>"><%= @featured_event.title %></a></h3>
-            <div class="feature-descript"><%= first_p(@featured_event.description).html_safe %></div>
+            <!-- <div class="feature-descript"><%= first_p(@featured_event.description).html_safe %></div> -->
           </div>
         <% else %>
           <div class="small-12 columns">
             <h3>No current upcoming event. Check back soon!</h3>
+            <!--
             <div class="feature-descript">
               <p>Chances are we just haven't put the next events on the schedule yet. Check back soon to see what's next!</p>
             </div>
+            -->
           </div>
         <% end %>
       </div>
@@ -24,21 +26,24 @@
 <% end %>
 
 <div class="row">
-  <h2>Some of our recent events:</h2>
-  <ul class="small-block-grid-2 large-block-grid-4 event-list">
-    <% @events.each do |event| %>
-      <li>
-        <a href="<%= event.url %>" title="<%= event.title %>">
-          <h4>
-            <%= event.title %>
-          </h4>
-          <% if event.photo_url %>
-            <%= image_tag event.photo_url, alt: event.title %>
-          <% else %>
-            <%= image_tag 'hackathon.jpg', alt: event.title %>
-          <% end %>
-        </a>
-      </li>
-    <% end %>
-  </ul>
+  <div class="small-4 columns">
+    <h2>Who we are</h2>
+    <p>We are a group of individuals who have a common interest in web and softare development.</p>
+    <p>Our skill levels vary greatly, from complete beginners to seasoned veterans, we welcome anyone with a curiousity for programming.</p>
+    <p><strong>We aim to educate, empower and connect developers in the Wichita area.</strong></p>
+  </div>
+
+  <div class="small-4 columns">
+    <h2>What we do</h2>
+    <p>Members of devICT have one common goal: to be better at what we do. Our events and services are aimed at achieving that.</p>
+    <p>To make that happen we have monthly events that are both social and educational.</p>
+    <p>Take a look at <a href="/events" title="Events">all of our events</a> or even watch some <a href="/videos" title="Videos">previously recorded talks</a>.</p>
+  </div>
+
+  <div class="small-4 columns">
+    <h2>Get involved!</h2>
+    <p>Most of the time we are hanging out in <a href="https://devict.slack.com" title="devICT Slack">Slack</a>. To join, just <a href="http://talk.devict.org/t/join-us-in-slack-ask-for-invite-here" title="devICT Slack Invite Request Thread">ask for an invite</a>.</p>
+    <p>Primarily, be sure to <a href="https://meetup.com/devict" title="devICT on Meetup">become a member on the Meetup page</a>. Then you will receive notifications for all coming events.</p>
+    <p>You could also give a talk! Share the knowledge, we enjoy learning about any development related topics.</p>
+  </div>
 </div>
