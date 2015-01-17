@@ -112,12 +112,21 @@ h4 a {
 
 h1 a:link, h1 a:visited, h1 a:active,
 h2 a:link, h2 a:visited, h2 a:active,
-h3 a:link, h3 a:visited, h3 a:active {
+h3 a:link, h3 a:visited, h3 a:active,
+h4 a:link, h4 a:visited, h4 a:active {
   color: #333;
 }
 
-h1 a:hover, h2 a:hover, h3 a:hover {
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
   color: #888;
+}
+
+a:link, a:visited {
+  color: #ee802b;
+}
+
+a:hover, a:active {
+  color: #84481a;
 }
 
 a.button.primary:link,
