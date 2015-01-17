@@ -1,9 +1,0 @@
-<h1><%= @user.name %></h1>
-<% if @user.info %>
-  <p><%= markdown(@user.info) %></p>
-<% else %>
-  <p class="subheader">No profile information has been provided.</p>
-<% end %>
-<% if user_signed_in? && current_user.id == @user.id %>
-  <%= link_to "Edit your profile", "#{users_path}/#{@user.id}/edit", class: 'button success large' %>
-<% end %>

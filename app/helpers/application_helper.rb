@@ -37,7 +37,4 @@ module ApplicationHelper
     end
   end
 
-  def permission?(permission_level)
-    User.find(session[:user_id]).permission >= permission_level
-  end
 end

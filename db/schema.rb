@@ -11,26 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140130132542) do
-
-  create_table "challenges", :force => true do |t|
-    t.string   "title"
-    t.text     "description"
-    t.integer  "user_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
-  create_table "comments", :force => true do |t|
-    t.text     "body"
-    t.integer  "submission_id"
-    t.integer  "user_id"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-  end
-
-  add_index "comments", ["submission_id"], :name => "index_comments_on_submission_id"
-  add_index "comments", ["user_id"], :name => "index_comments_on_user_id"
+ActiveRecord::Schema.define(:version => 20150117171306) do
 
   create_table "events", :force => true do |t|
     t.string   "title"
@@ -46,61 +27,6 @@ ActiveRecord::Schema.define(:version => 20140130132542) do
     t.datetime "created_at",                       :null => false
     t.datetime "updated_at",                       :null => false
     t.boolean  "upcoming",      :default => false
-  end
-
-  create_table "feeds", :force => true do |t|
-    t.string   "url",                           :null => false
-    t.integer  "user_id"
-    t.boolean  "approved",   :default => false
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
-  end
-
-  create_table "irc_users", :force => true do |t|
-    t.string "handle"
-  end
-
-  add_index "irc_users", ["handle"], :name => "index_irc_users_on_handle"
-
-  create_table "posts", :force => true do |t|
-    t.string   "title"
-    t.text     "summary"
-    t.string   "url"
-    t.datetime "published_at"
-    t.string   "guid"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-    t.integer  "feed_id"
-  end
-
-  create_table "services", :force => true do |t|
-    t.integer  "user_id"
-    t.string   "provider"
-    t.string   "uid"
-    t.string   "uname"
-    t.string   "uemail"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "submissions", :force => true do |t|
-    t.integer  "challenge_id"
-    t.integer  "user_id"
-    t.text     "code"
-    t.datetime "created_at",                        :null => false
-    t.datetime "updated_at",                        :null => false
-    t.string   "language",     :default => "Other", :null => false
-  end
-
-  create_table "users", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.datetime "created_at",                     :null => false
-    t.datetime "updated_at",                     :null => false
-    t.text     "info"
-    t.integer  "permission"
-    t.boolean  "isCharter",  :default => false
-    t.string   "color",      :default => "#ccc"
   end
 
   create_table "videos", :force => true do |t|

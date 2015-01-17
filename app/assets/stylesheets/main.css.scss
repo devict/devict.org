@@ -123,10 +123,6 @@ a.button.primary:visited {
   color: #666;
 }
 
-.sub-nav .userLogged dd a{
-  color:#f1822d;
-}
-
 .row {
   max-width:75em;
 }
@@ -286,15 +282,6 @@ p.pull-right {
 }
 .sub-nav dt, .sub-nav dd{
   margin-left:1em;
-}
-
-.userLogged dd:first-child,
-.userLogin dd:first-child {
-  border-left:2px solid #CDCDCD;
-  padding-left:1em;
-}
-.userLogged a{
-  color:#f1822d;
 }
 
 /* Services */

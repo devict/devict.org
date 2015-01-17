@@ -26,35 +26,18 @@
   <div class="top-banner">
     <div class="row">
       <div class="small-2 large-2 large-uncentered columns"><%= link_to image_tag("devict_logo.png", alt:"devICT"), root_path %></div>
-      <% if session[:user_id] %>
-      <dl class="sub-nav large-8 large-offset-2 columns main-nav">
-      <% else %>
-      <dl class="sub-nav large-7 large-offset-3 columns main-nav">
-      <% end %>
-        <%= nav_link "Code of Conduct", conduct_path %>
-        <%= nav_link "About/Member List", users_path %>
-        <%= nav_link "Code Challenge", challenges_path %>
+      <dl class="sub-nav large-4 large-offset-6 columns main-nav">
+        <%= nav_link "About", about_path %>
+        <%= nav_link "Events", events_path %>
         <%= nav_link "Talks/Videos", videos_path %>
-        <%= nav_link "IRC", irc_index_path %>
-        <%= nav_link "Blog", posts_index_path %>
-        <% if user_signed_in? %>
-        <div id="nav_user" class="userLogin">
-          <dd><span><%= current_user.email %></span></dd>
-          <dd><%= link_to "My Profile", edit_user_path(current_user) %></dd>
-          <dd><%= link_to "Sign out", signout_services_path %></dd>
-        </div>
-        <% else %>
-        <div class="userLogged">
-          <dd><%= link_to "Sign in", signin_services_path %></dd>
-        </div>
-        <% end %>
+        <%= nav_link "Code of Conduct", conduct_path %>
       </dl>
       <div class="small-1"></div>
     </div>
   </div>
   <nav class="sub-nav large-2 large-offset-1 columns social-tab">
     <a href="http://twitter.com/dev_ict"><i class="foundicon-twitter"></i>&nbsp;Twitter</a>
-    <a href="<%= irc_index_path %>"><i class="foundicon-chat"></i>&nbsp;IRC</a>
+    <a href="https://devict.slack.com"><i class="foundicon-chat"></i>&nbsp;Slack</a>
   </nav>
   <div class="social-dropdown">
     <div class="content-wrapper"></div>

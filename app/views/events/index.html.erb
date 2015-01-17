@@ -1,7 +1,4 @@
 <% @events.each do |event| %>
-  <% if permission?(3) %>
-    <p class="pull-right button"><%= link_to 'Edit', edit_event_path(event) %></p>
-  <% end %>
   <h1>
     <%= event.title %>
     <span class="event-date"><small><%= Time.at(event.date.to_i/1000).strftime('%m/%d/%y %I:%M%P') %></small></span>
