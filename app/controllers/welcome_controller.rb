@@ -9,4 +9,7 @@ class WelcomeController < ApplicationController
 
   def about
   end
+
+  def request_invite
+  end
 end
