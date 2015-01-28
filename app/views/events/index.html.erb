@@ -3,7 +3,7 @@
     <h1>Upcoming Events</h1>
     <% @upcoming_events.each do |event| %>
       <h3>
-        <span class="event-date"><small><%= Time.use_zone('America/Chicago') { Time.at(event.date.to_i/1000).strftime('%b %-d, %Y - %l:%M%P') } %></small></span>
+        <span class="event-date"><small><%= Time.at(event.date.to_i/1000).strftime('%b %-d, %Y - %l:%M%P') %></small></span>
         <a href="<%= event.url %>" title="<%= event.title %>"><%= event.title %></a>
       </h3>
       <%= event.description.html_safe %>
@@ -15,7 +15,7 @@
     <h1>Past Events</h1>
     <% @past_events.each do |event| %>
       <h3>
-        <span class="event-date"><small><%= Time.use_zone('America/Chicago') { Time.at(event.date.to_i/1000).strftime('%b %-d, %Y - %l:%M%P') } %></small></span>
+        <span class="event-date"><small><%= Time.at(event.date.to_i/1000).strftime('%b %-d, %Y - %l:%M%P') %></small></span>
         <a href="<%= event.url %>" title="<%= event.title %>"><%= event.title %></a>
       </h3>
       <hr>
