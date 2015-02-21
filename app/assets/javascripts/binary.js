@@ -310,9 +310,13 @@ var BinaryReader = (function () {
     },
     assignListeners: {
       value: function assignListeners() {
+        var _this = this;
         this.assignInputListeners();
         this.assignPositionListeners();
         this.assignHoleListeners();
+        $("button#clear").click(function (e) {
+          _this.clearButtonClicked(_this.inputs);
+        });
       },
       writable: true,
       configurable: true
@@ -374,6 +378,16 @@ var BinaryReader = (function () {
           $(hole).addClass("on-" + number);
           $(hole).addClass("on");
         }
+      },
+      writable: true,
+      configurable: true
+    },
+    clearButtonClicked: {
+      value: function clearButtonClicked(inputs) {
+        inputs.forEach(function (input) {
+          input.value = "";
+          $(input).trigger("keyup");
+        });
       },
       writable: true,
       configurable: true
