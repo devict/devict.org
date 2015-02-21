@@ -198,7 +198,19 @@ var ColumnRenderer = (function () {
         binary.forEach(function (on, i) {
           var $hole = $(_this.holes[i]);
           $hole.removeClass("on");
-          if (on) $hole.addClass("on");
+          $hole.removeClass("on-1");
+          $hole.removeClass("on-2");
+          $hole.removeClass("on-3");
+          $hole.removeClass("on-4");
+          $hole.removeClass("on-5");
+          $hole.removeClass("on-6");
+          $hole.removeClass("on-7");
+          $hole.removeClass("on-8");
+          if (on) {
+            var number = Math.floor(Math.random() * 8) + 1;
+            $hole.addClass("on-" + number);
+            $hole.addClass("on");
+          }
         });
       },
       writable: true,

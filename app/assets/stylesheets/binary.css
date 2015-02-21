@@ -16,6 +16,7 @@
 
 #word-input input,
 #letter-position input {
+  text-transform: uppercase;
   text-align: center;
   margin: 0;
   width: 80%;
