@@ -356,11 +356,12 @@ var BinaryReader = (function () {
           $(hole).removeClass("on-5");
           $(hole).removeClass("on-6");
           $(hole).removeClass("on-7");
+          $(hole).removeClass("on-8");
+          $(hole).removeClass("on");
         } else {
           $(hole).addClass("on-" + number);
+          $(hole).addClass("on");
         }
-
-        $(hole).toggleClass("on");
       },
       writable: true,
       configurable: true
