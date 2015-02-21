@@ -7,6 +7,7 @@ UpfrontwichitaCom::Application.routes.draw do
   match 'conduct' => 'welcome#conduct'
   match 'about' => 'welcome#about'
   match 'request-invite' => 'welcome#request_invite'
+  match 'binary' => 'welcome#binary'
 
   resources :events, :only => [:index, :show, :edit, :update] do
   end

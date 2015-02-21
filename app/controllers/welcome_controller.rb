@@ -4,12 +4,11 @@ class WelcomeController < ApplicationController
     @featured_event = Event.where(upcoming: true).order('date ASC').first
   end
 
-  def conduct
-  end
+  def conduct; end
 
-  def about
-  end
+  def binary; end
 
-  def request_invite
-  end
+  def about; end
+
+  def request_invite; end
 end
