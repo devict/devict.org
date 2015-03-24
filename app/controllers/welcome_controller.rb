@@ -11,4 +11,6 @@ class WelcomeController < ApplicationController
   def about; end
 
   def request_invite; end
+
+  def game_jam; end
 end
