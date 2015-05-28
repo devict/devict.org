@@ -17,3 +17,17 @@
 .section-container .title { font-size: 1.3em; font-weight: bold; }
 
 table { width: 100%; }
+
+div.gamejam p,
+div.gamejam li {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+ul, ol {
+  padding-left: 25px !important;
+}
+
+ul > ul {
+  margin-bottom: 0;
+}
