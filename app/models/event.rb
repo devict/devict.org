@@ -15,18 +15,21 @@ class Event < ActiveRecord::Base
   scope :past, where(upcoming: false)
 
   def self.update_events
+    Event.destroy_all
+
     RMeetup2::Client.api_key = "7c4d734c35c43246e1c3086d2c754d"
 
     @remote_events = RMeetup2::Request.new(:events, {
       group_urlname: 'devict',
-      status: 'upcoming,past'
+      status: 'upcoming'
     }).execute()
 
     @remote_events.each do |event|
-      local_event = Event.first( conditions: [ 'url = ?', event['event_url'] ])
+      local_event = Event.where(title: event['name']).first
+
       params = {
         title: event['name'],
-        description: event['description'],
+        description: ApplicationHelper.first_p(event['description']),
         venue_name: event['venue']['name'],
         venue_address: event['venue']['address_1'],
         venue_city: event['venue']['city'],

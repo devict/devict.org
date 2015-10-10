@@ -1,4 +1,32 @@
 <div class="row">
+  <div>
+    <h1>Recurring Events</h1>
+    <h4 class="subheader">We have several recurring events so there's always something to do. Be sure to <a href="http://meetup.com/devict" title="devICT on Meetup">join us on Meetup</a> to stay informed!</h4>
+    <br>
+    <div class="row">
+      <div class="small-3 columns">
+        <h3>Dev Talks</h3>
+        <p>Monthly, every last Thursday.</p>
+        <p>This event features a presentation on various development related topics. This is an opportunity to share knowledge and get exposure to all kids of new technologies, languages, tools, and more.</p>
+      </div>
+      <div class="small-3 columns">
+        <h3>Level Up</h3>
+        <p>Bi-weekly, every other Monday.</p>
+        <p>Level Up is your opportunity to learn how to code and improve your skills. We have mentors on hand who can answer questions and provide guidance to learning resources online.</p>
+      </div>
+      <div class="small-3 columns">
+        <h3>Code & Coffee</h3>
+        <p>Thursday mornings at 7:00am.</p>
+        <p>Start your day off right with this informal get together. Bring your laptop, enjoy some coffee, and hang out with other developers. Come whenever, leave whenever. Oh, and sometimes there are donuts.</p>
+      </div>
+      <div class="small-3 columns">
+        <h3>Hangout</h3>
+        <p>Monthly, every second Tuesday.</p>
+        <p>The Hangout is a social event and an opportunity to hang out, talk code (or not) and enjoy some company. Sometimes we make things. Sometimes we have a beer or two. Always a good time.</p>
+      </div>
+    </div>
+  </div>
+
   <div class="upcoming">
     <h1>Upcoming Events</h1>
     <% zone = ActiveSupport::TimeZone.new("Central Time (US & Canada)") %>
@@ -8,17 +36,6 @@
         <a href="<%= event.url %>" title="<%= event.title %>"><%= event.title %></a>
       </h3>
       <%= event.description.html_safe %>
-      <hr>
-    <% end %>
-  </div>
-
-  <div class="past">
-    <h1>Past Events</h1>
-    <% @past_events.each do |event| %>
-      <h3>
-        <span class="event-date"><small><%= Time.at(event.date.to_i/1000).in_time_zone.strftime('%b %-d, %Y - %l:%M%P') %></small></span>
-        <a href="<%= event.url %>" title="<%= event.title %>"><%= event.title %></a>
-      </h3>
       <hr>
     <% end %>
   </div>
