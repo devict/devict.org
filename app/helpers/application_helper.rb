@@ -25,6 +25,12 @@ module ApplicationHelper
     paras[0].to_s
   end
 
+  def self.first_p(html)
+    doc = Nokogiri::HTML.parse(html)
+    paras = doc.xpath('//p')
+    paras[0].to_s
+  end
+
   # Compares the provided link_path to the current page to set an "active"
   # class so your current page is highlighted in the navigation bar.
   #
