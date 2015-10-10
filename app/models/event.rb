@@ -24,6 +24,8 @@ class Event < ActiveRecord::Base
       status: 'upcoming'
     }).execute()
 
+    @remote_events.sort! { |a, b| b['time'] <=> a['time'] }
+
     @remote_events.each do |event|
       local_event = Event.where(title: event['name']).first
 
