@@ -1,18 +1,20 @@
-<h1>Video Presentations</h1>
+<div class="small-12 columns">
+  <h1>Video Presentations</h1>
 
-<% @videos.each_with_index do |entry, idx| %>
-  <% if idx % 2 == 0 %>
-    <div class="row">
-  <% end %>
-    <div class="video-div columns small-12 large-6">
-      <h4><a href="<%= entry.link %>" title="<%= entry.title %>"><%= entry.title %></a></h4>
-      <div class="video">
-        <iframe title="<%= entry.title %>" src="<%= entry.link %>&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+  <% @videos.each_with_index do |entry, idx| %>
+    <% if idx % 2 == 0 %>
+      <div class="row">
+    <% end %>
+      <div class="video-div columns small-12 large-6">
+        <h4><a href="<%= entry.link %>" title="<%= entry.title %>"><%= entry.title %></a></h4>
+        <div class="video">
+          <iframe title="<%= entry.title %>" src="<%= entry.link %>&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="date"><small>Published on <%= l entry.published_at, :format => :date %></small></p>
       </div>
-      <p class="date"><small>Published on <%= l entry.published_at, :format => :date %></small></p>
-    </div>
-  <% if idx % 2 == 1 %>
-    </div>
+    <% if idx % 2 == 1 %>
+      </div>
+    <% end %>
   <% end %>
-<% end %>
-<%= paginate @videos %>
+  <%= paginate @videos %>
+</div>
