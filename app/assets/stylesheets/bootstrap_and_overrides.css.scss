@@ -1,0 +1,47 @@
+@import "bootstrap";
+
+/************************** 
+ Override Bootstrap styles 
+***************************/
+
+// Match old foundation row wrappers
+.container {
+  width: 90%;
+}
+
+// Bootstrap Navbar defaults
+.navbar {
+  margin-bottom: 5px;
+}
+.navbar-brand {
+  padding: 0;
+}
+.navbar-brand {
+  height: 60px;
+}
+.navbar-nav {
+  margin-top: 24px;
+}
+.navbar-nav li {
+  margin: 0 5px; 
+}
+.navbar-nav > li > a {
+  color: #999;
+  font-size: 0.875em;
+  padding: 0 5px;
+}
+.navbar-nav > li > a:hover, 
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: inherit; 
+  border-radius: inherit;
+}
+
+.active {
+  background-color: #EE802B;
+  border-radius: 1000px; 
+
+  a {
+    color: #fff !important;
+  }
+}

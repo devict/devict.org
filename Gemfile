@@ -63,3 +63,4 @@ gem 'rvm-capistrano', require: false
 #Compass
 gem 'compass-rails'
 gem 'zurb-foundation', '~> 4.0.0'
+gem 'bootstrap-sass', '~> 3.1.1.0'

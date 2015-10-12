@@ -24,37 +24,47 @@
 
 <body>
   <div class="top-banner">
-    <div class="row">
-      <div class="small-2 large-2 large-uncentered columns"><%= link_to image_tag("devict_logo.png", alt:"devICT"), root_path %></div>
-      <dl class="sub-nav large-4 large-offset-6 columns main-nav">
-        <%= nav_link "About", about_path %>
-        <%= nav_link "Events", events_path %>
-        <%= nav_link "Videos", videos_path %>
-        <%= nav_link "Forum", 'https://talk.devict.org' %>
-        <%= nav_link "Chat", 'https://devict.slack.com' %>
-        <%= nav_link "Jobs", 'http://jobs.devict.org' %>
-        <%= nav_link "Conduct", conduct_path %>
-      </dl>
-      <div class="small-1"></div>
+    <div class='container'>
+      <div class="row">
+        <nav class='navbar'>
+          <div class="navbar-header"><%= link_to image_tag("devict_logo.png", alt:"devICT", class:'navbar-brand'), root_path %></div>
+          <ul class="nav navbar-nav navbar-right">
+            <%= nav_link "About", about_path %>
+            <%= nav_link "Events", events_path %>
+            <%= nav_link "Videos", videos_path %>
+            <%= nav_link "Forum", 'https://talk.devict.org' %>
+            <%= nav_link "Chat", 'https://devict.slack.com' %>
+            <%= nav_link "Jobs", 'http://jobs.devict.org' %>
+            <%= nav_link "Conduct", conduct_path %>
+          </ul>
+        </nav>
+        <div class="small-1"></div>
+      </div>
     </div>
   </div>
 
-  <div id="notifications">
-    <% if flash[:error] %>
-      <p id='error'><%=h flash[:error] %></p>
-    <% end -%>
-    <% if flash[:notice] %>
-      <p id='notice'><%=h flash[:notice] %></p>
-    <% end %>
+  <div class='container'>
+    <div id="notifications">
+      <% if flash[:error] %>
+        <p id='error'><%=h flash[:error] %></p>
+      <% end -%>
+      <% if flash[:notice] %>
+        <p id='notice'><%=h flash[:notice] %></p>
+      <% end %>
+    </div>
   </div>
 
   <%= yield :feature %>
-  <div class="row content">
-    <div class="small-12">
-    <%= yield %>
+
+  <div class='container'>
+    <div class="row content">
+      <div class="small-12">
+      <%= yield %>
+      </div>
     </div>
   </div>
 
+  <div class='container'>
   <footer class="row">
     <div class="small-12 columns">
       <hr>
@@ -76,6 +86,7 @@
       <h4><%= Time.now.strftime('%Y') %> devICT</h4>
     </div>
   </footer>
+  </div>
 
 
     <%= javascript_include_tag "application" %>
