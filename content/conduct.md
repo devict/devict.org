@@ -3,6 +3,8 @@ date = "2016-07-18T14:52:11-05:00"
 title = "Code of Conduct"
 +++
 
+# Code of Conduct <small>&amp; Anti-Harassment Policy</small>
+
 devICT is dedicated to providing a safe and harassment-free experience for
 everyone, regardless of gender, gender identity and expression, sexual
 orientation, disability, physical appearance, body size, race, age, religion,
