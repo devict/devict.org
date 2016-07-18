@@ -1,0 +1,12 @@
+* {
+  @include box-sizing(border-box);
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background:url("/images/cream_pixels.png") top center repeat #FFF;
+}
+
+.logo {
+  height: 3em;
+}
