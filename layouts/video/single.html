@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  <div class="container">
+
+    {{ partial "header.html" . }}
+
+    <div class="content">
+      <div class="posts">
+        <div class="post">
+          <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          <span class="post-date">By {{ .Params.author }}, Published {{ .Date.Format "Jan 2, 2006 " }}</span>
+          <div class="post-content">
+            <div class="video">
+              <iframe title="{{ .Title }}" src="https://www.youtube.com/embed/{{ .Params.id }}?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            {{ .Content }}
+          </div>
+        </div>
+
+        <div class="pagination">{{ if .Prev }}
+          <a class="btn previous " href="{{.Prev.Permalink}}"> Prev</a> {{ end }} {{ if .Next }}
+          <a class="btn next " href="{{.Next.Permalink}}"> Next</a> {{ end }}
+        </div>
+      </div>
+    </div>
+
+    {{ partial "footer.html" . }}
+
+  </div>
+
+</body>
+</html>

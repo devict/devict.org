@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  <div class="container">
+
+    {{ partial "header.html" . }}
+
+    <div class="content">
+      <div class="posts">
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "video") 8 }}
+        <div class="row">
+        {{ range $paginator.Pages }}
+          <div class="col-md-3">
+            <a href="{{ .Permalink }}">
+              <img width="100%" src="https://i.ytimg.com/vi/{{ .Params.id }}/hqdefault.jpg" />
+              {{ .Title }}
+            </a>
+            <p>
+              {{ .Params.author }}, {{ .Date.Format "2006-01-02" }}
+            </p>
+          </div>
+        {{ end }}
+        </div>
+      </div>
+
+      {{ template "_internal/pagination.html" . }}
+    </div>
+
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+</html>
