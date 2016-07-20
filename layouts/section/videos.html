@@ -12,7 +12,7 @@
 
     <div class="content">
       <div class="posts">
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "video") 8 }}
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "videos") 8 }}
         <div class="row">
         {{ range $paginator.Pages }}
           <div class="col-md-3">
