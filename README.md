@@ -1,10 +1,19 @@
-# devict.org development
+# devict.org
 
-Work on the site happens in this branch.
+This is the source repository for [devict.org](http://devict.org). It is built
+using [Hugo][hugo].
 
-First clone this repo and switch to the `code` branch.
+## Contributing
 
-Download and install Hugo from the [Hugo GitHub release page][hugo].
+A great way to contribute is to [file an issue][issues] if you notice a bug or
+something that could be improved.
+
+### Development
+
+To modify the site itself you should fork this repository then clone the repo
+locally. Create a new branch off `master` for your issue such as `fix-link`.
+
+Download and install Hugo from the [Hugo GitHub release page][hugo-release].
 There are many versions of Hugo to support a wide variety of users. To
 simplify things:
 
@@ -25,14 +34,6 @@ With hugo installed run `hugo server`. The site will be visible at
 http://localhost:1313 with LiveReload enabled so changes will be built
 and displayed instantly.
 
-# Deployment
-
-To publish run `./deploy.sh` which will generate the site, copy
-necessary files to the `master` branch, and push to GitHub. This deploy script
-probably only works on Mac and Linux but if any Windows user wanted to create a
-similar script we'd be happy to have it.
-
-Note that the `code` branch itself is not pushed so be sure to do that
-when necessary.
-
-[hugo]: https://github.com/spf13/hugo/releases "Hugo"
+[hugo]: https://gohugo.io "Hugo"
+[hugo-release]: https://github.com/spf13/hugo/releases "Hugo Releases"
+[issues]: https://github.com/devict/devict.org/issues "devICT.org issues"
