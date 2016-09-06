@@ -1,5 +1,8 @@
 #!bash -ex
 
+set -e
+set -x
+
 # This script will build the site and deploy it to the master branch of the
 # devict.github.io repo. It is heavily based on this gist:
 # https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
@@ -27,7 +30,7 @@ hugo -d public
 # Switch to the build dir
 cd public
 
-# wtf is going on
+# See what is going on
 git status
 
 # If there are no changes to the compiled output then just bail.
