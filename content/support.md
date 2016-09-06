@@ -1,19 +1,32 @@
 +++
 date = "2016-07-21T15:33:19-05:00"
 title = "support"
+script = "/js/support.js"
 +++
 
 # Support
 
 Membership in our organization is free as are most of our events. To keep our
-services free we depend on donations from the community. To that end there are
-multiple ways to support us.
+services free we depend on donations from the community.
 
-<h2>Donate Via PayPal</h2>
+<div id="details" class="hidden">
+
+Our monthly costs average about <strong id="payments-sum"></strong>.
+Our recurring donations are about <strong id="donations-sum"></strong> from <strong id="donations-count"></strong> donors.
+
+</div>
+
+<h2>Recurring Donations</h2>
 <p>
-  If you have a PayPal account and wish to make either a one-time or monthly
-  donation you can do that here: PayPal will collect 2.9% plus $0.30 of your
-  donation.
+  You can create a recurring donation by creating an account on
+  Patreon. To donate visit <a href="https://patreon.com/devict"
+  class="btn btn-success">devICT on Patreon</a>
+</p>
+
+<h2>One-time Donations</h2>
+<p>
+  If you want to help but do not want to set up a recurring donation
+  you can give a single amount using PayPal.
 </p>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
   <input type="hidden" name="cmd" value="_s-xclick">
@@ -21,16 +34,6 @@ multiple ways to support us.
   <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
   <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
-
-<h2>Donate Via Patreon</h2>
-<p>
-  If you do not have a PayPal account you can create a recurring donation via
-  Patreon. The fees they take are higher than PayPal but you don't have to have
-  a PayPal account.
-</p>
-<p>
-  To donate visit <a href="https://patreon.com/devict">devICT on Patreon</a>.
-</p>
 
 <h2>Referral Codes</h2>
 <p>

@@ -16,6 +16,9 @@
 
     {{ partial "footer.html" . }}
 
+    {{ if .Params.script }}
+      <script src="{{ .Params.script }}"></script>
+    {{ end }}
   </div>
 </body>
 </html>
