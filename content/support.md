@@ -11,8 +11,10 @@ services free we depend on donations from the community.
 
 <div id="details" class="hidden">
 
-Our monthly costs average about <strong id="payments-sum"></strong>.
+Our monthly costs average about <strong id="costs-sum"></strong>.
 Our recurring donations are about <strong id="donations-sum"></strong> from <strong id="donations-count"></strong> donors.
+
+<canvas id="chart" width="200" height="50" class="centered"></canvas>
 
 </div>
 
@@ -40,3 +42,5 @@ Our recurring donations are about <strong id="donations-sum"></strong> from <str
   If you were planning to use Digital Ocean you can try to sign up using our <a
   href="https://www.digitalocean.com/?refcode=0bc5d355b0fe">referral code</a>.
 </p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>

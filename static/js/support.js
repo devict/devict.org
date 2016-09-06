@@ -1,16 +1,15 @@
 $(function() {
 
   // Our recurring costs. Amount is in cents.
-  var payments = [
+  var costs = [
     {name: "Pizza", amount: 10000}, // $50 Dominos for Level Up x 2 per month
     {name: "The Labor Party", amount: 7500},
     {name: "Meetup.com", amount: 1500},
     {name: "Servers", amount: 3000},
   ];
-  var paymentSum = 0;
-  payments.forEach(function(v) { paymentSum += v.amount; });
-  $("#payments-sum").text(fmtMoney(paymentSum));
-
+  var costSum = 0;
+  costs.forEach(function(v) { costSum += v.amount; });
+  $("#costs-sum").text(fmtMoney(costSum));
 
   // The count and amount of recurring paypal donations (in cents). We
   // are not pushing for people to do this so this is basically static.
@@ -29,6 +28,40 @@ $(function() {
   $.get("https://devict-patreon.herokuapp.com/campaign", function(d) {
     $("#donations-sum").text(fmtMoney(d.data.pledge_sum + paypalSum));
     $("#donations-count").text(d.data.patron_count + paypal.length);
+
+    var myChart = new Chart($("#chart"), {
+      type: 'horizontalBar',
+      data: {
+        labels: ["Costs", "Donations"],
+        datasets: [{
+          label: "",
+          data: [costSum/100, (d.data.pledge_sum + paypalSum)/100],
+          backgroundColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)'
+          ],
+          borderColor: [
+            'rgba(255,99,132,1)',
+            'rgba(54, 162, 235, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        title: {display: false},
+        legend: {display: false},
+        scales: {
+          xAxes: [{
+            ticks: {
+              beginAtZero:true
+            }
+          }]
+        }
+      }
+    });
+
+
+
 
     $("#details").removeClass("hidden");
   });
