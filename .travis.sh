@@ -7,6 +7,9 @@ set -x
 # devict.github.io repo. It is heavily based on this gist:
 # https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
 
+# Preserve the email address of whoever committed last. We need this later for
+# the deploy.
+email=$(git log -1 --format="%aE")
 
 # In before_install we decrypted .travis.key.enc into .travis.key
 # We need to add that key to our ssh agent so we can push with it.
@@ -41,7 +44,7 @@ fi
 
 # Prepare git for committing and pushing.
 git config user.name "Travis CI"
-git config user.email "$COMMIT_AUTHOR_EMAIL"
+git config user.email "$email"
 
 # Stage it all, commit, and push
 git add -A
