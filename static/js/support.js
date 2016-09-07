@@ -60,9 +60,7 @@ $(function() {
       }
     });
 
-
-
-
+    $("#loading").addClass("hidden");
     $("#details").removeClass("hidden");
   });
 });

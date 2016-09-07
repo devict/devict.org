@@ -9,13 +9,15 @@ script = "/js/support.js"
 Membership in our organization is free as are most of our events. To keep our
 services free we depend on donations from the community.
 
-<div id="details" class="hidden">
+<div id="loading" class="text-center">
+  <i class="fa fa-cog fa-spin fa-5x"></i>
+</div>
 
+<div id="details" class="hidden">
 Our monthly costs average about <strong id="costs-sum"></strong>.
 Our recurring donations are about <strong id="donations-sum"></strong> from <strong id="donations-count"></strong> donors.
 
 <canvas id="chart" width="200" height="50" class="centered"></canvas>
-
 </div>
 
 <h2>Recurring Donations</h2>
