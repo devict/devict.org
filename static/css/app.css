@@ -41,3 +41,63 @@ a:link, a:visited {
 a:hover, a:active {
   color: #84481a;
 }
+
+/**
+ * Binary Reader
+ */
+
+#binary-reader-table {
+  width: 100%;
+  height: 350px;
+  font-size: 1.7em;
+}
+
+#binary-reader-table th,
+#binary-reader-table td {
+  text-align: center;
+  padding: 5px;
+}
+
+#binary-reader-table thead tr th:first-child {
+  width: 3em;
+}
+
+#word-input input,
+#letter-position input {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  width: 80%;
+}
+
+#binary-reader-table .hole {
+  background: no-repeat url(/images/circle-off.png);
+  background-size: 30%;
+  background-position: 40%;
+}
+
+#binary-reader-table .hole.on {
+  background-image: url(/images/circle-on.png);
+}
+
+#binary-reader-table .hole.on-1 { background-image: url(/images/circle-on-1.png); }
+#binary-reader-table .hole.on-2 { background-image: url(/images/circle-on-2.png); }
+#binary-reader-table .hole.on-3 { background-image: url(/images/circle-on-3.png); }
+#binary-reader-table .hole.on-4 { background-image: url(/images/circle-on-4.png); }
+#binary-reader-table .hole.on-5 { background-image: url(/images/circle-on-5.png); }
+#binary-reader-table .hole.on-6 { background-image: url(/images/circle-on-6.png); }
+#binary-reader-table .hole.on-7 { background-image: url(/images/circle-on-7.png); }
+#binary-reader-table .hole.on-8 { background-image: url(/images/circle-on-8.png); }
+
+/*#binary-reader-table .hole span {*/
+/*  background: #fff;*/
+/*  border: 1px solid black;*/
+/*  border-radius: 50%;*/
+/*  display: inline-block;*/
+/*  width: 40%;*/
+/*  height: 90%;*/
+/*}*/
+
+/*#binary-reader-table .hole.on span {*/
+/*  background: #aaa;*/
+/*}*/
