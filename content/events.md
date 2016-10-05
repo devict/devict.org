@@ -1,6 +1,7 @@
 +++
 date = "2016-07-18T14:52:11-05:00"
 title = "Events"
+script = "/js/events.js"
 +++
 
 # Recurring Events
@@ -35,4 +36,8 @@ title = "Events"
 
 # Upcoming Events
 
-TODO
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s); js.id=id;js.async=true;js.src="https://a248.e.akamai.net/secure.meetupstatic.com/s/script/2012676015776998360572/api/mu.btns.js?id=1fbm67c96djvpven80souq27te";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","mu-bootjs");</script>
+
+<div id="events"></div>
+
+
