@@ -24,7 +24,7 @@ Our recurring donations are about <strong id="donations-sum"></strong> from <str
 <p>
   You can create a recurring donation by creating an account on
   Patreon. To donate visit <a href="https://patreon.com/devict"
-  class="btn btn-success">devICT on Patreon</a>
+  class="btn btn-success"><i class="fa fa-rocket"></i>devICT on Patreon</a>
 </p>
 
 <h2>One-time Donations</h2>
