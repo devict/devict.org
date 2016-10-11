@@ -8,8 +8,12 @@
 <body>
     {{ partial "header.html" . }}
   <div class="container">
-
-
+    <div class="alert alert-success" role="alert">
+      <a href = "/tags">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        Click To Search Your Favorite Topics By Tags
+      </a>
+    </div>
     <div class="content">
       <div class="posts">
         {{ $paginator := .Paginate (where .Data.Pages "Type" "videos") 8 }}
@@ -27,8 +31,22 @@
         {{ end }}
         </div>
       </div>
+    </div>
 
-      {{ template "_internal/pagination.html" . }}
+    {{ template "_internal/pagination.html" . }}
+ 
+
+    <div class="col-lg-12 col-md-12">
+      <h4>Tags:</h4>
+      <ul id="all-tags" class="list-inline">
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+          <li>
+            <a href="{{ "/tags/" | relURL }}{{ $name | urlize }}">
+              {{ $name }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
     </div>
 
   </div>

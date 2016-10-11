@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+    {{ partial "header.html" . }}
+  <div class="container">
+    <section id="main">
+      <div>
+        <h1 class="text-center">Tags</h1>
+        {{ $data := .Data }}
+          {{ range $key,$value := .Data.Terms.Alphabetical }}
+            <div class="col-lg-6 col-md-6">
+            <h3><a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a> <span class="badge">{{ $value.Count }}</span></h3>
+            <ul>
+            {{ range $value.Pages.ByDate }}
+              <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+            </ul>
+            </div>
+          {{ end }}
+      </div>
+  </section>
+
+  </div>
+    {{ partial "footer.html" . }}
+
+</body>
+</html>

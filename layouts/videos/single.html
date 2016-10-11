@@ -9,15 +9,22 @@
     {{ partial "header.html" . }}
   <div class="container">
 
-
     <div class="content">
       <div class="posts">
         <div class="post">
           <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
           <span class="post-date">By {{ .Params.author }}, Published {{ .Date.Format "Jan 2, 2006 " }}</span>
+          <ul id="tags" class="list-inline">
+            {{ range .Params.tags }}
+              <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a> </li>
+            {{ end }}
+          </ul>
+          <br>
           <div class="post-content">
-            <div class="video">
-              <iframe title="{{ .Title }}" src="https://www.youtube.com/embed/{{ .Params.id }}?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+            <div class="col-sm-8 video">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" title="{{ .Title }}" src="https://www.youtube.com/embed/{{ .Params.id }}?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+              </div>
             </div>
 
             {{ .Content }}
@@ -30,6 +37,17 @@
         </div>
       </div>
     </div>
+
+    {{ if .Params.tags }}
+    <div class="row col-lg-12 col-md-12">
+      <h4>Tags: </h4>
+      <ul id="tags" class="list-inline">
+        {{ range .Params.tags }}
+          <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a> </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
 
 
   </div>
