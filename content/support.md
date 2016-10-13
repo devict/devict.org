@@ -1,10 +1,10 @@
 +++
 date = "2016-07-21T15:33:19-05:00"
-title = "support"
+title = "Support devICT"
 script = "/js/support.js"
 +++
 
-# Support
+<h2>Our costs</h2>
 
 Membership in our organization is free as are most of our events. To keep our
 services free we depend on donations from the community.

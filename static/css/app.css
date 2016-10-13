@@ -56,7 +56,24 @@ a.btn-default:link, a.btn-default:visited {color: #ee802b;}
 .btn-success {background: #1F8A70; border: 0px; }
 .btn-success:hover {background: #1cab88;}
 
+.btn-warning {background: #ee802b;}
+
 .btn .fa {padding-right: 12px;}
+
+.videos .col-md-3 {min-height: 280px;}
+
+ul#all-tags li {
+    margin-bottom: 7px;
+}
+
+.highlight {
+    padding: 9px 14px;
+    margin-bottom: 14px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 2px;
+}
+
 /**
  * Binary Reader
  */
@@ -109,7 +126,23 @@ a.btn-default:link, a.btn-default:visited {color: #ee802b;}
  * Design Things 
  */
 
-.navbar-default {background: #ffffff; border-radius: 0px;}
+.navbar-default {
+    background: #ffffff;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.title-header {
+    background: rgba(238,128,43,1);
+    color: #fff;
+}
+
+h1.page-title {
+    padding-bottom: 14px;
+    padding-top: 20px;
+}
+
+.main {padding-top: 12px; }
 
 .fluid-container .container .row {padding-left: 15px; padding-right: 15px;}
 
@@ -126,7 +159,7 @@ footer .fa {padding: 2px;}
 footer .fa-inverse { color: #EB7E32;}
 
 .fa-stack {
-    vertical-align: top;
+   vertical-align: top;
     margin-right: 6px;
     position: relative;
 }
@@ -136,6 +169,8 @@ h2 .fa-stack {
 }
 
 h2 .fa {padding-right: 10px;}
+
+.underline {    text-decoration: underline;}
 
 .fa-top {
     top: 6px;

@@ -7,16 +7,21 @@
 
 <body>
     {{ partial "header.html" . }}
-  <div class="container">
+  <div class="title-header">
+    <div class="container">
+      <h1 class="page-title">{{ .Title }}</h1>
+    </div>
+  </div>
+
+  <div class="container main">
 
     <div class="content">
       <div class="posts">
         <div class="post">
-          <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
           <span class="post-date">By {{ .Params.author }}, Published {{ .Date.Format "Jan 2, 2006 " }}</span>
           <ul id="tags" class="list-inline">
             {{ range .Params.tags }}
-              <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a> </li>
+              <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="btn btn-warning btn-xs">{{ . }}</a> </li>
             {{ end }}
           </ul>
           <br>
@@ -40,10 +45,11 @@
 
     {{ if .Params.tags }}
     <div class="row col-lg-12 col-md-12">
-      <h4>Tags: </h4>
+      <h4><i class="fa fa-tags" aria-hidden="true"></i>
+      Tags: </h4>
       <ul id="tags" class="list-inline">
         {{ range .Params.tags }}
-          <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a> </li>
+          <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="btn btn-warning btn-sm">{{ . }}</a> </li>
         {{ end }}
       </ul>
     </div>
