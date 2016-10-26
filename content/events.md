@@ -4,7 +4,7 @@ title = "Events"
 script = "/js/events.js"
 +++
 
-##Recurring Events
+## Recurring Events
 
 #### We have several recurring events so there's always something to do. Be sure to <a href="http://www.meetup.com/devict/" class="underline">join us on Meetup</a> to stay informed!
 
