@@ -1,10 +1,10 @@
 +++
 date = "2016-07-21T15:33:19-05:00"
-title = "support"
+title = "Support devICT"
 script = "/js/support.js"
 +++
 
-# Support
+##Our costs
 
 Membership in our organization is free as are most of our events. To keep our
 services free we depend on donations from the community.
@@ -20,14 +20,14 @@ Our recurring donations are about <strong id="donations-sum"></strong> from <str
 <canvas id="chart" width="200" height="50" class="centered"></canvas>
 </div>
 
-<h2>Recurring Donations</h2>
+##Recurring Donations
 <p>
   You can create a recurring donation by creating an account on
   Patreon. To donate visit <a href="https://patreon.com/devict"
   class="btn btn-success"><i class="fa fa-rocket"></i>devICT on Patreon</a>
 </p>
 
-<h2>One-time Donations</h2>
+##One-time Donations
 <p>
   If you want to help but do not want to set up a recurring donation
   you can give a single amount using PayPal.
@@ -39,7 +39,7 @@ Our recurring donations are about <strong id="donations-sum"></strong> from <str
   <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-<h2>Referral Codes</h2>
+##Referral Codes
 <p>
   If you were planning to use Digital Ocean you can try to sign up using our <a
   href="https://www.digitalocean.com/?refcode=0bc5d355b0fe">referral code</a>.

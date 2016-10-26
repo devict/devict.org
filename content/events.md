@@ -4,9 +4,9 @@ title = "Events"
 script = "/js/events.js"
 +++
 
-# Recurring Events
+##Recurring Events
 
-#### We have several recurring events so there's always something to do. Be sure to join us on Meetup to stay informed!
+#### We have several recurring events so there's always something to do. Be sure to <a href="http://www.meetup.com/devict/" class="underline">join us on Meetup</a> to stay informed!
 
 <div class="row">
 <div class="col-sm-3">
@@ -64,7 +64,7 @@ script = "/js/events.js"
         <b>Date and Time</b>: 
         <span class="event_time"></span>
       </p> 
-      <a class="btn btn-sm btn-default event_url" href="" target="_blank" role="button">
+      <a class="btn btn-sm btn-primary event_url" href="" target="_blank" role="button">
         <i class="fa fa-external-link" aria-hidden="true"></i> 
         Visit Meetup
       </a>
