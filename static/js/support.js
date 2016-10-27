@@ -2,10 +2,9 @@ $(function() {
 
   // Our recurring costs. Amount is in cents.
   var costs = [
-    {name: "Pizza", amount: 10000}, // $50 Dominos for Level Up x 2 per month
-    {name: "The Labor Party", amount: 7500},
-    {name: "Meetup.com", amount: 1500},
-    {name: "Servers", amount: 3000},
+    {name: "The Labor Party", amount: 7500}, // $75 / month
+    {name: "Meetup.com", amount: 1500},      // $45 / quarter
+    {name: "Servers", amount: 2500},         // $5 ict-food-circle, $20 minecraft server
   ];
   var costSum = 0;
   costs.forEach(function(v) { costSum += v.amount; });
