@@ -2,8 +2,8 @@
 date = "2016-07-21T15:33:19-05:00"
 title = "Support devICT"
 scripts = [
-  "/js/support.js",
   "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js",
+  "/js/support.js",
 ]
 +++
 
