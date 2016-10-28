@@ -6,8 +6,7 @@
     "skills": [
       "go", "php", "api", "sql", "linux", "docker"
     ],
-    "available": true,
-    "mentees": []
+    "available": true
   },
   {
     "name": "Julia Winegeart",
@@ -16,7 +15,6 @@
     "skills": [
       "C#", ".NET", "MSSSQL", "coffee"
     ],
-    "available": true,
-    "mentees": []
+    "available": true
   }
 ]
