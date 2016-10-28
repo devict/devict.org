@@ -1,7 +1,10 @@
 +++
 date = "2016-07-21T15:33:19-05:00"
 title = "Support devICT"
-script = "/js/support.js"
+scripts = [
+  "/js/support.js",
+  "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js",
+]
 +++
 
 ## Our costs
@@ -44,5 +47,3 @@ Our recurring donations are about <strong id="donations-sum"></strong> from <str
   If you were planning to use Digital Ocean you can try to sign up using our <a
   href="https://www.digitalocean.com/?refcode=0bc5d355b0fe">referral code</a>.
 </p>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>

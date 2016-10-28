@@ -1,6 +1,9 @@
 +++
 title = "Binary Reader"
-script = "/js/binary.js"
+scripts = [
+  "https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js",
+  "/js/binary.js",
+]
 +++
 
 <div class="container">
@@ -148,5 +151,3 @@ script = "/js/binary.js"
   </table>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>

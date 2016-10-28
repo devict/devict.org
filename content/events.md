@@ -1,7 +1,9 @@
 +++
 date = "2016-07-18T14:52:11-05:00"
 title = "Events"
-script = "/js/events.js"
+scripts = [
+  "/js/events.js",
+]
 +++
 
 ## Recurring Events
@@ -75,6 +77,3 @@ script = "/js/events.js"
 
 <!-- displays meetup results -->
 <div id="results" class="hidden"></div>
-
-
-
