@@ -21,8 +21,10 @@
 
   </div>
   {{ partial "footer.html" . }}
-  {{ if .Params.script }}
-      <script src="{{ .Params.script }}"></script>
+  {{ if .Params.scripts }}
+    {{ range .Params.scripts }}
+      <script src="{{ . }}"></script>
+    {{ end }}
   {{ end }}
 </body>
 </html>
