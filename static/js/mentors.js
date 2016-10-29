@@ -1,3 +1,24 @@
+/**
+ * Randomly shuffle the order of an array
+ * @param  array array
+ * @return array The shuffled array
+ */
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex -= 1
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex]
+    array[currentIndex] = array[randomIndex]
+    array[randomIndex] = temporaryValue
+  }
+
+  return array;
+}
+
 new Vue({
   el: '#mentors',
   data: function () {
@@ -12,7 +33,7 @@ new Vue({
         url : '/data/mentors.json',
         type: 'GET',
         success : function(mentors) {
-          self.mentors = mentors
+          self.mentors = shuffle(mentors)
         }
     })
   },
