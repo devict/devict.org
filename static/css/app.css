@@ -7,10 +7,6 @@ body {
     background:url("/images/cream_pixels.png") top center repeat #FFF;
 }
 
-.logo {
-  height: 3em;
-}
-
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Oswald', sans-serif;
   font-weight:normal;
@@ -123,7 +119,7 @@ ul#all-tags li {
 
 
 /**
- * Design Things 
+ * Design Things
  */
 
 .navbar-default {
@@ -201,9 +197,13 @@ h2 .fa {padding-right: 10px;}
 .logo {
     width: 170px;
     height: auto;
-    line-height: 3em;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    display: block;
+}
+
+.navbar-brand {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: auto;
 }
 
 /*#binary-reader-table .hole span {*/
