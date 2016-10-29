@@ -123,7 +123,7 @@ ul#all-tags li {
 
 
 /**
- * Design Things 
+ * Design Things
  */
 
 .navbar-default {
@@ -204,6 +204,16 @@ h2 .fa {padding-right: 10px;}
     line-height: 3em;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.navbar-nav {
+  font-size: .8em;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    font-size: 1em;
+  }
 }
 
 /*#binary-reader-table .hole span {*/
