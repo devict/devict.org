@@ -206,6 +206,10 @@ h2 .fa {padding-right: 10px;}
     padding-bottom: 5px;
 }
 
+.media-object-medium {
+    width: 64px;
+}
+
 /*#binary-reader-table .hole span {*/
 /*  background: #fff;*/
 /*  border: 1px solid black;*/
