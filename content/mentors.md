@@ -12,12 +12,11 @@ Everyone listed here has explicitly volunteered to be a mentor so don't
 hesitate to reach out!
 
 <div id="mentors">
-  <div v-if="mentors.length < 0" class="text-center"><i class="fa fa-cog fa-spin fa-5x"></i></div>
-  <div v-else>
+  <template v-if="mentors.length > 0">
     <form id="search" style="margin: 30px 0;">
       <input class="form-control" placeholder="Search by skills" name="query" v-model="searchQuery">
     </form>
-    <div v-if="filteredMentors.length > 0">
+    <template v-if="filteredMentors.length > 0">
       <div class="row">
         <div class="col-sm-6 col-md-4" v-for="mentor in filteredMentors">
           <div class="panel panel-default">
@@ -31,11 +30,16 @@ hesitate to reach out!
           </div>
         </div>
       </div>
-    </div>
-    <div v-else>
+    </template>
+    <template v-else>
       <div class="alert alert-info">
         Sorry, we couldn't find any mentors matching your skill criteria, try refining your search.
       </div>
+    </template>
+  </template>
+  <template v-else>
+    <div class="text-center">
+      <i class="fa fa-cog fa-spin fa-5x"></i>
     </div>
-  </div>
+  </template>
 </div>
