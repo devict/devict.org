@@ -24,5 +24,14 @@
       "C#", ".NET", "MSSSQL", "coffee"
     ],
     "available": true
+  },
+  {
+    "name": "Brian Buller",
+    "username": "br0xen",
+    "avatar": "https://avatars0.githubusercontent.com/u/1273280?v=3&s=466",
+    "skills": [
+      "go", "php"
+    ],
+    "available": true
   }
 ]
