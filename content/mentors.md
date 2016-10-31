@@ -13,19 +13,30 @@ hesitate to reach out!
 
 <div id="mentors">
   <template v-if="mentors.length > 0">
-    <form id="search" style="margin: 30px 0;">
-      <input class="form-control" placeholder="Search by skills" name="query" v-model="searchQuery">
-    </form>
+    <div class="well" style="margin: 30px 0;">
+        <form id="search">
+          <input class="form-control" placeholder="Search by skills" name="query" v-model="searchQuery">
+        </form>
+    </div>
     <template v-if="filteredMentors.length > 0">
       <div class="row">
-        <div class="col-sm-6 col-md-4" v-for="mentor in filteredMentors">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              {{mentor.name}} <small class="text-muted">&middot; {{mentor.username}}</small>
-              <span v-if="mentor.available" class="badge pull-right" style="background-color: rgba(238,128,43,1);">Available</span>
-            </div>
+        <div class="col-sm-6" v-for="columns in filteredMentors">
+          <div class="mentor panel panel-default" v-for="mentor in columns">
             <div class="panel-body">
-              <span class="label label-default" style="display: inline-block; margin-right: 4px;" v-for="skill in mentor.skills">{{skill}}</span>
+              <div class="media">
+                <div class="media-left">
+                  <img v-if="mentor.avatar" class="media-object" :src="mentor.avatar" :alt="mentor.name" style="width: 64px; height: auto;">
+                  <div v-else style="width: 64px; height: 64px; background: #eee;"></div>
+                  <div v-if="mentor.available" class="availability">Available</div>
+                </div>
+                <div class="media-body">
+                  <h2 class="media-heading h4">{{mentor.name}}</h2>
+                  <small class="text-muted">{{mentor.username}}</small>
+                  <div class="skills">
+                    <span class="label label-default" style="display: inline-block; margin-right: 4px;" v-for="skill in mentor.skills">{{skill}}</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

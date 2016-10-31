@@ -121,6 +121,27 @@ ul#all-tags li {
 #binary-reader-table .hole.on-7 { background-image: url(/images/circle-on-7.png); }
 #binary-reader-table .hole.on-8 { background-image: url(/images/circle-on-8.png); }
 
+.mentor {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.mentor .availability {
+  font-size: .8em;
+  font-weight: bold;
+  text-align: center;
+  padding: 2px;
+  color: #fff;
+  background: rgba(238,128,43,1)
+}
+
+.mentor .media-heading {
+  margin: 0;
+}
+
+.mentor .skills {
+  margin-top: 6px;
+}
 
 /**
  * Design Things

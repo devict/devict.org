@@ -16,7 +16,7 @@ function shuffle(array) {
     array[randomIndex] = temporaryValue
   }
 
-  return array;
+  return array
 }
 
 new Vue({
@@ -40,13 +40,17 @@ new Vue({
   computed: {
     filteredMentors: function () {
       var searchQuery = this.searchQuery && this.searchQuery.toLowerCase()
-      var mentors = this.mentors
+      // Clone the array instead of passing it by reference so the results can
+      // be spliced later
+      var mentors = this.mentors.slice(0)
       if (searchQuery) {
         mentors = mentors.filter(function (mentor) {
           return String(mentor.skills).toLowerCase().indexOf(searchQuery) > -1
         })
       }
-      return mentors
+
+      // Split results into two groups so they stack nicely in columns
+      return [mentors, mentors.splice(0, Math.floor(mentors.length / 2))]
     }
   }
 })
