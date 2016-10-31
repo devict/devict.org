@@ -134,6 +134,9 @@ ul#all-tags li {
   color: #fff;
   background: rgba(238,128,43,1)
 }
+.mentor .availability-taken {
+  background: #aaa;
+}
 
 .mentor .media-heading {
   margin: 0;

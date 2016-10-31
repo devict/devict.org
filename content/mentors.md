@@ -15,19 +15,22 @@ hesitate to reach out!
   <template v-if="mentors.length > 0">
     <div class="well" style="margin: 30px 0;">
         <form id="search">
-          <input class="form-control" placeholder="Search by skills" name="query" v-model="searchQuery">
+          <input class="form-control" placeholder="Search by skill" name="query" v-model="searchQuery">
         </form>
     </div>
-    <template v-if="filteredMentors.length > 0">
+    <template v-if="filteredMentors[0] && filteredMentors[0].length > 0">
       <div class="row">
-        <div class="col-sm-6" v-for="columns in filteredMentors">
-          <div class="mentor panel panel-default" v-for="mentor in columns">
+        <div class="col-sm-6" v-for="column in filteredMentors">
+          <div class="mentor panel panel-default" v-for="mentor in column">
             <div class="panel-body">
               <div class="media">
                 <div class="media-left">
                   <img v-if="mentor.avatar" class="media-object" :src="mentor.avatar" :alt="mentor.name" style="width: 64px; height: auto;">
-                  <div v-else style="width: 64px; height: 64px; background: #eee;"></div>
+                  <div v-else style="width: 64px; height: 64px; background: #eee; position: relative; overflow: hidden;">
+                    <i class="fa fa-user fa-4x fa-stack-1x" style="color: #aaa;" aria-hidden="true"></i>
+                  </div>
                   <div v-if="mentor.available" class="availability">Available</div>
+                  <div v-else="mentor.available" class="availability availability-taken">Taken</div>
                 </div>
                 <div class="media-body">
                   <h2 class="media-heading h4">{{mentor.name}}</h2>
