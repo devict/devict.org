@@ -15,7 +15,14 @@ hesitate to reach out!
   <template v-if="mentors.length > 0">
     <div class="well" style="margin: 30px 0;">
         <form id="search">
-          <input class="form-control" placeholder="Search by skill" name="query" v-model="searchQuery">
+          <div class="form-group">
+            <input class="form-control" placeholder="Search by skill" name="query" v-model="searchQuery">
+          </div>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" v-model="showOnlyAvailable"> Show only available mentors
+            </label>
+          </div>
         </form>
     </div>
     <template v-if="filteredMentors[0] && filteredMentors[0].length > 0">

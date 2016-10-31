@@ -24,7 +24,8 @@ new Vue({
   data: function () {
     return {
       mentors: [],
-      searchQuery: ''
+      searchQuery: '',
+      showOnlyAvailable: true
     }
   },
   created: function () {
@@ -47,6 +48,11 @@ new Vue({
         mentors = mentors.filter(function (mentor) {
           return String(mentor.skills).toLowerCase().indexOf(searchQuery) > -1
         })
+      }
+      if (this.showOnlyAvailable) {
+        mentors = mentors.filter(function (mentor) {
+          return mentor.available;
+        });
       }
 
       // Split results into two groups so they stack nicely in columns
