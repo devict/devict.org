@@ -2,7 +2,7 @@ $(function(){
 	var results = $("#results");
 	results.empty();
     $.ajax({
-        url : 'https://devict-patreon.herokuapp.com/events',
+        url : 'https://devict-proxy.herokuapp.com/events',
         type: 'GET',
         success : function(data) {
 			$.each(data.results, function (i, item) {

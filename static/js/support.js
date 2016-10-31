@@ -24,7 +24,7 @@ $(function() {
   var paypalSum = 0;
   paypal.forEach(function(v) { paypalSum += v});
 
-  $.get("https://devict-patreon.herokuapp.com/campaign", function(d) {
+  $.get("https://devict-proxy.herokuapp.com/campaign", function(d) {
     $("#donations-sum").text(fmtMoney(d.data.pledge_sum + paypalSum));
     $("#donations-count").text(d.data.patron_count + paypal.length);
 
