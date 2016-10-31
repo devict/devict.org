@@ -42,5 +42,14 @@
       "python", "selenium"
     ],
     "available": true
+  },
+  {
+    "name": "Crystal Prieb",
+    "username": "cjprieb",
+    "avatar": "https://avatars1.githubusercontent.com/u/13191550?v=3&s=466",
+    "skills": [
+      "C#", ".NET", "MSSSQL", "Java", "JavaScript", "CSS", "HTML"
+    ],
+    "available": true
   }
 ]
