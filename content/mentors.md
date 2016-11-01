@@ -22,13 +22,17 @@ hesitate to reach out!
       <div class="modal-body" v-if="selectedMentor">
         <div v-if="selectedMentor.isAvailable">
           <p>{{selectedMentor.name}} is available to mentor in these topics:</p>
-          <p>{{selectedMentor.skills}}</p>
-          <p>To get started, send {{selectedMentor.username}} a message on <a :href="selectedMentor.slackUrl" target="_blank">Slack</a>.</p>
+          <p class="skills">
+            <span class="label label-default" style="display: inline-block; margin-right: 4px;" v-for="skill in selectedMentor.skills">{{skill}}</span>
+          </p>
+          <p>To get started, <a :href="selectedMentor.slackUrl" target="_blank">send {{selectedMentor.username}} a message on Slack</a>.</p>
         </div>
         <div v-else>
           <p>{{selectedMentor.name}} is currently unavailable for mentorship.</p>
           <p>They have indicated that they have expertise in these topics:</p>
-          <p>{{selectedMentor.skills}}</p>
+          <p class="skills">
+            <span class="label label-default" style="display: inline-block; margin-right: 4px;" v-for="skill in selectedMentor.skills">{{skill}}</span>
+          </p>
           <p>They aren't taking on new mentees right now but they would certainly love to chat about those topics.</p>
         </div>
         <p>If you don't have an account on the devICT Slack then go 

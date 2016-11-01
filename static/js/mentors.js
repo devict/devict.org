@@ -41,7 +41,7 @@ new Vue({
               ? "https://devict.slack.com/messages/@" + mentor.username
               : undefined;
 
-            return {              
+            return {
               name: mentor.name != undefined ? mentor.name : "",
               avatar: mentor.avatar,
               username: mentor.username,
@@ -69,7 +69,6 @@ new Vue({
           return mentor.isAvailable;
         });
       }
-
       // Split results into two groups so they stack nicely in columns
       return [mentors, mentors.splice(0, Math.floor(mentors.length / 2))]
     }
