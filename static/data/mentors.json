@@ -33,5 +33,14 @@
       "go", "php"
     ],
     "available": true
+  },
+  {
+    "name": "Sandip Southekal",
+    "username": "sandip",
+    "avatar": "http://www.gravatar.com/avatar/f20e1f9ae9598ca5d6b1181298f3f787.png?s=500",
+    "skills": [
+      "python", "selenium"
+    ],
+    "available": true
   }
 ]
