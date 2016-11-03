@@ -37,7 +37,7 @@ new Vue({
         success : function(mentors) {
           self.mentors = shuffle(mentors.map(function (mentor) {
             //create a mentor model with some additional, computed fields
-            let slackUrl = mentor.username != undefined && mentor.username != "" 
+            var slackUrl = mentor.username != undefined && mentor.username != ""
               ? "https://devict.slack.com/messages/@" + mentor.username
               : undefined;
 
@@ -75,7 +75,7 @@ new Vue({
   },
   methods: {
     openContactDialog: function(username, e) {
-      let matchingMentors = this.mentors.filter(function(mentor) {
+      var matchingMentors = this.mentors.filter(function(mentor) {
         return mentor.username == username;
       });
       this.selectedMentor = matchingMentors.length > 0 ? matchingMentors[0] : null;
