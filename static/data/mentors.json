@@ -51,5 +51,23 @@
       "C#", ".NET", "MSSSQL", "Java", "JavaScript", "CSS", "HTML"
     ],
     "available": true
+  },
+  {
+    "name" :"Seth Etter",
+    "username": "sethetter",
+    "avatar": "https://avatars0.githubusercontent.com/u/655500",
+    "skills": [
+      "javascript", "ruby", "elixir", "api", "linux", "php", "css", "html"
+    ],
+    "available": true
+  },
+  {
+    "name": "Gregg Bolinger",
+    "username": "gregg",
+    "avatar": "https://avatars2.githubusercontent.com/u/16592?v=3&s=460",
+    "skills": [
+      "Java", "Groovy/Grails", "React", "HTML"
+    ],
+    "available": true
   }
 ]
