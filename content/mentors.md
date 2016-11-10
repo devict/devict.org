@@ -35,7 +35,7 @@ hesitate to reach out!
           </p>
           <p>They aren't taking on new mentees right now but they would certainly love to chat about those topics.</p>
         </div>
-        <p>If you don't have an account on the devICT Slack then go 
+        <p>If you don't have an account on the devICT Slack then go
           <a href="https://devict-slackin.herokuapp.com/" target="_blank" title="Get an invite for devICT slack">here</a>.</p>
       </div>
       <div class="modal-footer">
@@ -48,7 +48,7 @@ hesitate to reach out!
     <div class="well" style="margin: 30px 0;">
         <form id="search">
           <div class="form-group">
-            <input class="form-control" placeholder="Search by skill" name="query" v-model="searchQuery">
+            <input class="form-control" placeholder="Search by skill" name="query" v-model="searchQuery" v-on:keyup.esc="clearSearchQuery">
           </div>
           <div class="form-group">
             <label>
