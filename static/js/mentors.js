@@ -84,6 +84,9 @@ new Vue({
         $('#contact-mentor-modal').modal('show');
       }
       e.preventDefault();
+    },
+    clearSearchQuery: function() {
+      this.searchQuery = '';
     }
   }
 })
