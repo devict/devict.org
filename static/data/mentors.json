@@ -59,5 +59,14 @@
     "skills": [
       "javascript", "ruby", "elixir", "api", "linux", "php", "css", "html"
     ]
+  },
+  {
+    "name": "Gregg Bolinger",
+    "username": "gdboling",
+    "avatar": "https://avatars2.githubusercontent.com/u/16592?v=3&s=460",
+    "skills": [
+      "Java", "Groovy/Grails", "React", "HTML"
+    ],
+    "available": true
   }
 ]
