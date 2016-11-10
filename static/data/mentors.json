@@ -51,5 +51,12 @@
       "C#", ".NET", "MSSSQL", "Java", "JavaScript", "CSS", "HTML"
     ],
     "available": true
-  }
+  },
+  {
+    "name" :"Seth Etter",
+    "username": "sethetter",
+    "avatar": "https://avatars0.githubusercontent.com/u/655500",
+    "skills": [
+      "javascript", "ruby", "elixir", "api", "linux", "php", "css", "html"
+    ]
 ]
