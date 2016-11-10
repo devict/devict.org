@@ -58,7 +58,8 @@
     "avatar": "https://avatars0.githubusercontent.com/u/655500",
     "skills": [
       "javascript", "ruby", "elixir", "api", "linux", "php", "css", "html"
-    ]
+    ],
+    "available": true
   },
   {
     "name": "Gregg Bolinger",
