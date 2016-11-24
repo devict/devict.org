@@ -69,5 +69,14 @@
       "Java", "Groovy/Grails", "React", "HTML"
     ],
     "available": true
+  },
+  {
+    "name": "Chuck Haines",
+    "username": "termleech",
+    "avatar": "https://avatars3.githubusercontent.com/u/479722?v=3&s=460",
+    "skills": [
+      "java", "javascript", "angular", "html", "less / css", "php", "devops", "software architecture", "linux", "api"
+    ],
+    "available": true
   }
 ]
