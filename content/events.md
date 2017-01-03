@@ -18,9 +18,9 @@ scripts = [
 </div>
 
 <div class="col-sm-3">
-  <h3>Level Up</h3>
-  <p>Bi-weekly, every other Monday.</p>
-  <p>Level Up is your opportunity to learn how to code and improve your skills. We have mentors on hand who can answer questions and provide guidance to learning resources online.</p>
+  <h3>Study Hall</h3>
+  <p>Weekly, every Monday.</p>
+  <p>Study Hall is your opportunity to learn how to code and improve your skills.</p>
 </div>
 
 <div class="col-sm-3">
