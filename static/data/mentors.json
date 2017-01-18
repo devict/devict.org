@@ -50,7 +50,7 @@
     "skills": [
       "C#", ".NET", "MSSSQL", "Java", "JavaScript", "CSS", "HTML"
     ],
-    "available": true
+    "available": false
   },
   {
     "name" :"Seth Etter",
