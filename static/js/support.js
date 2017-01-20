@@ -3,8 +3,8 @@ $(function() {
   // Our recurring costs. Amount is in cents.
   var costs = [
     {name: "The Labor Party", amount: 7500}, // $75 / month
-    {name: "Meetup.com", amount: 1500},      // $45 / quarter
-    {name: "Servers", amount: 2500},         // $5 ict-food-circle, $20 minecraft server
+    {name: "Meetup.com", amount: 2000},      // $20 / month
+    {name: "Servers", amount: 600},          // $6 ict-food-circle
   ];
   var costSum = 0;
   costs.forEach(function(v) { costSum += v.amount; });
@@ -13,10 +13,9 @@ $(function() {
   // The count and amount of recurring paypal donations (in cents). We
   // are not pushing for people to do this so this is basically static.
   var paypal = [
-    500,
-    500,
-    200,
-    2500
+    500, // BF
+    200, // BB
+    2500 // KE
   ];
   var paypalSum = 0;
   paypal.forEach(function(v) { paypalSum += v});
