@@ -1,7 +1,7 @@
 +++
 title = "Mentors"
 scripts = [
-  "https://unpkg.com/vue@next/dist/vue.js",
+  "https://unpkg.com/vue/dist/vue.js",
   "/js/mentors.js"
 ]
 +++
