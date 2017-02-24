@@ -23,24 +23,31 @@
     <div class="content">
       <div class="posts">
         {{ $paginator := .Paginate (where .Data.Pages "Type" "videos") 8 }}
-        <div class="row">
-        {{ range $paginator.Pages }}
+        {{ range $i, $page := $paginator.Pages }}
+          {{ if or (eq $i 0) (eq $i 4) }}
+            <div class="row">
+          {{ end }}
+
           <div class="col-md-3">
-            <a href="{{ .Permalink }}">
-              <img width="100%" src="https://i.ytimg.com/vi/{{ .Params.id }}/hqdefault.jpg" />
-              {{ .Title }}
+            <a href="{{ $page.Permalink }}">
+              <img width="100%" src="https://i.ytimg.com/vi/{{ $page.Params.id }}/hqdefault.jpg" />
+              {{ $page.Title }}
             </a>
             <p>
-              {{ .Params.author }}, {{ .Date.Format "2006-01-02" }}
+            {{ $page.Params.author }}
+            <br/>
+            {{ $page.Date.Format "2006-01-02" }}
             </p>
           </div>
+
+          {{ if or (eq $i 3) (eq $i 7) }}
+            </div>
+          {{ end }}
         {{ end }}
-        </div>
       </div>
     </div>
 
     {{ template "_internal/pagination.html" . }}
- 
 
     <div class="col-lg-12 col-md-12">
       <h4><i class="fa fa-tags" aria-hidden="true"></i>Tags:</h4>
