@@ -78,5 +78,14 @@
       "java", "javascript", "angular", "html", "less / css", "php", "devops", "software architecture", "linux", "api"
     ],
     "available": true
+  },
+  {
+    "name": "Matt Conrad",
+    "username": "mattu",
+    "avatar": "https://avatars2.githubusercontent.com/u/1033912?v=3&s=460",
+    "skills": [
+      "C#", ".NET", "MSSSQL", "Python", "JavaScript", "CSS", "HTML"
+    ],
+    "available": true
   }
 ]
