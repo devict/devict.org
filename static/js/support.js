@@ -21,8 +21,8 @@ $(function() {
   paypal.forEach(function(v) { paypalSum += v});
 
   $.get("https://devict-proxy.herokuapp.com/campaign", function(d) {
-    $("#donations-sum").text(fmtMoney(d.data.pledge_sum + paypalSum));
-    $("#donations-count").text(d.data.patron_count + paypal.length);
+    $("#donations-sum").text(fmtMoney(d.data.attributes.pledge_sum + paypalSum));
+    $("#donations-count").text(d.data.attributes.patron_count + paypal.length);
 
     var myChart = new Chart($("#chart"), {
       type: 'horizontalBar',
@@ -30,7 +30,7 @@ $(function() {
         labels: ["Costs", "Donations"],
         datasets: [{
           label: "",
-          data: [costSum/100, (d.data.pledge_sum + paypalSum)/100],
+          data: [costSum/100, (d.data.attributes.pledge_sum + paypalSum)/100],
           backgroundColor: [
             'rgba(255, 99, 132, 1)',
             'rgba(54, 162, 235, 1)'
