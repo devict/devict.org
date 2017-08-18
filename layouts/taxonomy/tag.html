@@ -15,16 +15,9 @@
   <div class="container main">
     <section id="menu">
       <ul>
-          {{ $title := .Title|lower }}
-          {{ range $key, $taxonomy := .Site.Taxonomies.tags }}
-            {{ if eq $key $title }}
-              <ul>
-                  {{ range $taxonomy.Pages }}
-                  <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
-                  {{ end }}
-              </ul>
-            {{ end }}
-          {{ end }}
+        {{ range .Page.Data.Pages }}
+        <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
+        {{ end }}
       </ul>
     </section>
     <a href="/tags" class="btn btn-warning btn-sm"><i class="fa fa-tags" aria-hidden="true"></i> 
