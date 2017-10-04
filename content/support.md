@@ -31,16 +31,18 @@ Our recurring donations are about <strong id="donations-sum"></strong> from <str
 </p>
 
 ## One-time Donations
-<p>
-  If you want to help but do not want to set up a recurring donation
-  you can give a single amount using PayPal.
-</p>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-  <input type="hidden" name="cmd" value="_s-xclick">
-  <input type="hidden" name="hosted_button_id" value="TV7Y785BF7V4G">
-  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+<div>
+  <p>
+    If you want to help but do not want to set up a recurring donation
+    you can give a single amount using PayPal.
+  </p>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="TV7Y785BF7V4G">
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+  </form>
+</div>
 
 ## Referral Codes
 <p>
