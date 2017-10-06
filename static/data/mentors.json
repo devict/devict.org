@@ -1,13 +1,5 @@
 [
   {
-    "name": "C. Janzen",
-    "username": "cjanzen",
-    "skills": [
-      "entrepreneurship", "project management", "leadership", "women in STEM", "HTML", "CSS", "fire trucks"
-    ],
-    "available": true
-  },
-  {
     "name": "Jacob Walker",
     "username": "jcbwlkr",
     "avatar": "http://www.gravatar.com/avatar/0ee0ed1d5c1b450c2c76651dd62f38c4.png?s=500",
