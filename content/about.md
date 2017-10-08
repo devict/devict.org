@@ -7,10 +7,10 @@ title = "About devICT"
 devICT is a local community for developers in Wichita, KS. We are a group of
 like-minded software developers gathering to help each other better ourselves
 as professionals and hobbyists alike. devICT welcomes front-end devs, back-end
-devs, mobile devs, desktop devs, mainframe devs, designers, and all others.
+devs, mobile devs, desktop devs, mainframe devs, game devs, designers, and all others.
 
 Come join us to get real-world examples of new technologies that you can
-implement into your workflow today. By attending the events you will become a
+implement into your workflow today. By attending our events, you will become a
 better developer and will meet other like-minded people from the ever-growing
 developer community in Wichita.
 
