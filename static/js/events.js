@@ -1,5 +1,6 @@
 $(function(){
 	var results = $("#results");
+	var eventNamesAlreadySeen = [];
 	results.empty();
     $.ajax({
         url : 'https://devict-proxy.herokuapp.com/events',
@@ -16,7 +17,10 @@ $(function(){
           t.find(".event_venue_city").text(item.venue.city);
           t.find(".event_map").attr("href", 'https://www.google.com/maps/@' + item.venue.lat + ',' + item.venue.lon + ',18z');
           t.find(".event_time").text(epochConv(item.time));
-          results.append(t[0]);
+          if (eventNamesAlreadySeen.indexOf(item.name) === -1) {
+            eventNamesAlreadySeen.push(item.name);
+            results.append(t[0]);
+          }
         }
         catch(err) {
           console.log(err);
