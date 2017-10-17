@@ -1,5 +1,6 @@
 $(function(){
 	var results = $("#results");
+  var eventNamesAlreadySeen = [];
 	results.empty();
     $.ajax({
         url : 'https://devict-proxy.herokuapp.com/events',
@@ -10,7 +11,10 @@ $(function(){
 			    var t = $("#events div").clone();
 			    t.find(".event_url").attr("href", item.event_url);
           t.find(".event_name").text(item.name);
-          t.find(".event_description").html(item.description);
+          if (eventNamesAlreadySeen.indexOf(item.name) === -1) {
+            eventNamesAlreadySeen.push(item.name);
+            t.find(".event_description").html(item.description);
+          }
           t.find(".event_venue_name").text(item.venue.name);
           t.find(".event_venue_address").text(item.venue.address_1);
           t.find(".event_venue_city").text(item.venue.city);
