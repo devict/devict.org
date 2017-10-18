@@ -8,8 +8,6 @@ scripts = [
 
 ## Recurring Events
 
-#### We have several recurring events so there's always something to do. Be sure to <a href="http://www.meetup.com/devict/" class="underline">join us on Meetup</a> to stay informed!
-
 <div class="row">
 <div class="col-sm-3">
   <h3>Dev Talks</h3>
