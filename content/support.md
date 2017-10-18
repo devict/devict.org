@@ -19,8 +19,9 @@ services free we depend on donations from the community.
 <div id="details" class="hidden">
 Our monthly costs average about <strong id="costs-sum"></strong>.
 Our recurring donations are about <strong id="donations-sum"></strong> from <strong id="donations-count"></strong> donors.
-
-<canvas id="chart" width="200" height="50" class="centered"></canvas>
+</div>
+<div>
+  <canvas id="chart" width="200" height="50" class="centered"></canvas>
 </div>
 
 ## Recurring Donations
