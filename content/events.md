@@ -5,9 +5,6 @@ scripts = [
   "/js/events.js",
 ]
 +++
-
-## Recurring Events
-
 <div class="row">
 <div class="col-sm-3">
   <h3>Dev Talks</h3>
