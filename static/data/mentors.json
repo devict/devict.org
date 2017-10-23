@@ -79,5 +79,14 @@
       "C#", ".NET", "MSSSQL", "Python", "JavaScript", "CSS", "HTML"
     ],
     "available": true
+  },
+  {
+    "name": "Michael Spohn",
+    "username": "michaelspohn",
+    "avatar": "https://avatars2.githubusercontent.com/u/6027057?s=460&v=4",
+    "skills": [
+      "javascript", "react", "node", "ruby/rails", "front-end tooling", "css", "html"
+    ],
+    "available": true
   }
 ]
