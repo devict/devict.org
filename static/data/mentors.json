@@ -88,5 +88,14 @@
       "javascript", "react", "node", "ruby/rails", "front-end tooling", "css", "html"
     ],
     "available": true
+  },
+  {
+    "name": "Sam Schurter",
+    "username": "skippotter",
+    "avatar": "https://avatars0.githubusercontent.com/u/7039470?s=96&v=4",
+    "skills": [
+      "perl", "python", "go", "ruby/rails", "linux", "css", "html"
+    ],
+    "available": true
   }
 ]
