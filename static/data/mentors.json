@@ -97,5 +97,14 @@
       "perl", "python", "go", "ruby/rails", "linux", "css", "html"
     ],
     "available": true
+  },
+  {
+    "name": "Andrew Siegman",
+    "username": "blunket",
+    "avatar": "https://avatars1.githubusercontent.com/u/17580512?s=460&v=4",
+    "skills": [
+      "php", "javascript", "jquery", "css", "html"
+    ],
+    "available": true
   }
 ]
