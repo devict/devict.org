@@ -106,5 +106,14 @@
       "php", "javascript", "jquery", "css", "html"
     ],
     "available": true
+  },
+    {
+    "name": "Justyn Temme",
+    "username": "justynt",
+    "avatar": "https://avatars0.githubusercontent.com/u/7116592?s=96&v=4",
+    "skills": [
+      "linux","docker","jQuery"
+    ],
+    "available": true
   }
 ]
