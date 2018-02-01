@@ -15,7 +15,6 @@ $(function() {
   var paypal = [
     500, // BF
     200, // BB
-    2500 // KE
   ];
   var paypalSum = 0;
   paypal.forEach(function(v) { paypalSum += v});
