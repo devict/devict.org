@@ -13,7 +13,6 @@ $(function() {
   // The count and amount of recurring paypal donations (in cents). We
   // are not pushing for people to do this so this is basically static.
   var paypal = [
-    500, // BF
     200, // BB
   ];
   var paypalSum = 0;
