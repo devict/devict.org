@@ -1,3 +1,4 @@
+
 'use strict';
 
 (function() {
@@ -17,8 +18,10 @@
             </p>
             <h2>
                 <a class="btn btn-lg btn-success modal-link" target="_blank" href="https://kentonh.typeform.com/to/SNdj46">
-                    Please Participate >>>>
+                    Individuals Participate >>>>
                 </a>
+                <a class="btn btn-lg btn-success modal-link" target="_blank" href="https://form.jotform.com/81908941084160">Employers Participate >>>></a>
+
             </h2>
         `;
 
