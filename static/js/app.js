@@ -17,16 +17,16 @@
                 survey. The information provided will remain anonymous.
             </p>
             <h2>
-                <a class="btn btn-lg btn-success modal-link" target="_blank" href="https://kentonh.typeform.com/to/SNdj46">
+                <a class="btn btn-lg btn-success survey-modal-link" target="_blank" href="https://kentonh.typeform.com/to/SNdj46">
                     Individuals Participate >>>>
                 </a>
-                <a class="btn btn-lg btn-success modal-link" target="_blank" href="https://form.jotform.com/81908941084160">Employers Participate >>>></a>
+                <a class="btn btn-lg btn-success survey-modal-link" target="_blank" href="https://form.jotform.com/81908941084160">Employers Participate >>>></a>
 
             </h2>
         `;
 
         //create modal instance and pass in child elements
-            //can be whatever, styled however you want
+        //can be whatever, styled however you want
         var modal = new Modal(child, true);
         modal.show(); //open the modal window
     }
