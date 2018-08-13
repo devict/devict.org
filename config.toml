@@ -1,5 +1,6 @@
 baseurl = "http://devict.org/"
 languageCode = "en-us"
 title = "devICT"
+buildFuture = true
 [taxonomies]
 tag = "tags"
