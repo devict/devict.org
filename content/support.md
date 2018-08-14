@@ -13,7 +13,7 @@ Membership in our organization is free as are most of our events. To keep our
 services free we depend on donations from the community.
 
 <div id="loading" class="text-center">
-  <i class="fa fa-cog fa-spin fa-5x"></i>
+  <i class="fa fa-cog fa-spin fa-5x" aria-hidden="true"></i>
 </div>
 
 <div id="details" class="hidden">
@@ -28,7 +28,7 @@ Our recurring donations are about <strong id="donations-sum"></strong> from <str
 <p>
   You can create a recurring donation by creating an account on
   Patreon. To donate visit <a href="https://patreon.com/devict"
-  class="btn btn-success"><i class="fa fa-rocket"></i>devICT on Patreon</a>
+  class="btn btn-success"><i class="fa fa-rocket" aria-hidden="true"></i>devICT on Patreon</a>
 </p>
 
 ## One-time Donations
