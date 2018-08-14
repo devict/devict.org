@@ -6,12 +6,14 @@
 </head>
 
 <body>
-    {{ partial "header.html" . }}
+  {{ partial "header.html" . }}
+
   <div class="title-header">
     <div class="container">
       <h1 class="page-title">Tags</h1>
     </div>
   </div>
+
   <div class="container">
     <section id="main">
       <div>
@@ -27,10 +29,9 @@
             </div>
           {{ end }}
       </div>
-  </section>
-
+    </section>
   </div>
-    {{ partial "footer.html" . }}
 
+  {{ partial "footer.html" . }}
 </body>
 </html>

@@ -6,12 +6,14 @@
 </head>
 
 <body>
-    {{ partial "header.html" . }}
+  {{ partial "header.html" . }}
+
   <div class="title-header">
     <div class="container">
       <h1 class="page-title">Topics on {{ .Title }}</h1>
     </div>
   </div>
+
   <div class="container main">
     <section id="menu">
       <ul>
@@ -20,12 +22,11 @@
         {{ end }}
       </ul>
     </section>
-    <a href="/tags" class="btn btn-warning btn-sm"><i class="fa fa-tags" aria-hidden="true"></i> 
+    <a href="/tags" class="btn btn-warning btn-sm"><i class="fa fa-tags" aria-hidden="true"></i>
       View All Tags
     </a>
   </div>
-    
-    {{ partial "footer.html" . }}
 
+  {{ partial "footer.html" . }}
 </body>
 </html>
