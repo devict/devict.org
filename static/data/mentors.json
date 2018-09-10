@@ -107,12 +107,21 @@
     ],
     "available": true
   },
-    {
+  {
     "name": "Justyn Temme",
     "username": "justynt",
     "avatar": "https://avatars0.githubusercontent.com/u/7116592?s=96&v=4",
     "skills": [
       "linux","docker","jQuery"
+    ],
+    "available": true
+  },
+  {
+    "name": "George Shaw",
+    "username": "george.shaw",
+    "avatar": "https://avatars0.githubusercontent.com/u/30050545?s=460&v=4,",
+    "skills": [
+      "html", "css", "javascript", "postgresql", "MySQL", "jQuery", "wordpress", "php", "go", "C++", "api", "web security"
     ],
     "available": true
   }

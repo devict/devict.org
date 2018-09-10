@@ -12,9 +12,9 @@ var Modal = function(child, strictClose) {
 Modal.prototype.show = function() {
     if (!this.portal) {
         this.portal = document.createElement('div');
-        this.portal.className = 'modal fade';
+        this.portal.className = 'survey-modal fade';
         var backdrop = document.createElement('div');
-            backdrop.className = 'modal-backdrop';
+            backdrop.className = 'survey-modal-backdrop';
             backdrop.addEventListener('click', this.hide.bind(this));
         this.portal.appendChild(backdrop);
         document.body.insertBefore(this.portal, document.body.children[0]);
@@ -29,9 +29,9 @@ Modal.prototype.render = function() {
             this.portal.classList.add('in');
         }.bind(this), 10);
         var inner = document.createElement('div');
-            inner.className = 'modal-inner';
+            inner.className = 'survey-modal-inner';
         var closeModal = document.createElement('div');
-            closeModal.id = 'close-modal';
+            closeModal.id = 'close-survey-modal';
             closeModal.className = 'fa fa-times';
         inner.appendChild(closeModal);
         inner.appendChild(this.child);
@@ -46,10 +46,10 @@ Modal.prototype.settleOnMount = function() {
 };
 
 Modal.prototype.hide = function(e) {
-    if (e.target.className === 'modal-backdrop' && !this.strictClose) {
+    if (e.target.className === 'survey-modal-backdrop' && !this.strictClose) {
         this.unmount();
     }
-    if (e.target.id === 'close-modal') {
+    if (e.target.id === 'close-survey-modal') {
         this.unmount();
     }
 };

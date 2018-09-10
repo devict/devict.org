@@ -10,7 +10,7 @@ scripts = [
 # <img src="https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/8/f/1/d/highres_454596637.jpeg" width="75" height="75"> Upcoming Events
 
 <div id="loading" class="text-center">
-  <i class="fa fa-cog fa-spin fa-5x"></i>
+  <i class="fa fa-cog fa-spin fa-5x" aria-hidden="true"></i>
 </div>
 
 <!-- placeholder html that will be filled with data from events.js -->

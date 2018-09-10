@@ -1,6 +1,6 @@
 /*Plain CSS*/
 
-.modal {
+.survey-modal {
     position: fixed;
     opacity: 0;
     display: table;
@@ -10,15 +10,15 @@
     left: 0;
     z-index: 5000;
 }
-.modal.fade .modal-inner {
+.survey-modal.fade .survey-modal-inner {
     transform: translateY(-100px);
     transition: all .3s ease-in-out;
 }
-.modal.fade.in {
+.survey-modal.fade.in {
     opacity: 1;
     transition: all .3s ease-in-out;
 }
-.modal.fade.in .modal-inner {
+.survey-modal.fade.in .survey-modal-inner {
     transform: translateY(0);
     height: auto;
     box-shadow: 0 2px 3px 0 #303030;
@@ -28,16 +28,16 @@
     max-width: 80%;
     padding: 20px;
 }
-.modal-backdrop {
+.survey-modal-backdrop {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: top;
     text-align: center;
     background-color: rgba(0, 0, 0, .5);
 }
 
 /*base styling*/
 
-.modal-inner {
+.survey-modal-inner {
     display: inline-block;
     text-align: left;
     background-color: #eee;
@@ -45,10 +45,10 @@
     padding: 20px;
 }
 
-.modal-link {
+.survey-modal-link {
   text-align: right;
 }
-#close-modal {
+#close-survey-modal {
     position: absolute;
     right: 10px;
     top: 10px;

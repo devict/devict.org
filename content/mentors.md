@@ -96,7 +96,7 @@ hesitate to reach out!
   </template>
   <template v-else>
     <div class="text-center">
-      <i class="fa fa-cog fa-spin fa-5x"></i>
+      <i class="fa fa-cog fa-spin fa-5x" aria-hidden="true"></i>
     </div>
   </template>
 </div>
