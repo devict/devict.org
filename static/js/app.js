@@ -20,7 +20,8 @@
                 <a class="btn btn-lg btn-success survey-modal-link" target="_blank" href="https://kentonh.typeform.com/to/SNdj46">
                     Individuals Participate >>>>
                 </a>
-                <a class="btn btn-lg btn-success survey-modal-link" target="_blank" href="https://form.jotform.com/81908941084160">Employers Participate >>>></a>
+                <a class="btn btn-lg btn-success survey-modal-link" target="_blank" href="https://form.jotform.com/81908941084160">Employers Participate
+                </a>
 
             </h2>
         `;
