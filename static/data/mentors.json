@@ -125,4 +125,13 @@
     ],
     "available": true
   }
+  {
+    "name": "Kenton Hansen",
+    "username": "kentonh",
+    "avatar": "https://avatars2.githubusercontent.com/u/868295?s=460&v=4,",
+    "skills": [
+      "html", "css", "javascript", "ruby", "rails", "wordpress", "php", "Scrum", "Product Management" 
+    ],
+    "available": true
+  }
 ]

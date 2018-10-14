@@ -29,37 +29,37 @@ The devICT Institute is ran by this Board of Directors:
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
       <img src="/images/leadership/jacob-walker.png" class="figure-img img-responsive img-rounded" alt="Image of Jacob Walker" />
-      <figcaption class="figure-caption">Jacob Walker - President</figcaption>
+      <figcaption class="figure-caption">Jacob Walker - President<br /><a href="https://devict.slack.com/messages/@jcbwlkr">Contact on Slack</a> <a href="tel:1-316-461-1127">316.461.1127</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
       <img src="/images/leadership/julia-winegeart.jpg" class="figure-img img-responsive img-rounded" alt="Image of Julia Winegeart" />
-      <figcaption class="figure-caption">Julia Winegeart - Vice President</figcaption>
+      <figcaption class="figure-caption">Julia Winegeart - Vice President<br /><a href="https://devict.slack.com/messages/@juliabwinegeart">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
       <img src="/images/leadership/richard-sharp.jpg" class="figure-img img-responsive img-rounded" alt="Image of Richard Sharp" />
-      <figcaption class="figure-caption">Richard Sharp - Secretary</figcaption>
+      <figcaption class="figure-caption">Richard Sharp - Secretary<br /><a href="https://devict.slack.com/messages/@rsharp">Contact on Slack</a> <a href="tel:1-316-300-0047">316.300.0047</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
       <img src="/images/leadership/casey-woolfolk.jpg" class="figure-img img-responsive img-rounded" alt="Image of Casey Woolfolk" />
-      <figcaption class="figure-caption">Casey Woolfolk - Treasurer</figcaption>
+      <figcaption class="figure-caption">Casey Woolfolk - Treasurer<br /><a href="https://devict.slack.com/messages/@caseywoolfolk">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
       <img src="/images/leadership/sandip-southekal.jpg" class="figure-img img-responsive img-rounded" alt="Image of Sandip Southekal" />
-      <figcaption class="figure-caption">Sandip Southekal - Director</figcaption>
+      <figcaption class="figure-caption">Sandip Southekal - Director<br /><a href="https://devict.slack.com/messages/@sandip">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
       <img src="/images/leadership/seth-etter.jpg" class="figure-img img-responsive img-rounded" alt="Image of Seth Etter" />
-      <figcaption class="figure-caption">Seth Etter - Director</figcaption>
+      <figcaption class="figure-caption">Seth Etter - Director<br /><a href="https://devict.slack.com/messages/@sethetter">Contact on Slack</a></figcaption>
     </figure>
   </div>
 </div>
