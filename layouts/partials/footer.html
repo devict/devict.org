@@ -30,8 +30,13 @@
 <!-- Bootstrap JS! -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-<!-- Our JS -->
-
+<!-- Banner -->
+{{ if .IsHome }}
+  <script src="/js/rellax.min.js"></script>
+  <script>
+    var rellax = new Rellax('.parallax');
+  </script>
+{{ end }}
 <!-- Survey Modal script
 <script src="/js/modal.js" charset="utf-8"></script>
 <script src="/js/app.js" charset="utf-8"></script>

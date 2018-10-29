@@ -71,6 +71,70 @@ ul#all-tags li {
 }
 
 /**
+ * Banner
+ */
+ .banner {
+  position: relative;
+  overflow: hidden;
+}
+.banner-slide {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 6.25em;
+  padding: 0 1rem;
+  font-size: 2em;
+}
+
+.banner-title {
+  color: #ee802b;
+  line-height: 1.25;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  max-width: 20em;
+  margin-bottom: 0.5em;
+}
+
+a.banner-link {
+  padding: 0.85em;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.3em;
+  font-weight: bold;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 10em;
+  text-align: center;
+  transition: all 0.3s;
+}
+.banner-link:hover {
+  color: #fff;
+  background-color: #ee802b;
+  border-color: #ee802b;
+  text-decoration: none;
+}
+
+.parallax {
+  overflow: hidden;
+}
+.parallax-image {
+  /* Add buffer to prevent whitespace when this element moves with parallax */
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 70px);
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+/**
  * Binary Reader
  */
 
@@ -172,7 +236,7 @@ footer a:link, footer a:visited {
     color: #ffffff;
 }
 footer a:link:hover, footer a:visited:hover {
-    color: #333333;
+  color: #006180;
 }
 footer .fa {padding: 2px;}
 
@@ -234,9 +298,18 @@ h2 .fa {padding-right: 10px;}
   font-size: .8em;
 }
 
+@media (min-width: 768px) {
+  .banner-slide {
+    font-size: 3em;
+  }
+}
+
 @media (min-width: 992px) {
   .navbar-nav {
     font-size: 1em;
+  }
+  .banner-slide {
+    font-size: 4em;
   }
 }
 
