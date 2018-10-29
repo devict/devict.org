@@ -1,15 +1,25 @@
 * {
-  @include box-sizing(border-box);
-  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
 }
-
+html {
+  font-size: 16px;
+}
 body {
     background:url("/images/cream_pixels.png") top center repeat #FFF;
+    font-family: 'Hind', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p, ul, ol {
+  margin-bottom: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Oswald', sans-serif;
   font-weight:normal;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 h1 a,
@@ -210,10 +220,27 @@ a.banner-link {
  * Design Things
  */
 
+.navbar-header {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
 .navbar-default {
-    background: #ffffff;
-    border-radius: 0px;
-    margin-bottom: 0px;
+  background: #ffffff;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+.logo {
+  width: 160px;
+  height: auto;
+  display: block;
+}
+.navbar-brand {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: auto;
+}
+.navbar-nav {
+  font-size: 0.9em;
 }
 
 .title-header {
@@ -222,11 +249,13 @@ a.banner-link {
 }
 
 h1.page-title {
-    padding-bottom: 14px;
-    padding-top: 20px;
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
 }
 
-.main {padding-top: 12px; }
+.main {
+  padding-top: 1.5rem;
+}
 
 .fluid-container .container .row {padding-left: 15px; padding-right: 15px;}
 
@@ -282,20 +311,12 @@ h2 .fa {padding-right: 10px;}
     border-color: #ddd;
 }
 
-.logo {
-    width: 160px;
-    height: auto;
-    display: block;
-}
-
-.navbar-brand {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  height: auto;
-}
-
-.navbar-nav {
-  font-size: .8em;
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    line-height: 16px;
+  }
 }
 
 @media (min-width: 768px) {
