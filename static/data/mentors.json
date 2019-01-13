@@ -133,5 +133,14 @@
       "html", "css", "javascript", "ruby", "rails", "wordpress", "php", "Scrum", "Product Management"
     ],
     "available": true
+  },
+  {
+    "name": "Michael Campbell",
+    "username": "mpc",
+    "avatar": "https://avatars3.githubusercontent.com/u/9451845?s=460&v=4",
+    "skills": [
+      "swift", "iOS", "mobile", "database"
+    ],
+    "available": true
   }
 ]
