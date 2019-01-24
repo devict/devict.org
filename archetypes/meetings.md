@@ -22,17 +22,23 @@ minutes = false
 
 # III. Approval of Minutes
 
-# IV. Old Business
+# IV. Financial Report
 
-# V. New Business
+Treasurer will please provide the board a short update of our financial situation.
 
-# VI. Comments/Announcements
+# V. Old Business
 
-# VII. Public Participation
+# VI. New Business
 
-# VIII. Set Meeting Dates
+# VII. Comments/Announcements
 
-# IX. Adjournment
+## a. How is Open Wichita?
+
+# VIII. Public Participation
+
+# IX. Set Meeting Dates
+
+# X. Adjournment
 
 
 <!--
