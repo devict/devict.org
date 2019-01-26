@@ -3,17 +3,16 @@ date = "2019-01-2-T14:52:11-05:00"
 title = "Salary Survey"
 +++
 
-<div class="col-md-8">
-we did a survey. here the results.
-</div>
+<div class="row">
+<h2>Salary Data for All Job Titles</h2>
 <div class="col-md-4">
 <table class="table table table-bordered table-hover table-condensed">
-<h3>Comparison of all Data</h3>
-<tbody><tr>
-<td> </td>
-<td>2017</td>
-<td>2018</td>
-</tr>
+<thead><tr>
+<th>All Respondents</th>
+<th>2017</th>
+<th>2018</th>
+</tr></thead>
+<tbody>
 <tr>
 <td>25th</td>
 <td>$53,476.50</td>
@@ -47,17 +46,16 @@ we did a survey. here the results.
 </tbody></table>
 </div>
 
-<div class="row">
-<h1>How do salaries compare by years of experience?</h1>
-<div class="col-md-4 col-md-offset-1">
+<div class="col-md-4">
 <table class="table table-bordered table-hover table-condensed">
 <tbody>
 <tr>
-<td><h3>2017</h3></td>
-<td>1-4 years</td>
-<td>5-10 years</td>
-<td>11+ years</td>
-</tr>
+<thead><tr>
+<th>2017</th>
+<th>1-4 years</th>
+<th>5-10 years</th>
+<th>11+ years</th>
+</tr></thead>
 <tr>
 <td>25th</td>
 <td>$34,020.00</td>
@@ -97,14 +95,15 @@ we did a survey. here the results.
 </tbody></table>
 </div>
 
-<div class="col-md-4 col-md-offset-1">
+<div class="col-md-4">
 <table class="table table-bordered table-hover table-condensed">
 <tbody><tr>
-<td><h3>2018</h3></td>
-<td>1-4 years</td>
-<td>5-10 years</td>
-<td>11+ years</td>
-</tr>
+<thead><tr>
+<th>2018</th>
+<th>1-4 years</th>
+<th>5-10 years</th>
+<th>11+ years</th>
+</tr></thead>
 <tr>
 <td>25th</td>
 <td>$39,760.00</td>
@@ -144,9 +143,10 @@ we did a survey. here the results.
 </tbody></table>
 </div>
 </div>
+</div>
 
 <div class="row">
-<h1>Is it better to be an employee or a contractor?</h1>
+<h2>Is it better to be an employee or a contractor?</h2>
 <div class="col-md-4 col-md-offset-1">
 <table class="table table-bordered table-hover table-condensed">
 <tbody><tr>
@@ -229,7 +229,7 @@ we did a survey. here the results.
 </div>
 
 <div class="row">
-<h1>How do salaries compare between Wichita and Remote?</h1>
+<h2>How do salaries compare between Wichita and Remote?</h2>
 <div class="col-md-4 col-md-offset-1">
 <table class="table table-bordered table-hover table-condensed">
 <tbody><tr>
@@ -372,16 +372,14 @@ Management Percentiles
 </div>
 </div>
 
+<h2>Web Developer</h2>
+<div class="col-md-4">
 <table class="table table-bordered table-hover table-condensed">
-<thead><tr><th title="Field #1">Web Developer</th>
-<th title="Field #2">FIELD2</th>
-<th title="Field #3">FIELD3</th>
+<thead><tr><th title="Field #1">All Respondents</th>
+<th title="Field #2">2017</th>
+<th title="Field #3">2018</th>
 </tr></thead>
-<tbody><tr>
-<td> </td>
-<td>All 2017</td>
-<td>All 2018</td>
-</tr>
+<tbody>
 <tr>
 <td>25th</td>
 <td>$37,000.00</td>
@@ -417,26 +415,15 @@ Management Percentiles
 <td>15</td>
 <td>14</td>
 </tr>
-<tr>
-<td> </td>
-<td> </td>
-<td> </td>
-</tr>
-<tr>
-<td> </td>
-<td> </td>
-<td> </td>
-</tr>
-<tr>
-<td> </td>
-<td>2017</td>
-<td> </td>
-</tr>
-<tr>
-<td> </td>
-<td>1-4 years exp</td>
-<td>5+ years exp</td>
-</tr>
+</table>
+</div>
+
+<div class="col-md-4">
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">2017</th>
+<th title="Field #2">1-4 years exp</th>
+<th title="Field #3">5+ years exp</th>
+</tr></thead>
 <tr>
 <td>25th</td>
 <td>$34,515.00</td>
@@ -473,17 +460,15 @@ Management Percentiles
 <td>10</td>
 </tr>
 </tbody></table>
+</div>
 
+<div class="col-md-4">
 <table class="table table-bordered table-hover table-condensed">
-<thead><tr><th title="Field #1">FIELD1</th>
-<th title="Field #2">2018</th>
-<th title="Field #3">FIELD3</th>
+<thead><tr><th title="Field #1">2018</th>
+<th title="Field #2">1-4 years exp</th>
+<th title="Field #3">5+ years exp</th>
 </tr></thead>
-<tbody><tr>
-<td> </td>
-<td>1-4 years exp</td>
-<td>5+ years exp</td>
-</tr>
+<tbody>
 <tr>
 <td>25th</td>
 <td>$38,510.00</td>
@@ -520,3 +505,402 @@ Management Percentiles
 <td>8</td>
 </tr>
 </tbody></table>
+</div>
+
+
+<h2>Engineer</h2>
+<div class="col-md-4">
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">All Respondents</th>
+<th title="Field #2">All 2017</th>
+<th title="Field #3">All 2018</th>
+</tr></thead>
+<tbody><tr>
+<td>25th</td>
+<td>$66,000.00</td>
+<td>$63,750.00</td>
+</tr>
+<tr>
+<td>50th</td>
+<td>$83,269.00</td>
+<td>$83,435.50</td>
+</tr>
+<tr>
+<td>75th</td>
+<td>$104,500.00</td>
+<td>$101,000.00</td>
+</tr>
+<tr>
+<td>90th</td>
+<td>$134,560.00</td>
+<td>$128,800.00</td>
+</tr>
+<tr>
+<td>Average</td>
+<td>$87,918.57</td>
+<td>$88,366.79</td>
+</tr>
+<tr>
+<td>Average Yrs. Exp</td>
+<td>6.43</td>
+<td>6.42</td>
+</tr>
+<tr>
+<td>n</td>
+<td>23</td>
+<td>24</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="col-md-4">
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">2017</th>
+<th title="Field #2">1-4 yrs exp</th>
+<th title="Field #3">5+ yrs exp</th>
+</tr></thead>
+<tbody><tr>
+<td>25th</td>
+<td>$55,000.00</td>
+<td>$74,000.00</td>
+</tr>
+<tr>
+<td>50th</td>
+<td>$60,000.00</td>
+<td>$83,269.00</td>
+</tr>
+<tr>
+<td>75th</td>
+<td>$115,900.00</td>
+<td>$96,000.00</td>
+</tr>
+<tr>
+<td>90th</td>
+<td>$133,120.00</td>
+<td>$120,800.00</td>
+</tr>
+<tr>
+<td>Average</td>
+<td>$82,485.71</td>
+<td>$86,160.41</td>
+</tr>
+<tr>
+<td>Average Yrs Exp</td>
+<td>2.57</td>
+<td>8.00</td>
+</tr>
+<tr>
+<td>n</td>
+<td>7</td>
+<td>17</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="col-md-4">
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">2018</th>
+<th title="Field #2">1-4 yrs exp</th>
+<th title="Field #3">5-10 yrs exp</th>
+</tr></thead>
+<tbody><tr>
+<td>25th</td>
+<td>$54,500.00</td>
+<td>$78,500.00</td>
+</tr>
+<tr>
+<td>50th</td>
+<td>$60,000.00</td>
+<td>$85,966.00</td>
+</tr>
+<tr>
+<td>75th</td>
+<td>$80,000.00</td>
+<td>$98,000.00</td>
+</tr>
+<tr>
+<td>90th</td>
+<td>$122,400.00</td>
+<td>$125,500.00</td>
+</tr>
+<tr>
+<td>Average</td>
+<td>$75,285.71</td>
+<td>$90,237.69</td>
+</tr>
+<tr>
+<td>Average Yrs Exp</td>
+<td>2.57</td>
+<td>8.00</td>
+</tr>
+<tr>
+<td>n</td>
+<td>7</td>
+<td>16</td>
+</tr>
+</tbody></table>
+</div>
+
+<h2>Developer</h2>
+<div class="row">
+<div class="col-md-4">
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">All Developers</th>
+<th title="Field #2">All 2017</th>
+<th title="Field #3">All 2018</th>
+</tr></thead>
+<tbody><tr>
+<td>25th</td>
+<td>$53,250.00</td>
+<td>$52,000.00</td>
+</tr>
+<tr>
+<td>50th</td>
+<td>$68,150.00</td>
+<td>$68,455.00</td>
+</tr>
+<tr>
+<td>75th</td>
+<td>$80,272.25</td>
+<td>$87,875.50</td>
+</tr>
+<tr>
+<td>90th</td>
+<td>$99,200.00</td>
+<td>$99,800.00</td>
+</tr>
+<tr>
+<td>Average</td>
+<td>$68,942.97</td>
+<td>$69,764.50</td>
+</tr>
+<tr>
+<td>Average Yrs. Exp</td>
+<td>10.26</td>
+<td>8.468</td>
+</tr>
+<tr>
+<td>n</td>
+<td>30</td>
+<td>32</td>
+</tr>
+</tbody></table>
+</div>
+<div class="col-md-4">
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">2017</th>
+<th title="Field #2">1-4 yrs exp</th>
+<th title="Field #3">5-10 yrs exp</th>
+<th title="Field #4">11+ yrs exp</th>
+</tr></thead>
+<tbody><tr>
+<td>25th</td>
+<td>$50,000.00</td>
+<td>$57,750.00</td>
+<td>$78,500.00</td>
+</tr>
+<tr>
+<td>50th</td>
+<td>$60,000.00</td>
+<td>$64,400.00</td>
+<td>$88,166.50</td>
+</tr>
+<tr>
+<td>75th</td>
+<td>$60,000.00</td>
+<td>$78,500.00</td>
+<td>$101,000.00</td>
+</tr>
+<tr>
+<td>90th</td>
+<td>$60,000.00</td>
+<td>$80,108.90</td>
+<td>$117,500.00</td>
+</tr>
+<tr>
+<td>Avg</td>
+<td>$52,857.14</td>
+<td>$65,707.88</td>
+<td>$92,916.63</td>
+</tr>
+<tr>
+<td>Avg Yrs Exp</td>
+<td>2.35</td>
+<td>7.50</td>
+<td>20.25</td>
+</tr>
+<tr>
+<td>n</td>
+<td>7</td>
+<td>8</td>
+<td>8</td>
+</tr>
+</tbody></table>
+</div>
+<div class="col-md-4">
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">2018</th>
+<th title="Field #2">1-4 yrs exp</th>
+<th title="Field #3">5-10 yrs exp</th>
+<th title="Field #4">11+ yrs exp</th>
+</tr></thead>
+<tbody><tr>
+<td>25th</td>
+<td>$41,875.00</td>
+<td>$60,315.00</td>
+<td>$78,750.00</td>
+</tr>
+<tr>
+<td>50th</td>
+<td>$56,000.00</td>
+<td>$65,750.00</td>
+<td>$94,251.00</td>
+</tr>
+<tr>
+<td>75th</td>
+<td>$63,852.50</td>
+<td>$82,921.50</td>
+<td>$101,000.00</td>
+</tr>
+<tr>
+<td>90th</td>
+<td>$91,031.00</td>
+<td>$87,400.00</td>
+<td>$117,500.00</td>
+</tr>
+<tr>
+<td>Avg</td>
+<td>$57,281.67</td>
+<td>$70,238.20</td>
+<td>$95,062.75</td>
+</tr>
+<tr>
+<td>Avg Yrs Exp</td>
+<td>2.29</td>
+<td>7.50</td>
+<td>20.25</td>
+</tr>
+<tr>
+<td>n</td>
+<td>12</td>
+<td>10</td>
+<td>8</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">Local</th>
+<th title="Field #2">2017</th>
+<th title="Field #3">2018</th>
+<th title="Field #4">Remote</th>
+<th title="Field #5">2017</th>
+<th title="Field #6">2018</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>25th</td>
+<td>$60,000.00</td>
+<td>$57,687.50</td>
+<td>25th</td>
+<td>$67,500.00</td>
+<td>$67,500.00</td>
+</tr>
+<tr>
+<td>50th</td>
+<td>$66,300.00</td>
+<td>$68,455.00</td>
+<td>50th</td>
+<td>$85,000.00</td>
+<td>$75,000.00</td>
+</tr>
+<tr>
+<td>75th</td>
+<td>$80,000.00</td>
+<td>$87,900.00</td>
+<td>75th</td>
+<td>$106,666.50</td>
+<td>$102,251.00</td>
+</tr>
+<tr>
+<td>90th</td>
+<td>$82,348.00</td>
+<td>$99,400.00</td>
+<td>90th</td>
+<td>$127,200.00</td>
+<td>$120,600.00</td>
+</tr>
+<tr>
+<td>Average</td>
+<td>$65,188.38</td>
+<td>$70,060.92</td>
+<td>Average</td>
+<td>$88,333.29</td>
+<td>$85,928.86</td>
+</tr>
+<tr>
+<td>Average Yrs Exp</td>
+<td>10.61</td>
+<td>8.60</td>
+<td>Average Yrs Exp</td>
+<td>10.83</td>
+<td>10.83</td>
+</tr>
+<tr>
+<td>n</td>
+<td>21</td>
+<td>24</td>
+<td>n</td>
+<td>7</td>
+<td>7</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="col-md-4">
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">W-2 vs 1099</th>
+<th title="Field #2">2018 W-2</th>
+<th title="Field #3">2018 1099</th>
+</tr></thead>
+<tbody><tr>
+<td>25th</td>
+<td>$51,375.00</td>
+<td>$75,000.00</td>
+</tr>
+<tr>
+<td>50th</td>
+<td>$61,260.00</td>
+<td>$86,800.00</td>
+</tr>
+<tr>
+<td>75th</td>
+<td>$77,170.00</td>
+<td>$101,000.00</td>
+</tr>
+<tr>
+<td>90th</td>
+<td>$92,001.60</td>
+<td>$113,300.00</td>
+</tr>
+<tr>
+<td>Avg</td>
+<td>$63,249.74</td>
+<td>$86,465.00</td>
+</tr>
+<tr>
+<td>Avg Yrs Exp</td>
+<td>7.63</td>
+<td>10.57</td>
+</tr>
+<tr>
+<td>n</td>
+<td>23</td>
+<td>8</td>
+</tr>
+</tbody></table>
+</div>
+</div>
