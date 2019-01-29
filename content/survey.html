@@ -242,7 +242,12 @@ title = "Salary Survey"
 </div>-->
 
 <div class="row">
-  <h2>How do salaries compare between Employee and Contractor?</h2>
+  <div class="col-md-12">
+    <h2>How do salaries compare between Employee and Contractor?</h2>
+        <strong>Hidden Costs in Contracting</strong>
+        <p>For several reasons, Contractors, paid on a 1099, are typically paid more per hour than an Employee. Contractors are responsible for paying their own FICA and Income Taxes. Contractors have the added responsbility of bookkeeping and sales for which an employee could reasonably expect to rely someone else.</p>
+        <p>The difference is typically 25% to 30%.</p>
+    </div>
     <div class="col-md-4">
       <table class="table table-bordered table-hover table-condensed">
       <tbody><tr>
@@ -480,10 +485,20 @@ title = "Salary Survey"
 <div role="tabpanel" class="row tab-pane" id="allcharts">
 
   <div class="col-md-6">
+    <strong>All Respondents by year</strong>
     <canvas id="yearChart"></canvas>
   </div>
   <div class="col-md-6">
+    <strong>All Respondents by Percentile</strong>
     <canvas id="percentileChart"></canvas>
+  </div>
+  <div class="col-md-12">
+    <strong>Employee vs. Contractor</strong>
+    <canvas id="w2vs1099"></canvas>
+  </div>
+  <div class="col-md-12">
+    <strong>Local vs. Remote</strong>
+    <canvas id="alllocalvsremote"></canvas>
   </div>
 </div>
 
@@ -980,48 +995,109 @@ title = "Salary Survey"
   </div>
 
   <div class="col-md-4">
-  <table class="table table-bordered table-hover table-condensed">
-  <thead><tr><th title="Field #1">Developer W-2 vs 1099</th>
-  <th title="Field #2">2018 W-2</th>
-  <th title="Field #3">2018 1099</th>
-  </tr></thead>
-  <tbody><tr>
-  <td>25th</td>
-  <td>$51,375.00</td>
-  <td>$75,000.00</td>
-  </tr>
-  <tr>
-  <td>50th</td>
-  <td>$61,260.00</td>
-  <td>$86,800.00</td>
-  </tr>
-  <tr>
-  <td>75th</td>
-  <td>$77,170.00</td>
-  <td>$101,000.00</td>
-  </tr>
-  <tr>
-  <td>90th</td>
-  <td>$92,001.60</td>
-  <td>$113,300.00</td>
-  </tr>
-  <tr>
-  <td>Avg</td>
-  <td>$63,249.74</td>
-  <td>$86,465.00</td>
-  </tr>
-  <tr>
-  <td>Avg Yrs Exp</td>
-  <td>7.63</td>
-  <td>10.57</td>
-  </tr>
-  <tr>
-  <td>n</td>
-  <td>23</td>
-  <td>8</td>
-  </tr>
-  </tbody></table>
+    <table class="table table-bordered table-hover table-condensed">
+    <thead><tr><th title="Field #1">2018 Difference</th>
+    <th title="Field #2">2018 % &Delta;</th>
+    </tr></thead>
+    <tbody><tr>
+    <td>+ $9,812.50</td>
+    <td>117.0%</td>
+    </tr>
+    <tr>
+    <td>+ $6,545.00</td>
+    <td>109.6%</td>
+    </tr>
+    <tr>
+    <td>+ $14,351.00</td>
+    <td>116.3%</td>
+    </tr>
+    <tr>
+    <td>+ $21,200.00</td>
+    <td>121.3%</td>
+    </tr>
+    <tr>
+    <td>+ $15,867.94</td>
+    <td>122.6%</td>
+    </tr>
+    </tbody></table>
   </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <table class="table table-bordered table-hover table-condensed">
+    <thead><tr><th title="Field #1">Developer W-2 vs 1099</th>
+    <th title="Field #2">2018 W-2</th>
+    <th title="Field #3">2018 1099</th>
+    </tr></thead>
+    <tbody><tr>
+    <td>25th</td>
+    <td>$51,375.00</td>
+    <td>$75,000.00</td>
+    </tr>
+    <tr>
+    <td>50th</td>
+    <td>$61,260.00</td>
+    <td>$86,800.00</td>
+    </tr>
+    <tr>
+    <td>75th</td>
+    <td>$77,170.00</td>
+    <td>$101,000.00</td>
+    </tr>
+    <tr>
+    <td>90th</td>
+    <td>$92,001.60</td>
+    <td>$113,300.00</td>
+    </tr>
+    <tr>
+    <td>Avg</td>
+    <td>$63,249.74</td>
+    <td>$86,465.00</td>
+    </tr>
+    <tr>
+    <td>Avg Yrs Exp</td>
+    <td>7.63</td>
+    <td>10.57</td>
+    </tr>
+    <tr>
+    <td>n</td>
+    <td>23</td>
+    <td>8</td>
+    </tr>
+    </tbody></table>
+  </div>
+  <div class="col-md-4">
+    <table class="table table-bordered table-hover table-condensed">
+      <thead><tr><th title="Field #1">W2 vs. 1099 &Delta;</th>
+      <th title="Field #2">% &Delta;</th>
+      </tr></thead>
+      <tbody><tr>
+      <td>+ $23,625.00</td>
+      <td>146.0%</td>
+      </tr>
+      <tr>
+      <td>+ $25,540.00</td>
+      <td>141.7%</td>
+      </tr>
+      <tr>
+      <td>+ $23,830.00</td>
+      <td>130.9%</td>
+      </tr>
+      <tr>
+      <td>+ $21,298.40</td>
+      <td>123.2%</td>
+      </tr>
+      <tr>
+      <td>+ $23,215.26</td>
+      <td>136.7%</td>
+      </tr>
+      </tbody></table>
+    </div>
+  <div class="col-md-4">
+      <strong>Hidden Costs in Contracting</strong>
+      <p>For several reasons, Contractors, paid on a 1099, are typically paid more per hour than an Employee. Contractors are responsible for paying their own FICA and Income Taxes. Contractors have the added responsbility of bookkeeping and sales for which an employee could reasonably expect to rely someone else.</p>
+      <p>The difference is typically 25% to 30%.</p>
+    </div>
   </div>
 </div>
 
