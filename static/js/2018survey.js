@@ -137,7 +137,13 @@ var lineChart = new Chart(ctx, {
         ticks: {
           min: 0,
         }
-      }]
+      }],
+      xAxes: [{
+        ticks: {
+          beginAtZero: true,
+          callback: function(value, index, values) { return '$' + value; },
+        }
+      }],
     }
   }
 });
@@ -174,7 +180,13 @@ var lineChart = new Chart(ctx, {
         ticks: {
           min: 0,
         }
-      }]
+      }],
+      xAxes: [{
+        ticks: {
+          beginAtZero: true,
+          callback: function(value, index, values) { return '$' + value; },
+        }
+      }],
     }
   }
 });
