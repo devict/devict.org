@@ -7,8 +7,9 @@ title = "Salary Survey"
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#all" aria-controls="All Titles" role="tab" data-toggle="tab">All Titles</a></li>
-    <li role="presentation"><a href="#allcharts" aria-controls="Charts for All Titles" role="tab" data-toggle="tab">Charts for All Titles</a></li>
+    <li role="presentation" class="active"><a href="#intro" aria-controls="Survey Introduction" role="tab" data-toggle="tab">Survey Introduction</a></li>
+    <li role="presentation"><a href="#all" aria-controls="All Titles" role="tab" data-toggle="tab">All Titles</a></li>
+    <li role="presentation"><a href="#allcharts" aria-controls="All Titles Charts" role="tab" data-toggle="tab">All Titles - Charts</a></li>
     <li role="presentation"><a href="#developer" aria-controls="Developer" role="tab" data-toggle="tab">Developer</a></li>
     <li role="presentation"><a href="#webdeveloper" aria-controls="web developer" role="tab" data-toggle="tab">Web Developer</a></li>
     <li role="presentation"><a href="#engineer" aria-controls="engineer" role="tab" data-toggle="tab">Engineer</a></li>
@@ -16,8 +17,27 @@ title = "Salary Survey"
 
 <!-- Tab panes -->
 <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="intro">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>devICT Salary Survey</h2>
+      <p>Starting in May 2018, a group of volunteers started working towards collecting and analyzing salary date for techincal employees in the Wichita, Kansas Metropolitan Area. The main purpose was to better understand the workforce and economy around the skilled, technical workforce.</p>
+      <p>Witin the community, there are often talks about where a salary should be, and how individuals could better negotiate their pay. This was an attempt at an analytical look comparison into the answers that have so far been hearsay.</p>
+      </div>
+    <div class="col-md-4">
+      <h2>Methods</h2>
+      <p>Data was collected through three main sources. Individuals anonymously provided data about their compensaton. Six employers provided the anonymous salary data of their payroll, and City and County public records were collected.</p>
+      <p>Names and specificities were cleansed from the data, and identifying information submitted was removed. Samples with fewer than 4 data points were removed for statistical relevance.</p>
+      </div>
+    <div class="col-md-4">
+      <h2>Analysis</h2>
+      <p>Economist, Anthony Bieker provided analysis of the data collected. Kenton Hansen provided data cleaning, charts, and developed the code for this report.</p>
+      <p>Through the process, three questions emerged. <br />1) How are people in Wichita paid? <br />2) How do Employee salaries compare to Contractor rates? <br />3) How do salaries for remote employees compare to those workign in Wichita?</p>
+      </div>
+    </div>
+  </div>
 
-<div role="tabpanel" class="tab-pane active" id="all">
+<div role="tabpanel" class="tab-pane" id="all">
   <div class="row>">
     <h2>Salary Data for All Job Titles</h2>
     <div class="col-md-4">
@@ -159,7 +179,7 @@ title = "Salary Survey"
     </div>
   </div>
 
-<div class="row">
+<!--- <div class="row">
     <div class="col-md-4">
       <table class="table table-bordered table-hover table-condensed">
       Management Percentiles
@@ -219,7 +239,7 @@ title = "Salary Survey"
     <div class="col-md-4">
     <h2>77.66% of Respondents said they receive health insurance</h2>
     </div>
-</div>
+</div>-->
 
 <div class="row">
   <h2>How do salaries compare between Employee and Contractor?</h2>
@@ -1006,6 +1026,7 @@ title = "Salary Survey"
 </div>
 
 <!-- end of tab content  -->
+</div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
