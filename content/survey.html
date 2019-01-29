@@ -25,76 +25,86 @@ scripts = [
   <div class="row">
     <div class="col-md-4">
       <h2>devICT Salary Survey</h2>
-      <p>Starting in May 2018, a group of volunteers started working towards collecting and analyzing salary date for techincal employees in the Wichita, Kansas Metropolitan Area. The main purpose was to better understand the workforce and economy around the skilled, technical workforce.</p>
-      <p>Witin the community, there are often talks about where a salary should be, and how individuals could better negotiate their pay. This was an attempt at an analytical look comparison into the answers that have so far been hearsay.</p>
+      <p>In May 2018, a group of volunteers started collecting and analyzing salary data for technical employees in the Wichita, Kansas Metropolitan Area. The main purpose was to better understand the economy around the skilled, technical workforce.</p>
+      <p>Within the community, there are often talks about where a salary should be, and how individuals could better negotiate their pay. This was an attempt at an analytical look into answers that have so far been hearsay.</p>
       </div>
     <div class="col-md-4">
       <h2>Methods</h2>
-      <p>Data was collected through three main sources. Individuals anonymously provided data about their compensaton. Six employers provided the anonymous salary data of their payroll, and City and County public records were collected.</p>
-      <p>Names and specificities were cleansed from the data, and identifying information submitted was removed. Samples with fewer than 4 data points were removed for statistical relevance.</p>
+      <p>Data was collected through three main sources. Individuals anonymously provided data about their compensation, six employers provided anonymous salary data of their payroll, and City and County public records were collected.</p>
+      <p>Names and specificities were cleansed from the data, and identifying information was removed. Samples with fewer than 4 data points were removed for statistical relevance.</p>
       </div>
     <div class="col-md-4">
       <h2>Analysis</h2>
-      <p>Economist, Anthony Bieker provided analysis of the data collected. Kenton Hansen provided data cleaning, charts, and developed the code for this report.</p>
-      <p>Through the process, three questions emerged. <br />1) How are people in Wichita paid? <br />2) How do Employee salaries compare to Contractor rates? <br />3) How do salaries for remote employees compare to those workign in Wichita?</p>
+      <p>Economist Anthony Bieker provided analysis of the data collected. Kenton Hansen provided data cleaning, charts, and developed the code for this report.</p>
+      <p>Through the process, three questions emerged.
+      <ol>
+        <li>How are people in Wichita paid?</li>
+        <li>How do Employee salaries compare to Contractor rates?</li>
+        <li>How do salaries for remote employees compare to those working in Wichita?</li>
+      </ol>
+      </p>
       </div>
     </div>
   </div>
 
 <div role="tabpanel" class="tab-pane" id="all">
-  <div class="row>">
+  <div class="row">
     <h2>Salary Data for All Job Titles</h2>
     <div class="col-md-4">
-      <table class="table table table-bordered table-hover table-condensed">
-        <thead><tr>
+      <table class="table table-bordered table-hover table-condensed">
+        <thead>
+          <tr>
             <th>All Respondents</th>
-                <th>2017</th>
-                <th>2018</th>
-            </tr></thead>
-          <tbody>
-            <tr>
-              <td>25th</td>
-              <td>$53,476.50</td>
-              <td>$52,000.00</td>
-            </tr>
-            <tr>
-              <td>50th</td>
-              <td>$66,197.00</td>
-              <td>$77,300.00</td>
-            </tr>
-            <tr>
-              <td>75th</td>
-              <td>$83,274.25</td>
-              <td>$96,500.00</td>
-            </tr>
-            <tr>
-              <td>90th</td>
-              <td>$102,153.60</td>
-              <td>$120,000.00</td>
-            </tr>
-            <tr>
-              <td>Average</td>
-              <td>$68,637.37</td>
-              <td>$77,384.44</td>
-            </tr>
-            <tr>
-              <td>n</td>
-              <td>190</td>
-              <td>84</td>
-            </tr>
-        </tbody></table>
+            <th>2017</th>
+            <th>2018</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>25th</td>
+            <td>$53,476.50</td>
+            <td>$52,000.00</td>
+          </tr>
+          <tr>
+            <td>50th</td>
+            <td>$66,197.00</td>
+            <td>$77,300.00</td>
+          </tr>
+          <tr>
+            <td>75th</td>
+            <td>$83,274.25</td>
+            <td>$96,500.00</td>
+          </tr>
+          <tr>
+            <td>90th</td>
+            <td>$102,153.60</td>
+            <td>$120,000.00</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>$68,637.37</td>
+            <td>$77,384.44</td>
+          </tr>
+          <tr>
+            <td>n</td>
+            <td>190</td>
+            <td>84</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="col-md-4">
       <table class="table table-bordered table-hover table-condensed">
-        <tbody>
+        <thead>
           <tr>
-          <thead><tr>
             <th>2017</th>
             <th>1-4 years</th>
             <th>5-10 years</th>
             <th>11+ years</th>
-          </tr></thead>
+          </tr>
+        </thead>
+        <tbody>
           <tr>
             <td>25th</td>
             <td>$34,020.00</td>
@@ -130,360 +140,326 @@ scripts = [
             <td>17</td>
             <td>30</td>
             <td>26</td>
-            </tr>
-          </tbody></table>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="col-md-4">
       <table class="table table-bordered table-hover table-condensed">
-      <tbody><tr>
-      <thead><tr>
-        <th>2018</th>
-        <th>1-4 years</th>
-        <th>5-10 years</th>
-        <th>11+ years</th>
-      </tr></thead>
-      <tr>
-        <td>25th</td>
-        <td>$39,760.00</td>
-        <td>$60,445.00</td>
-        <td>$80,000.00</td>
-      </tr>
-      <tr>
-        <td>50th</td>
-        <td>$50,000.00</td>
-        <td>$77,000.00</td>
-        <td>$95,000.00</td>
-      </tr>
-      <tr>
-        <td>75th</td>
-        <td>$60,000.00</td>
-        <td>$95,000.00</td>
-        <td>$110,000.00</td>
-      </tr>
-      <tr>
-        <td>90th</td>
-        <td>$69,328.00</td>
-        <td>$103,600.00</td>
-        <td>$135,000.00</td>
-      </tr>
-      <tr>
-        <td>Average</td>
-        <td>$50,417.37</td>
-        <td>$77,424.91</td>
-        <td>$94,342.64</td>
-      </tr>
-      <tr>
-        <td>n</td>
-        <td>19</td>
-        <td>32</td>
-        <td>25</td>
-      </tr>
-    </tbody></table>
+        <thead>
+          <tr>
+            <th>2018</th>
+            <th>1-4 years</th>
+            <th>5-10 years</th>
+            <th>11+ years</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>25th</td>
+            <td>$39,760.00</td>
+            <td>$60,445.00</td>
+            <td>$80,000.00</td>
+          </tr>
+          <tr>
+            <td>50th</td>
+            <td>$50,000.00</td>
+            <td>$77,000.00</td>
+            <td>$95,000.00</td>
+          </tr>
+          <tr>
+            <td>75th</td>
+            <td>$60,000.00</td>
+            <td>$95,000.00</td>
+            <td>$110,000.00</td>
+          </tr>
+          <tr>
+            <td>90th</td>
+            <td>$69,328.00</td>
+            <td>$103,600.00</td>
+            <td>$135,000.00</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>$50,417.37</td>
+            <td>$77,424.91</td>
+            <td>$94,342.64</td>
+          </tr>
+          <tr>
+            <td>n</td>
+            <td>19</td>
+            <td>32</td>
+            <td>25</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
-<!--- <div class="row">
-    <div class="col-md-4">
-      <table class="table table-bordered table-hover table-condensed">
-      Management Percentiles
-      <tbody><tr>
-        <td>25th</td>
-        <td>$85,000.00</td>
-        <td>$90,750.00</td>
-      </tr>
-      <tr>
-        <td>50th</td>
-        <td>$100,000.00</td>
-        <td>$98,000.00</td>
-      </tr>
-      <tr>
-        <td>75th</td>
-        <td>$128,600.00</td>
-        <td>$121,250.00</td>
-      </tr>
-      <tr>
-        <td>90th</td>
-        <td>$135,800.00</td>
-        <td>$137,500.00</td>
-      </tr>
-      <tr>
-        <td>Average</td>
-        <td>$102,770.59</td>
-        <td>$101,734.38</td>
-      </tr>
-      <tr>
-        <td>n</td>
-        <td>17</td>
-        <td>16</td>
-      </tr>
-      <tr>
-        <td> </td>
-        <td>Most common was managing 1-5 </td>
-        <td> </td>
-      </tr>
-      </tbody></table>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>How do salaries compare between Employee and Contractor?</h2>
+      <strong>Hidden Costs in Contracting</strong>
+      <p>For several reasons, Contractors, paid on a 1099, are typically paid more per hour than an Employee. Contractors are responsible for paying their own FICA and Income Taxes. Contractors have the added responsbility of bookkeeping and sales for which an employee could reasonably expect to rely someone else.</p>
+      <p>The difference is typically 25% to 30%.</p>
     </div>
     <div class="col-md-4">
       <table class="table table-bordered table-hover table-condensed">
-      <thead><tr>
-        <th title="Field #1">Happy Score</th>
-        <th title="Field #2">All</th>
-        <th title="Field #3">Remote</th>
-      <th title="Field #4">In Wichita</th>
-      </tr></thead>
-      <tbody><tr>
-      <td>Average</td>
-        <td align="right">7.1</td>
-        <td align="right">7.32</td>
-        <td align="right">7.02</td>
-      </tr>
-      </tbody></table>
-    </div>
-    <div class="col-md-4">
-    <h2>77.66% of Respondents said they receive health insurance</h2>
-    </div>
-</div>-->
-
-<div class="row">
-  <div class="col-md-12">
-    <h2>How do salaries compare between Employee and Contractor?</h2>
-        <strong>Hidden Costs in Contracting</strong>
-        <p>For several reasons, Contractors, paid on a 1099, are typically paid more per hour than an Employee. Contractors are responsible for paying their own FICA and Income Taxes. Contractors have the added responsbility of bookkeeping and sales for which an employee could reasonably expect to rely someone else.</p>
-        <p>The difference is typically 25% to 30%.</p>
-    </div>
-    <div class="col-md-4">
-      <table class="table table-bordered table-hover table-condensed">
-      <tbody><tr>
-        <td><h2>2017</h2></td>
-        <td>2017 W-2</td>
-        <td>2017 1099</td>
-      </tr>
-      <tr>
-        <td>25th</td>
-        <td>$53,155.25</td>
-        <td>$66,250.00</td>
-      </tr>
-      <tr>
-        <td>50th</td>
-        <td>$65,437.00</td>
-        <td>$85,000.00</td>
-      </tr>
-      <tr>
-        <td>75th</td>
-        <td>$81,715.00</td>
-        <td>$116,250.00</td>
-      </tr>
-      <tr>
-        <td>90th</td>
-        <td>$101,103.60</td>
-        <td>$135,000.00</td>
-      </tr>
-      <tr>
-        <td>Average</td>
-        <td>$67,952.78</td>
-        <td>$91,166.67</td>
-      </tr>
-      <tr>
-        <td>n</td>
-        <td>180</td>
-        <td>12</td>
-      </tr>
-      </tbody></table>
-    </div>
-
-    <div class="col-md-4">
-    <table class="table table-bordered table-hover table-condensed">
-    <tbody><tr>
-      <td><h2>2018</h2></td>
-      <td>2018 W-2</td>
-      <td>2018 1099</td>
-    </tr>
-    <tr>
-      <td>25th</td>
-      <td>$50,500.00</td>
-      <td>$72,500.00</td>
-    </tr>
-    <tr>
-      <td>50th</td>
-      <td>$74,000.00</td>
-      <td>$95,000.00</td>
-    </tr>
-    <tr>
-      <td>75th</td>
-      <td>$95,000.00</td>
-      <td>$104,500.00</td>
-    </tr>
-    <tr>
-      <td>90th</td>
-      <td>$116,935.20</td>
-      <td>$133,000.00</td>
-    </tr>
-    <tr>
-      <td>Average</td>
-      <td>$74,879.75</td>
-      <td>$88,866.67</td>
-    </tr>
-    <tr>
-      <td>n</td>
-      <td>67</td>
-      <td>15</td>
-    </tr>
-    </tbody></table>
+        <thead>
+          <tr>
+            <th>2017</th>
+            <th>2017 W-2</th>
+            <th>2017 1099</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>25th</td>
+            <td>$53,155.25</td>
+            <td>$66,250.00</td>
+          </tr>
+          <tr>
+            <td>50th</td>
+            <td>$65,437.00</td>
+            <td>$85,000.00</td>
+          </tr>
+          <tr>
+            <td>75th</td>
+            <td>$81,715.00</td>
+            <td>$116,250.00</td>
+          </tr>
+          <tr>
+            <td>90th</td>
+            <td>$101,103.60</td>
+            <td>$135,000.00</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>$67,952.78</td>
+            <td>$91,166.67</td>
+          </tr>
+          <tr>
+            <td>n</td>
+            <td>180</td>
+            <td>12</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="col-md-4">
       <table class="table table-bordered table-hover table-condensed">
-      <thead><tr><th title="Field #1"><h4>2018</h4> Difference</th>
-      <th title="Field #2">Salary &Delta;</th>
-      <th title="Field #3">Percent &Delta;</th>
-      </tr></thead>
-      <tbody><tr>
-      <td>25th</td>
-      <td>$22,000.00</td>
-      <td>143.56%</td>
-      </tr>
-      <tr>
-      <td>50th</td>
-      <td>$21,000.00</td>
-      <td>128.38%</td>
-      </tr>
-      <tr>
-      <td>75th</td>
-      <td>$9,500.00</td>
-      <td>110.00%</td>
-      </tr>
-      <tr>
-      <td>90th</td>
-      <td>$16,064.80</td>
-      <td>113.74%</td>
-      </tr>
-      <tr>
-      <td>Average</td>
-      <td>$13,986.92</td>
-      <td>118.68%</td>
-      </tr>
-      </tbody></table>
+        <thead>
+          <tr>
+            <th>2018</th>
+            <th>2018 W-2</th>
+            <th>2018 1099</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>25th</td>
+            <td>$50,500.00</td>
+            <td>$72,500.00</td>
+          </tr>
+          <tr>
+            <td>50th</td>
+            <td>$74,000.00</td>
+            <td>$95,000.00</td>
+          </tr>
+          <tr>
+            <td>75th</td>
+            <td>$95,000.00</td>
+            <td>$104,500.00</td>
+          </tr>
+          <tr>
+            <td>90th</td>
+            <td>$116,935.20</td>
+            <td>$133,000.00</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>$74,879.75</td>
+            <td>$88,866.67</td>
+          </tr>
+          <tr>
+            <td>n</td>
+            <td>67</td>
+            <td>15</td>
+          </tr>
+        </tbody></table>
     </div>
-</div>
 
-<div class="row">
-<h2>How do salaries compare between Wichita and Remote?</h2>
-<div class="col-md-4">
-<table class="table table-bordered table-hover table-condensed">
-<tbody><tr>
-<td><h2>Local</h2></td>
-<td>2017</td>
-<td>2018</td>
-</tr>
-<tr>
-<td>25th</td>
-<td>$52,244.00</td>
-<td>$43,576.00</td>
-</tr>
-<tr>
-<td>50th</td>
-<td>$63,350.00</td>
-<td>$65,000.00</td>
-</tr>
-<tr>
-<td>75th</td>
-<td>$80,000.00</td>
-<td>$82,871.00</td>
-</tr>
-<tr>
-<td>90th</td>
-<td>$100,000.00</td>
-<td>$98,400.00</td>
-</tr>
-<tr>
-<td>Average</td>
-<td>$66,006.86</td>
-<td>$66,038.08</td>
-</tr>
-<tr>
-<td>n</td>
-<td>161</td>
-<td>49</td>
-</tr>
-</tbody></table>
-</div>
+    <div class="col-md-4">
+      <table class="table table-bordered table-hover table-condensed">
+        <thead>
+          <tr>
+            <th title="Field #1">2018 1099</th>
+            <th title="Field #2">Salary &Delta;</th>
+            <th title="Field #3">Percent &Delta;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>25th</td>
+            <td>+ $22,000.00</td>
+            <td>143.56%</td>
+          </tr>
+          <tr>
+            <td>50th</td>
+            <td>+ $21,000.00</td>
+            <td>128.38%</td>
+          </tr>
+          <tr>
+            <td>75th</td>
+            <td>+ $9,500.00</td>
+            <td>110.00%</td>
+          </tr>
+          <tr>
+            <td>90th</td>
+            <td>+ $16,064.80</td>
+            <td>113.74%</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>+ $13,986.92</td>
+            <td>118.68%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
-<div class="col-md-4">
-<table class="table table-bordered table-hover table-condensed">
-<tbody><tr>
-<td><h2>Remote</h2></td>
-<td>2017</td>
-<td>2018</td>
-</tr>
-<tr>
-<td>25th</td>
-<td>$80,000.00</td>
-<td>$80,000.00</td>
-</tr>
-<tr>
-<td>50th</td>
-<td>$93,166.50</td>
-<td>$96,000.00</td>
-</tr>
-<tr>
-<td>75th</td>
-<td>$109,860.50</td>
-<td>$117,446.00</td>
-</tr>
-<tr>
-<td>90th</td>
-<td>$130,550.00</td>
-<td>$129,600.00</td>
-</tr>
-<tr>
-<td>Average</td>
-<td>$95,313.23</td>
-<td>$98,669.48</td>
-</tr>
-<tr>
-<td>n</td>
-<td>26</td>
-<td>27</td>
-</tr>
-</tbody></table>
-</div>
+  <div class="row">
+    <h2>How do salaries compare between Wichita and Remote?</h2>
+    <div class="col-md-4">
+      <table class="table table-bordered table-hover table-condensed">
+        <thead>
+          <tr>
+            <th>Wichita</th>
+            <th>2017</th>
+            <th>2018</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>25th</td>
+            <td>$52,244.00</td>
+            <td>$43,576.00</td>
+          </tr>
+          <tr>
+            <td>50th</td>
+            <td>$63,350.00</td>
+            <td>$65,000.00</td>
+          </tr>
+          <tr>
+            <td>75th</td>
+            <td>$80,000.00</td>
+            <td>$82,871.00</td>
+          </tr>
+          <tr>
+            <td>90th</td>
+            <td>$100,000.00</td>
+            <td>$98,400.00</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>$66,006.86</td>
+            <td>$66,038.08</td>
+          </tr>
+          <tr>
+            <td>n</td>
+            <td>161</td>
+            <td>49</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-<div class="col-md-4">
-  <table class="table table-bordered table-hover table-condensed">
-    <thead><tr>
-    <th title="Field #0"><h4>2018</h4>Difference</th>
-    <th title="Field #1">Salary &Delta;</th>
-    <th title="Field #2">Percent &Delta;</th>
-    </tr></thead>
-    <tbody><tr>
-    <td>25th</td>
-    <td>+ $36,424.00</td>
-    <td>183.59%</td>
-    </tr>
-    <tr>
-    <td>50th</td>
-    <td>+ $31,000.00</td>
-    <td>147.69%</td>
-    </tr>
-    <tr>
-    <td>75th</td>
-    <td>+ $34,575.00</td>
-    <td>141.72%</td>
-    </tr>
-    <tr>
-    <td>90th</td>
-    <td>+ $31,200.00</td>
-    <td>131.71%</td>
-    </tr>
-    <tr>
-    <td>Average</td>
-    <td>+ $32,631.40</td>
-    <td>149.41%</td>
-    </tr>
-  </tbody></table>
-</div>
-</div>
+    <div class="col-md-4">
+      <table class="table table-bordered table-hover table-condensed">
+        <thead>
+          <tr>
+            <th>Remote</th>
+            <th>2017</th>
+            <th>2018</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>25th</td>
+            <td>$80,000.00</td>
+            <td>$80,000.00</td>
+          </tr>
+          <tr>
+            <td>50th</td>
+            <td>$93,166.50</td>
+            <td>$96,000.00</td>
+          </tr>
+          <tr>
+            <td>75th</td>
+            <td>$109,860.50</td>
+            <td>$117,446.00</td>
+          </tr>
+          <tr>
+            <td>90th</td>
+            <td>$130,550.00</td>
+            <td>$129,600.00</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>$95,313.23</td>
+            <td>$98,669.48</td>
+          </tr>
+          <tr>
+            <td>n</td>
+            <td>26</td>
+            <td>27</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-4">
+      <table class="table table-bordered table-hover table-condensed">
+        <thead>
+          <tr>
+            <th title="Field #0">2018 Remote</th>
+            <th title="Field #1">Salary &Delta;</th>
+            <th title="Field #2">Percent &Delta;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>25th</td>
+            <td>+ $36,424.00</td>
+            <td>183.59%</td>
+          </tr>
+          <tr>
+            <td>50th</td>
+            <td>+ $31,000.00</td>
+            <td>147.69%</td>
+          </tr>
+          <tr>
+            <td>75th</td>
+            <td>+ $34,575.00</td>
+            <td>141.72%</td>
+          </tr>
+          <tr>
+            <td>90th</td>
+            <td>+ $31,200.00</td>
+            <td>131.71%</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>+ $32,631.40</td>
+            <td>149.41%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
 
 <div role="tabpanel" class="row tab-pane" id="allcharts">
