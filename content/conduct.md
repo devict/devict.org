@@ -5,6 +5,8 @@ title = "Code of Conduct"
 
 ## &amp; Anti-Harassment Policy
 
+[Report a Code of Conduct Incident](/report/)
+
 devICT is dedicated to providing a safe and harassment-free experience for
 everyone, regardless of gender, gender identity and expression, sexual
 orientation, disability, physical appearance, body size, race, age, religion,
@@ -33,3 +35,5 @@ Sponsors, organizers, and speakers are also subject to the anti-harassment polic
 This anti-harassment policy is based on the example policy from the [Geek
 Feminism wiki](http://geekfeminism.wikia.com/wiki/Community_anti-harassment),
 created by the Geek Feminism community.
+
+[Report a Code of Conduct Incident](/report/)
