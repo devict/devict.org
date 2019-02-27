@@ -286,7 +286,7 @@ var data = {
     borderWidth: 3,
     data: [60315, 65750, 82921.5, 87400]
   }, {
-    label: "2018 5-10",
+    label: "2018 11+",
      backgroundColor: "rgba(54,162,235,0.1)",
     borderColor: "'rgba(54,162,235,1)'",
     borderWidth: 3,
