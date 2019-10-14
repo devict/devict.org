@@ -46,10 +46,9 @@ type meetupVenue struct {
 
 // EventsFromMeetup grabs events from the Meetup API, converts into our internal Event
 // data structure, and filters unique events in a series and any beyond a date threshold.
-func EventsFromMeetup() ([]Event, error) {
+func EventsFromMeetup(url string) ([]Event, error) {
 	events := make([]Event, 0)
-	meetupURL := "https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=devICT&limited_events=false&fields=series&status=upcoming&page=20"
-	resp, err := http.Get(meetupURL)
+	resp, err := http.Get(url)
 	if err != nil {
 		return events, errors.Wrap(err, "failed http request")
 	}
