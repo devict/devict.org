@@ -44,6 +44,8 @@ type meetupVenue struct {
 	Zip     string `json:"zip"`
 }
 
+// EventsFromMeetup grabs events from the Meetup API, converts into our internal Event
+// data structure, and filters unique events in a series and any beyond a date threshold.
 func EventsFromMeetup() ([]Event, error) {
 	events := make([]Event, 0)
 	meetupURL := "https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=devICT&limited_events=false&fields=series&status=upcoming&page=20"
