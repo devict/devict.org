@@ -12,9 +12,11 @@ import (
 
 // Event represents a devICT event from Meetup.
 type Event struct {
-	Name     string
-	Time     time.Time
-	Location string
+	Name              string
+	SeriesID          int
+	SeriesDescription string
+	Time              time.Time
+	Location          string
 }
 
 type meetupResponse struct {
@@ -22,18 +24,27 @@ type meetupResponse struct {
 }
 
 type meetupEvent struct {
-	Name  string `json:"name"`
-	Venue struct {
-		Name    string `json:"name"`
-		Address string `json:"address_1"`
-		City    string `json:"string"`
-		State   string `json:"state"`
-		Zip     string `json:"zip"`
-	} `json:"venue"`
-	Time int `json:"time"`
+	Name      string       `json:"name"`
+	Series    meetupSeries `json:"series"`
+	Venue     meetupVenue  `json:"venue"`
+	Time      int          `json:"time"`
+	UTCOffset int          `json:"utc_offset"`
 }
 
-func eventsFromMeetup() ([]Event, error) {
+type meetupSeries struct {
+	ID          int    `json:"id"`
+	Description string `json:"description"`
+}
+
+type meetupVenue struct {
+	Name    string `json:"name"`
+	Address string `json:"address_1"`
+	City    string `json:"string"`
+	State   string `json:"state"`
+	Zip     string `json:"zip"`
+}
+
+func EventsFromMeetup() ([]Event, error) {
 	events := make([]Event, 0)
 	meetupURL := "https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=devICT&limited_events=false&fields=series&status=upcoming&page=20"
 	resp, err := http.Get(meetupURL)
@@ -61,7 +72,11 @@ func eventsFromMeetup() ([]Event, error) {
 
 func eventFromMeetupEvent(mEvent meetupEvent) Event {
 	event := Event{Name: mEvent.Name}
-	event.Time = time.Unix(int64(mEvent.Time), 0)
+
+	utc, _ := time.LoadLocation("UTC")
+	seconds := (mEvent.Time + mEvent.UTCOffset) / 1000
+	event.Time = time.Unix(int64(seconds), 0).In(utc)
+
 	event.Location = fmt.Sprintf(
 		"%s\n%s\n%s, %s, %s",
 		mEvent.Venue.Name,
@@ -70,6 +85,24 @@ func eventFromMeetupEvent(mEvent meetupEvent) Event {
 		mEvent.Venue.State,
 		mEvent.Venue.Zip,
 	)
+	event.SeriesID = mEvent.Series.ID
+	event.SeriesDescription = mEvent.Series.Description
 
 	return event
+}
+
+func eventsThisMonth(events []Event) []Event {
+	// filter unique events in the next month
+	filtered := make([]Event, 0)
+	seriesIncluded := make(map[int]bool)
+
+	for _, e := range events {
+		// Check that we haven't included this series yet
+		if _, ok := seriesIncluded[e.SeriesID]; !ok {
+			filtered = append(filtered, e)
+			seriesIncluded[e.SeriesID] = true
+		}
+	}
+
+	return filtered
 }
