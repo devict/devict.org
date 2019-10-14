@@ -96,12 +96,21 @@ func eventsThisMonth(events []Event) []Event {
 	filtered := make([]Event, 0)
 	seriesIncluded := make(map[int]bool)
 
+	utc, _ := time.LoadLocation("UTC")
+	now := time.Now()
+	daysAhead := 35
+	maxDate := time.Date(now.Year(), now.Month(), now.Day(), 19, 0, 0, 0, utc).AddDate(0, 0, daysAhead)
+
 	for _, e := range events {
 		// Check that we haven't included this series yet
 		if _, ok := seriesIncluded[e.SeriesID]; !ok {
-			filtered = append(filtered, e)
-			seriesIncluded[e.SeriesID] = true
+			// Make sure it's within our date range
+			if !e.Time.After(maxDate) {
+				filtered = append(filtered, e)
+				seriesIncluded[e.SeriesID] = true
+			}
 		}
+
 	}
 
 	return filtered

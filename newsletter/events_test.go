@@ -66,11 +66,18 @@ func Test_eventsThisMonth(t *testing.T) {
 					SeriesDescription: "This Meetup repeats every Monday.",
 				},
 				{
-					Name:              "Some Event",
+					Name:              "Some Event: Special Edition",
 					Time:              todayPlusDays(10),
 					Location:          "The Labor Party\n216 N Mosley St\nWichita, KS, 67202",
 					SeriesID:          123,
 					SeriesDescription: "This Meetup repeats every Monday.",
+				},
+				{
+					Name:              "Too Far In The Future",
+					Time:              todayPlusDays(40),
+					Location:          "The Labor Party\n216 N Mosley St\nWichita, KS, 67202",
+					SeriesID:          0,
+					SeriesDescription: "",
 				},
 			},
 			want: []Event{
