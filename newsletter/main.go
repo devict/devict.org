@@ -2,18 +2,17 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"io/ioutil"
 	"os"
+	"path/filepath"
 	"regexp"
 	"strconv"
 
 	"github.com/joho/godotenv"
 )
 
-var (
-	filenameBase = "newsletter-%03d.md"
-	out          = flag.String("out", "../content/newsletters/", "Folder for newsletter output")
-)
+var out = flag.String("out", "../content/newsletters/", "Folder for newsletter output")
 
 func main() {
 	flag.Parse()
@@ -29,8 +28,10 @@ func main() {
 		panic(err)
 	}
 
+	fmt.Printf("Creating newsletter %03d\n", number)
 	nl := &Newsletter{Number: number}
 
+	fmt.Print("Pulling data..\n")
 	err = nl.LoadData(DataSources{
 		EventsURL:       os.Getenv("EVENTS_URL"),
 		JobsURL:         os.Getenv("JOBS_URL"),
@@ -40,11 +41,21 @@ func main() {
 		panic(err)
 	}
 
-	// err = nl.Render(outFile)
-	err = nl.Render(os.Stdout)
+	outFileName := filepath.Join(*out, fmt.Sprintf("newsletter-%03d.md", nl.Number))
+	fmt.Printf("Creating %s\n", outFileName)
+
+	outFile, err := os.Create(outFileName)
 	if err != nil {
 		panic(err)
 	}
+	defer outFile.Close()
+
+	err = nl.Render(outFile)
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Print("Done!\n")
 }
 
 // Reads the list of files, checks them for valid newsletter filename format,
