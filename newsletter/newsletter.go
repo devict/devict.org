@@ -14,11 +14,46 @@ type Newsletter struct {
 	Volunteering []Volunteering
 }
 
+// LoadData pulls all the necessary data for the Newsletter.
+func (nl Newsletter) LoadData() error {
+	err := nl.loadEvents()
+	if err != nil {
+		return err
+	}
+	err = nl.loadJobs()
+	if err != nil {
+		return err
+	}
+	err = nl.loadVolunteering()
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
 func (nl Newsletter) loadEvents() error {
 	events, err := EventsFromMeetup(meetupURL)
 	if err != nil {
 		return err
 	}
 	nl.Events = events
+	return nil
+}
+
+func (nl Newsletter) loadJobs() error {
+	jobs, err := JobsFromGoogleSheet(jobsURL)
+	if err != nil {
+		return err
+	}
+	nl.Jobs = jobs
+	return nil
+}
+
+func (nl Newsletter) loadVolunteering() error {
+	volunteering, err := VolunteeringFromGoogleSheet(volunteeringURL)
+	if err != nil {
+		return err
+	}
+	nl.Volunteering = volunteering
 	return nil
 }
