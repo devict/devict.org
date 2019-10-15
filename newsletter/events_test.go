@@ -34,6 +34,7 @@ func Test_eventFromMeetupEvent(t *testing.T) {
 				},
 				Time:      1571097600000,
 				UTCOffset: -18000000,
+				Link:      "https://meetup.com/fake/event/url",
 			},
 			want: Event{
 				Name:              "Some Event",
@@ -41,6 +42,7 @@ func Test_eventFromMeetupEvent(t *testing.T) {
 				Location:          "The Labor Party\n216 N Mosley St\nWichita, KS, 67202",
 				SeriesID:          123,
 				SeriesDescription: "This Meetup repeats every Monday.",
+				Link:              "https://meetup.com/fake/event/url",
 			},
 		},
 	}
