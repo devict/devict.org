@@ -9,12 +9,6 @@ import (
 	"github.com/pkg/errors"
 )
 
-var (
-	meetupURL       = "https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=devICT&limited_events=false&fields=series&status=upcoming&page=20"
-	jobsURL         = ""
-	volunteeringURL = ""
-)
-
 // Newsletter is the main data structure we're building here.
 type Newsletter struct {
 	Number       int
@@ -23,25 +17,33 @@ type Newsletter struct {
 	Volunteering []Volunteering
 }
 
+// DataSources tells the newsletter LoadData function wheere to
+// load the data from.
+type DataSources struct {
+	EventsURL       string
+	JobsURL         string
+	VolunteeringURL string
+}
+
 // LoadData pulls all the necessary data for the Newsletter.
-func (nl Newsletter) LoadData() error {
-	err := nl.loadEvents()
+func (nl *Newsletter) LoadData(sources DataSources) error {
+	err := nl.loadEvents(sources.EventsURL)
 	if err != nil {
 		return err
 	}
-	err = nl.loadJobs()
+	err = nl.loadJobs(sources.JobsURL)
 	if err != nil {
 		return err
 	}
-	err = nl.loadVolunteering()
+	err = nl.loadVolunteering(sources.VolunteeringURL)
 	if err != nil {
 		return err
 	}
 	return nil
 }
 
-func (nl Newsletter) loadEvents() error {
-	events, err := EventsFromMeetup(meetupURL)
+func (nl *Newsletter) loadEvents(url string) error {
+	events, err := EventsFromMeetup(url)
 	if err != nil {
 		return err
 	}
@@ -49,8 +51,8 @@ func (nl Newsletter) loadEvents() error {
 	return nil
 }
 
-func (nl Newsletter) loadJobs() error {
-	jobs, err := JobsFromGoogleSheet(jobsURL)
+func (nl *Newsletter) loadJobs(url string) error {
+	jobs, err := JobsFromGoogleSheet(url)
 	if err != nil {
 		return err
 	}
@@ -58,8 +60,8 @@ func (nl Newsletter) loadJobs() error {
 	return nil
 }
 
-func (nl Newsletter) loadVolunteering() error {
-	volunteering, err := VolunteeringFromGoogleSheet(volunteeringURL)
+func (nl *Newsletter) loadVolunteering(url string) error {
+	volunteering, err := VolunteeringFromGoogleSheet(url)
 	if err != nil {
 		return err
 	}
@@ -75,7 +77,7 @@ type templateData struct {
 }
 
 // Render turns the Newsletter into markdown.
-func (nl Newsletter) Render(w io.Writer) error {
+func (nl *Newsletter) Render(w io.Writer) error {
 	tmpl, err := template.New("template.md").Funcs(template.FuncMap{
 		"dateFormat": func(t time.Time) string {
 			return t.Format("Monday, 01/02/2006 @ 3PM")
