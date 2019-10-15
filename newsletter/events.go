@@ -17,6 +17,7 @@ type Event struct {
 	SeriesDescription string
 	Time              time.Time
 	Location          string
+	Link              string
 }
 
 type meetupResponse struct {
@@ -29,6 +30,7 @@ type meetupEvent struct {
 	Venue     meetupVenue  `json:"venue"`
 	Time      int          `json:"time"`
 	UTCOffset int          `json:"utc_offset"`
+	Link      string       `json:"event_url"`
 }
 
 type meetupSeries struct {
@@ -72,24 +74,24 @@ func EventsFromMeetup(url string) ([]Event, error) {
 }
 
 func eventFromMeetupEvent(mEvent meetupEvent) Event {
-	event := Event{Name: mEvent.Name}
-
 	utc, _ := time.LoadLocation("UTC")
 	seconds := (mEvent.Time + mEvent.UTCOffset) / 1000
-	event.Time = time.Unix(int64(seconds), 0).In(utc)
 
-	event.Location = fmt.Sprintf(
-		"%s\n%s\n%s, %s, %s",
-		mEvent.Venue.Name,
-		mEvent.Venue.Address,
-		mEvent.Venue.City,
-		mEvent.Venue.State,
-		mEvent.Venue.Zip,
-	)
-	event.SeriesID = mEvent.Series.ID
-	event.SeriesDescription = mEvent.Series.Description
-
-	return event
+	return Event{
+		Name: mEvent.Name,
+		Link: mEvent.Link,
+		Time: time.Unix(int64(seconds), 0).In(utc),
+		Location: fmt.Sprintf(
+			"%s\n%s\n%s, %s, %s",
+			mEvent.Venue.Name,
+			mEvent.Venue.Address,
+			mEvent.Venue.City,
+			mEvent.Venue.State,
+			mEvent.Venue.Zip,
+		),
+		SeriesID:          mEvent.Series.ID,
+		SeriesDescription: mEvent.Series.Description,
+	}
 }
 
 func eventsThisMonth(events []Event) []Event {
