@@ -74,13 +74,12 @@ func EventsFromMeetup(url string) ([]Event, error) {
 }
 
 func eventFromMeetupEvent(mEvent meetupEvent) Event {
-	utc, _ := time.LoadLocation("UTC")
 	seconds := (mEvent.Time + mEvent.UTCOffset) / 1000
 
 	return Event{
 		Name: mEvent.Name,
 		Link: mEvent.Link,
-		Time: time.Unix(int64(seconds), 0).In(utc),
+		Time: time.Unix(int64(seconds), 0).UTC(),
 		Location: fmt.Sprintf(
 			"%s\n%s\n%s, %s, %s",
 			mEvent.Venue.Name,
@@ -99,14 +98,13 @@ func eventsThisMonth(events []Event) []Event {
 	filtered := make([]Event, 0)
 	seriesIncluded := make(map[int]bool)
 
-	utc, _ := time.LoadLocation("UTC")
 	now := time.Now()
 	daysAhead := 35
-	maxDate := time.Date(now.Year(), now.Month(), now.Day(), 19, 0, 0, 0, utc).AddDate(0, 0, daysAhead)
+	maxDate := time.Date(now.Year(), now.Month(), now.Day(), 19, 0, 0, 0, time.UTC).AddDate(0, 0, daysAhead)
 
 	for _, e := range events {
 		// Check that we haven't included this series yet
-		if _, ok := seriesIncluded[e.SeriesID]; !ok {
+		if !seriesIncluded[e.SeriesID] {
 			// Make sure it's within our date range
 			if !e.Time.After(maxDate) {
 				filtered = append(filtered, e)

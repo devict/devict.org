@@ -9,11 +9,6 @@ import (
 )
 
 func Test_eventFromMeetupEvent(t *testing.T) {
-	loc, err := time.LoadLocation("UTC")
-	if err != nil {
-		t.Errorf("failed to load timezone: %v", err)
-	}
-
 	tests := []struct {
 		in   meetupEvent
 		want Event
@@ -38,7 +33,7 @@ func Test_eventFromMeetupEvent(t *testing.T) {
 			},
 			want: Event{
 				Name:              "Some Event",
-				Time:              time.Date(2019, 10, 14, 19, 0, 0, 0, loc),
+				Time:              time.Date(2019, 10, 14, 19, 0, 0, 0, time.UTC),
 				Location:          "The Labor Party\n216 N Mosley St\nWichita, KS, 67202",
 				SeriesID:          123,
 				SeriesDescription: "This Meetup repeats every Monday.",
@@ -101,7 +96,6 @@ func Test_eventsThisMonth(t *testing.T) {
 }
 
 func todayPlusDays(days int) time.Time {
-	utc, _ := time.LoadLocation("UTC")
 	now := time.Now()
-	return time.Date(now.Year(), now.Month(), now.Day(), 19, 0, 0, 0, utc).AddDate(0, 0, days)
+	return time.Date(now.Year(), now.Month(), now.Day(), 19, 0, 0, 0, time.UTC).AddDate(0, 0, days)
 }

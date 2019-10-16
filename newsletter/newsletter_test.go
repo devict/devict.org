@@ -10,20 +10,18 @@ import (
 )
 
 func TestRender(t *testing.T) {
-	loc, _ := time.LoadLocation("UTC")
-
 	nl := Newsletter{
 		Number: 1,
 		Events: []Event{
 			Event{
 				Name: "Code & Coffee",
 				Link: "https://devict.org/codeandcoffee/01",
-				Time: time.Date(2019, 10, 17, 7, 0, 0, 0, loc),
+				Time: time.Date(2019, 10, 17, 7, 0, 0, 0, time.UTC),
 			},
 			Event{
 				Name: "devICT Presents",
 				Link: "https://devict.org/devictpresents/01",
-				Time: time.Date(2019, 10, 17, 19, 0, 0, 0, loc),
+				Time: time.Date(2019, 10, 17, 19, 0, 0, 0, time.UTC),
 			},
 		},
 		Jobs: []Job{
