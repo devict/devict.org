@@ -55,6 +55,10 @@ func main() {
 		panic(err)
 	}
 
+	if err := outFile.Close(); err != nil {
+		panic(err)
+	}
+
 	fmt.Print("Done!\n")
 }
 
