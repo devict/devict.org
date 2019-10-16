@@ -12,6 +12,7 @@ import (
 // Newsletter is the main data structure we're building here.
 type Newsletter struct {
 	Number       int
+	Date         string
 	Events       []Event
 	Jobs         []Job
 	Volunteering []Volunteering
@@ -71,6 +72,7 @@ func (nl *Newsletter) loadVolunteering(url string) error {
 
 type templateData struct {
 	Number       string
+	Date         string
 	Events       []Event
 	Jobs         []Job
 	Volunteering []Volunteering
@@ -90,6 +92,7 @@ func (nl *Newsletter) Render(w io.Writer) error {
 
 	return tmpl.Execute(w, templateData{
 		Number:       fmt.Sprintf("%03d", nl.Number),
+		Date:         nl.Date,
 		Events:       nl.Events,
 		Jobs:         nl.Jobs,
 		Volunteering: nl.Volunteering,

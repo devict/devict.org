@@ -12,6 +12,7 @@ import (
 func TestRender(t *testing.T) {
 	nl := Newsletter{
 		Number: 1,
+		Date:   "2019-10-26",
 		Events: []Event{
 			Event{
 				Name: "Code & Coffee",
@@ -48,6 +49,10 @@ func TestRender(t *testing.T) {
 
 	out := b.Bytes()
 	expect := `
++++
+title = "devICT Newsletter: 001"
+date = "2019-10-26"
++++
 # devICT Newsletter: 001
 
 ...

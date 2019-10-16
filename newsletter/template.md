@@ -1,3 +1,7 @@
++++
+title = "devICT Newsletter: {{.Number}}"
+date = "{{.Date}}"
++++
 # devICT Newsletter: {{.Number}}
 
 ...

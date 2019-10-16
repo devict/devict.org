@@ -8,6 +8,7 @@ import (
 	"path/filepath"
 	"regexp"
 	"strconv"
+	"time"
 
 	"github.com/joho/godotenv"
 )
@@ -29,7 +30,10 @@ func main() {
 	}
 
 	fmt.Printf("Creating newsletter %03d\n", number)
-	nl := &Newsletter{Number: number}
+	nl := &Newsletter{
+		Number: number,
+		Date:   time.Now().Format("2006-01-02"),
+	}
 
 	fmt.Print("Pulling data..\n")
 	err = nl.LoadData(DataSources{
