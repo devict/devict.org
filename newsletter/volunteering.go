@@ -24,13 +24,13 @@ func VolunteeringFromGoogleSheet(url string) ([]Volunteering, error) {
 	// Pull from googl sheets
 	resp, err := http.Get(url)
 	if err != nil {
-		return []Volunteering{}, errors.Wrap(err, "failed to get volunteering opportunities csv")
+		return nil, errors.Wrap(err, "failed to get volunteering opportunities csv")
 	}
 
 	// Read as a csv
 	csvContent, err := csv.NewReader(resp.Body).ReadAll()
 	if err != nil {
-		return []Volunteering{}, errors.Wrap(err, "failed reading response body")
+		return nil, errors.Wrap(err, "failed reading response body")
 	}
 
 	// Drop the header and parse the rest

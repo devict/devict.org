@@ -22,13 +22,13 @@ func JobsFromGoogleSheet(url string) ([]Job, error) {
 	// Pull from googl sheets
 	resp, err := http.Get(url)
 	if err != nil {
-		return []Job{}, errors.Wrap(err, "failed to get job opportunities csv")
+		return nil, errors.Wrap(err, "failed to get job opportunities csv")
 	}
 
 	// Read as a csv
 	csvContent, err := csv.NewReader(resp.Body).ReadAll()
 	if err != nil {
-		return []Job{}, errors.Wrap(err, "failed reading response body")
+		return nil, errors.Wrap(err, "failed reading response body")
 	}
 
 	// Drop the header and parse the rest
