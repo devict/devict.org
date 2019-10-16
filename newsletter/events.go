@@ -54,6 +54,11 @@ func EventsFromMeetup(url string) ([]Event, error) {
 	if err != nil {
 		return events, errors.Wrap(err, "failed http request")
 	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		return nil, fmt.Errorf("unsuccessful http response (%v)", resp.StatusCode)
+	}
 
 	respBody, err := ioutil.ReadAll(resp.Body)
 	if err != nil {

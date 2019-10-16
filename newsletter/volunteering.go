@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/csv"
+	"fmt"
 	"net/http"
 
 	"github.com/pkg/errors"
@@ -25,6 +26,11 @@ func VolunteeringFromGoogleSheet(url string) ([]Volunteering, error) {
 	resp, err := http.Get(url)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to get volunteering opportunities csv")
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		return nil, fmt.Errorf("unsuccessful http response (%v)", resp.StatusCode)
 	}
 
 	// Read as a csv
