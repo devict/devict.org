@@ -8,7 +8,8 @@ date = "{{.Date}}"
 
 ## Events
 
-{{range .Events}}- [{{.Name}}]({{.Link}}): {{dateFormat .Time}}
+{{range .Events}}- [{{.Name}}]({{.Link}}): {{dateFormat .Time}}{{if .SeriesID}}
+  - {{.SeriesDescription}}{{end}}
 {{end}}
 ## Job Postings
 

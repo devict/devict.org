@@ -15,14 +15,18 @@ func TestRender(t *testing.T) {
 		Date:   "2019-10-26",
 		Events: []Event{
 			Event{
-				Name: "Code & Coffee",
-				Link: "https://devict.org/codeandcoffee/01",
-				Time: time.Date(2019, 10, 17, 7, 0, 0, 0, time.UTC),
+				Name:              "Code & Coffee",
+				Link:              "https://devict.org/codeandcoffee/01",
+				Time:              time.Date(2019, 10, 17, 7, 0, 0, 0, time.UTC),
+				SeriesID:          123,
+				SeriesDescription: "This Meetup repeats every week on Thursday",
 			},
 			Event{
-				Name: "devICT Presents",
-				Link: "https://devict.org/devictpresents/01",
-				Time: time.Date(2019, 10, 17, 19, 0, 0, 0, time.UTC),
+				Name:              "devICT Presents",
+				Link:              "https://devict.org/devictpresents/01",
+				Time:              time.Date(2019, 10, 17, 19, 0, 0, 0, time.UTC),
+				SeriesID:          123,
+				SeriesDescription: "This Meetup repeats every month on the last Thursday",
 			},
 		},
 		Jobs: []Job{
@@ -60,7 +64,9 @@ date = "2019-10-26"
 ## Events
 
 - [Code & Coffee](https://devict.org/codeandcoffee/01): Thursday, 10/17/2019 @ 7AM
+  - This Meetup repeats every week on Thursday
 - [devICT Presents](https://devict.org/devictpresents/01): Thursday, 10/17/2019 @ 7PM
+  - This Meetup repeats every month on the last Thursday
 
 ## Job Postings
 
