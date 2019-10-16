@@ -75,7 +75,7 @@ func EventsFromMeetup(url string) ([]Event, error) {
 		events = append(events, eventFromMeetupEvent(e))
 	}
 
-	return events, nil
+	return eventsThisMonth(events), nil
 }
 
 func eventFromMeetupEvent(mEvent meetupEvent) Event {
@@ -108,15 +108,12 @@ func eventsThisMonth(events []Event) []Event {
 	maxDate := time.Date(now.Year(), now.Month(), now.Day(), 19, 0, 0, 0, time.UTC).AddDate(0, 0, daysAhead)
 
 	for _, e := range events {
-		// Check that we haven't included this series yet
-		if !seriesIncluded[e.SeriesID] {
-			// Make sure it's within our date range
-			if !e.Time.After(maxDate) {
-				filtered = append(filtered, e)
-				seriesIncluded[e.SeriesID] = true
-			}
+		// Check that we haven't included this series yet, and it's within date range
+		if seriesIncluded[e.SeriesID] || e.Time.After(maxDate) {
+			continue
 		}
-
+		filtered = append(filtered, e)
+		seriesIncluded[e.SeriesID] = true
 	}
 
 	return filtered
