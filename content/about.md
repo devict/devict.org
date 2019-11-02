@@ -28,8 +28,8 @@ The devICT Institute is ran by this Board of Directors:
 <div class="leadership row">
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
-      <img src="/images/leadership/jacob-walker.png" class="figure-img img-responsive img-rounded" alt="Image of Jacob Walker" />
-      <figcaption class="figure-caption">Jacob Walker - President<br /><a href="https://devict.slack.com/messages/@jcbwlkr">Contact on Slack</a> <a href="tel:1-316-461-1127">316.461.1127</a></figcaption>
+      <img src="/images/leadership/george-shaw.jpg" class="figure-img img-responsive img-rounded" alt="Image of George Shaw" />
+      <figcaption class="figure-caption">George Shaw - President<br /><a href="https://devict.slack.com/messages/@@george.shaw">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
@@ -40,14 +40,14 @@ The devICT Institute is ran by this Board of Directors:
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
-      <img src="/images/leadership/richard-sharp.jpg" class="figure-img img-responsive img-rounded" alt="Image of Richard Sharp" />
-      <figcaption class="figure-caption">Richard Sharp - Secretary<br /><a href="https://devict.slack.com/messages/@rsharp">Contact on Slack</a> <a href="tel:1-316-300-0047">316.300.0047</a></figcaption>
+      <img src="/images/leadership/casey-woolfolk.jpg" class="figure-img img-responsive img-rounded" alt="Image of Casey Woolfolk" />
+      <figcaption class="figure-caption">Casey Woolfolk - Treasurer<br /><a href="https://devict.slack.com/messages/@caseywoolfolk">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
-      <img src="/images/leadership/casey-woolfolk.jpg" class="figure-img img-responsive img-rounded" alt="Image of Casey Woolfolk" />
-      <figcaption class="figure-caption">Casey Woolfolk - Treasurer<br /><a href="https://devict.slack.com/messages/@caseywoolfolk">Contact on Slack</a></figcaption>
+      <img src="/images/leadership/tonya-riepe.jpg" class="figure-img img-responsive img-rounded" alt="Image of Tonya Riepe" />
+      <figcaption class="figure-caption">Tonya Riepe - Social Media Manager<br /><a href="https://devict.slack.com/messages/@triepe">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
@@ -60,6 +60,45 @@ The devICT Institute is ran by this Board of Directors:
     <figure class="figure">
       <img src="/images/leadership/seth-etter.jpg" class="figure-img img-responsive img-rounded" alt="Image of Seth Etter" />
       <figcaption class="figure-caption">Seth Etter - Director<br /><a href="https://devict.slack.com/messages/@sethetter">Contact on Slack</a></figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <figure class="figure">
+      <img src="/images/leadership/jacob-walker.png" class="figure-img img-responsive img-rounded" alt="Image of Jacob Walker" />
+      <figcaption class="figure-caption">Jacob Walker - Director<br /><a href="https://devict.slack.com/messages/@jcbwlkr">Contact on Slack</a> <a href="tel:1-316-461-1127">316.461.1127</a></figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <figure class="figure">
+      <img src="/images/leadership/nic-wentling.jpg" class="figure-img img-responsive img-rounded" alt="Image of Nic Wentling" />
+      <figcaption class="figure-caption">Nic Wentling - Director<br /><a href="https://devict.slack.com/messages/@nwentling5">Contact on Slack</a></figcaption>
+    </figure>
+  </div>
+</div>
+<div class="leadership row">
+  <div class="col-sm-6 col-md-4">
+    <figure class="figure">
+      <figcaption class="figure-caption">Kevin Elledge - Director<br /><a href="https://devict.slack.com/messages/@kelledge">Contact on Slack</a></figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <figure class="figure">
+      <figcaption class="figure-caption">Jacob Hobbie - Secretary, GSuite Administrator<br /><a href="https://devict.slack.com/messages/@hobbiej">Contact on Slack</a></figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <figure class="figure">
+      <figcaption class="figure-caption">Michael Neth - Director<br /><a href="https://devict.slack.com/messages/@infernocloud">Contact on Slack</a></figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <figure class="figure">
+      <figcaption class="figure-caption">Michael Dorian - Botmaster<br /><a href="https://devict.slack.com/messages/@doby162">Contact on Slack</a></figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <figure class="figure">
+      <figcaption class="figure-caption">Chris Lofland - Webmaster<br /><a href="https://devict.slack.com/messages/@chrisl8">Contact on Slack</a></figcaption>
     </figure>
   </div>
 </div>
@@ -78,12 +117,6 @@ generally keep things running.
   </div>
   <div class="col-sm-6 col-md-3">
     <figure class="figure">
-      <img src="/images/leadership/tonya-riepe.jpg" class="figure-img img-responsive img-rounded" alt="Image of Tonya Riepe" />
-      <figcaption class="figure-caption">Tonya Riepe - devICT Presents</figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <figure class="figure">
       <img src="/images/leadership/jim-rice.jpg" class="figure-img img-responsive img-rounded" alt="Image of Jim Rice" />
       <figcaption class="figure-caption">Jim Rice - ICT Game Jam</figcaption>
     </figure>
@@ -92,6 +125,19 @@ generally keep things running.
     <figure class="figure">
       <img src="/images/leadership/brian-foster.jpg" class="figure-img img-responsive img-rounded" alt="Image of Brian Foster" />
       <figcaption class="figure-caption">Brian Foster - GameDev Potluck</figcaption>
+    </figure>
+  </div>
+</div>
+
+<hr/>
+
+#### Former Board Members
+
+<div class="leadership row">
+  <div class="col-sm-6 col-md-2">
+    <figure class="figure">
+      <img src="/images/leadership/richard-sharp.jpg" class="figure-img img-responsive img-rounded" alt="Image of Richard Sharp" />
+      <figcaption class="figure-caption">Richard Sharp - Secretary: 2018 - 2019</figcaption>
     </figure>
   </div>
 </div>
