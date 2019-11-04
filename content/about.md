@@ -74,13 +74,14 @@ The devICT Institute is ran by this Board of Directors:
       <figcaption class="figure-caption">Nic Wentling - Director<br /><a href="https://devict.slack.com/messages/@nwentling5">Contact on Slack</a></figcaption>
     </figure>
   </div>
-</div>
-<div class="leadership row">
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
+      <img src="/images/leadership/kevin-elledge.jpg" class="figure-img img-responsive img-rounded" alt="Image of Kevin Elledge" />
       <figcaption class="figure-caption">Kevin Elledge - Director<br /><a href="https://devict.slack.com/messages/@kelledge">Contact on Slack</a></figcaption>
     </figure>
   </div>
+</div>
+<div class="leadership row">
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
       <figcaption class="figure-caption">Jacob Hobbie - Secretary, GSuite Administrator<br /><a href="https://devict.slack.com/messages/@hobbiej">Contact on Slack</a></figcaption>
