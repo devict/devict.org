@@ -88,7 +88,7 @@ The devICT Institute is ran by this Board of Directors:
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
-      <img src="/images/leadership/christen-lofland.jpg" image-orientation: from-image; class="figure-img img-responsive img-rounded" alt="Image of Christen Lofland" />
+      <img src="/images/leadership/christen-lofland.jpg" class="figure-img img-responsive img-rounded" alt="Image of Christen Lofland" />
       <figcaption class="figure-caption">Christen Lofland - Webmaster<br /><a href="https://devict.slack.com/messages/@chrisl8">Contact on Slack</a></figcaption>
     </figure>
   </div>
