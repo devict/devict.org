@@ -80,16 +80,16 @@ The devICT Institute is ran by this Board of Directors:
       <figcaption class="figure-caption">Christen Lofland - Webmaster<br /><a href="https://devict.slack.com/messages/@chrisl8">Contact on Slack</a></figcaption>
     </figure>
   </div>
-</div>
-<div class="leadership row">
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
-      <figcaption class="figure-caption">Jacob Hobbie - Secretary, GSuite Administrator<br /><a href="https://devict.slack.com/messages/@hobbiej">Contact on Slack</a></figcaption>
+      <img src="/images/leadership/michael-dorian.jpg" class="figure-img img-responsive img-rounded" alt="Image of Michael Dorian" />
+      <figcaption class="figure-caption">Michael Dorian - Botmaster<br /><a href="https://devict.slack.com/messages/@doby162">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
+      <img src="/images/leadership/jacob-hobbie.png" class="figure-img img-responsive img-rounded" alt="Image of Jacob Hobbie" />
     <figure class="figure">
-      <figcaption class="figure-caption">Michael Dorian - Botmaster<br /><a href="https://devict.slack.com/messages/@doby162">Contact on Slack</a></figcaption>
+      <figcaption class="figure-caption">Jacob Hobbie - Secretary, GSuite Administrator<br /><a href="https://devict.slack.com/messages/@hobbiej">Contact on Slack</a></figcaption>
     </figure>
   </div>
 </div>
