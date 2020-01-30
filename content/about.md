@@ -52,20 +52,8 @@ The devICT Institute is ran by this Board of Directors:
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
-      <img src="/images/leadership/sandip-southekal.jpg" class="figure-img img-responsive img-rounded" alt="Image of Sandip Southekal" />
-      <figcaption class="figure-caption">Sandip Southekal - Director<br /><a href="https://devict.slack.com/messages/@sandip">Contact on Slack</a></figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <figure class="figure">
       <img src="/images/leadership/seth-etter.jpg" class="figure-img img-responsive img-rounded" alt="Image of Seth Etter" />
       <figcaption class="figure-caption">Seth Etter - Director<br /><a href="https://devict.slack.com/messages/@sethetter">Contact on Slack</a></figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <figure class="figure">
-      <img src="/images/leadership/jacob-walker.png" class="figure-img img-responsive img-rounded" alt="Image of Jacob Walker" />
-      <figcaption class="figure-caption">Jacob Walker - Director<br /><a href="https://devict.slack.com/messages/@jcbwlkr">Contact on Slack</a> <a href="tel:1-316-461-1127">316.461.1127</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
@@ -139,8 +127,20 @@ generally keep things running.
 <div class="leadership row">
   <div class="col-sm-6 col-md-2">
     <figure class="figure">
+      <img src="/images/leadership/jacob-walker.png" class="figure-img img-responsive img-rounded" alt="Image of Jacob Walker" />
+      <figcaption class="figure-caption">Jacob Walker</figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-2">
+    <figure class="figure">
+      <img src="/images/leadership/sandip-southekal.jpg" class="figure-img img-responsive img-rounded" alt="Image of Sandip Southekal" />
+      <figcaption class="figure-caption">Sandip Southekal</figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-2">
+    <figure class="figure">
       <img src="/images/leadership/richard-sharp.jpg" class="figure-img img-responsive img-rounded" alt="Image of Richard Sharp" />
-      <figcaption class="figure-caption">Richard Sharp - Secretary: 2018 - 2019</figcaption>
+      <figcaption class="figure-caption">Richard Sharp</figcaption>
     </figure>
   </div>
 </div>
