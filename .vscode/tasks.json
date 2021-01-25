@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Hugo Server",
+            "command": "hugo server",
+            "type": "shell",
+            "args": [],
+            "problemMatcher": {
+                "base": "$go",
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "Building sites",
+                    "endsPattern": "Web Server is available"
+                }
+            },
+            "presentation": {
+                "group": "build",
+                "reveal": "always"
+            },
+            "isBackground": true,
+            "group": "build"
+        }
+    ]
+}

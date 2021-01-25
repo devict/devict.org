@@ -22,6 +22,10 @@ With hugo installed run `hugo server`. The site will be visible at
 http://localhost:1313 with LiveReload enabled so changes will be built
 and displayed instantly.
 
+You may also [create a GitHub Codespace][create-codespace] and run the `Hugo Build` task from the dev environment. Ports will forward automatically, so you can visit http://localhost:1313 as with other methods.
+
+[create-codespace]: https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/creating-a-codespace "Creating a Codespace"
+
 ### Deployment
 
 Merges/commits to the `master` branch trigger a build on [Travis CI][travis].
