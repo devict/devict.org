@@ -69,9 +69,15 @@ The devICT Institute is ran by this Board of Directors:
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
-      <img src="/images/leadership/jacob-hobbie.png" class="figure-img img-responsive img-rounded" alt="Image of Jacob Hobbie" />
     <figure class="figure">
+      <img src="/images/leadership/jacob-hobbie.png" class="figure-img img-responsive img-rounded" alt="Image of Jacob Hobbie" />
       <figcaption class="figure-caption">Jacob Hobbie - Treasurer, GSuite Administrator<br /><a href="https://devict.slack.com/messages/@hobbiej">Contact on Slack</a></figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <figure class="figure">
+      <img src="/images/leadership/andrew-siegman.jpg" class="figure-img img-responsive img-rounded" alt="Image of Andrew Siegman" />
+      <figcaption class="figure-caption">Andrew Siegman - Volunteer Coordinator<br /><a href="https://devict.slack.com/messages/D2TBT0PNZ">Contact on Slack</a></figcaption>
     </figure>
   </div>
 </div>
