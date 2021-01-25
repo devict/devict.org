@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/devict/devict.org.svg)][travis]
+
 # devict.org
 
 This is the source repository for [devict.org](http://devict.org). It is built
