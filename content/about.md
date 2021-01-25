@@ -29,7 +29,7 @@ The devICT Institute is ran by this Board of Directors:
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
       <img src="/images/leadership/george-shaw.jpg" class="figure-img img-responsive img-rounded" alt="Image of George Shaw" />
-      <figcaption class="figure-caption">George Shaw - President<br /><a href="https://devict.slack.com/messages/@@george.shaw">Contact on Slack</a></figcaption>
+      <figcaption class="figure-caption">George Shaw - President<br /><a href="https://devict.slack.com/messages/@george.shaw">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
@@ -78,6 +78,11 @@ The devICT Institute is ran by this Board of Directors:
     <figure class="figure">
       <img src="/images/leadership/andrew-siegman.jpg" class="figure-img img-responsive img-rounded" alt="Image of Andrew Siegman" />
       <figcaption class="figure-caption">Andrew Siegman - Volunteer Coordinator<br /><a href="https://devict.slack.com/messages/@blunket">Contact on Slack</a></figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <figure class="figure">
+      <figcaption class="figure-caption">Jake Suellentrop - Secretary<br /><a href="https://devict.slack.com/messages/@jake">Contact on Slack</a></figcaption>
     </figure>
   </div>
 </div>
