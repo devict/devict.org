@@ -34,24 +34,6 @@ The devICT Institute is ran by this Board of Directors:
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
-      <img src="/images/leadership/julia-winegeart.jpg" class="figure-img img-responsive img-rounded" alt="Image of Julia Winegeart" />
-      <figcaption class="figure-caption">Julia Winegeart - Vice President<br /><a href="https://devict.slack.com/messages/@juliabwinegeart">Contact on Slack</a></figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <figure class="figure">
-      <img src="/images/leadership/casey-woolfolk.jpg" class="figure-img img-responsive img-rounded" alt="Image of Casey Woolfolk" />
-      <figcaption class="figure-caption">Casey Woolfolk - Treasurer<br /><a href="https://devict.slack.com/messages/@caseywoolfolk">Contact on Slack</a></figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <figure class="figure">
-      <img src="/images/leadership/tonya-riepe.jpg" class="figure-img img-responsive img-rounded" alt="Image of Tonya Riepe" />
-      <figcaption class="figure-caption">Tonya Riepe - Social Media Manager<br /><a href="https://devict.slack.com/messages/@triepe">Contact on Slack</a></figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <figure class="figure">
       <img src="/images/leadership/seth-etter.jpg" class="figure-img img-responsive img-rounded" alt="Image of Seth Etter" />
       <figcaption class="figure-caption">Seth Etter - Director<br /><a href="https://devict.slack.com/messages/@sethetter">Contact on Slack</a></figcaption>
     </figure>
@@ -141,6 +123,24 @@ generally keep things running.
     <figure class="figure">
       <img src="/images/leadership/richard-sharp.jpg" class="figure-img img-responsive img-rounded" alt="Image of Richard Sharp" />
       <figcaption class="figure-caption">Richard Sharp</figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-2">
+    <figure class="figure">
+      <img src="/images/leadership/julia-winegeart.jpg" class="figure-img img-responsive img-rounded" alt="Image of Julia Winegeart" />
+      <figcaption class="figure-caption">Julia Winegeart</figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-2">
+    <figure class="figure">
+      <img src="/images/leadership/casey-woolfolk.jpg" class="figure-img img-responsive img-rounded" alt="Image of Casey Woolfolk" />
+      <figcaption class="figure-caption">Casey Woolfolk</figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-2">
+    <figure class="figure">
+      <img src="/images/leadership/tonya-riepe.jpg" class="figure-img img-responsive img-rounded" alt="Image of Tonya Riepe" />
+      <figcaption class="figure-caption">Tonya Riepe</figcaption>
     </figure>
   </div>
 </div>
