@@ -82,6 +82,7 @@ The devICT Institute is ran by this Board of Directors:
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
+      <img src="/images/leadership/jake-suellentrop.jpg" class="figure-img img-responsive img-rounded" alt="Image of Jake Suellentrop" />
       <figcaption class="figure-caption">Jake Suellentrop - Secretary<br /><a href="https://devict.slack.com/messages/@jake">Contact on Slack</a></figcaption>
     </figure>
   </div>
