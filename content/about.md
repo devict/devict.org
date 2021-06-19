@@ -4,6 +4,7 @@ title = "About devICT"
 +++
 
 ## A community for Wichita developers
+
 devICT is a community for software developers in Wichita, KS. We are a group of
 like-minded technologists gathering to help each other better ourselves as
 professionals and hobbyists alike. devICT welcomes front and back web devs,
@@ -28,26 +29,20 @@ The devICT Institute is ran by this Board of Directors:
 <div class="leadership row">
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
-      <img src="/images/leadership/george-shaw.jpg" class="figure-img img-responsive img-rounded" alt="Image of George Shaw" />
-      <figcaption class="figure-caption">George Shaw - President<br /><a href="https://devict.slack.com/messages/@george.shaw">Contact on Slack</a></figcaption>
+      <img src="/images/leadership/seth-etter.jpg" class="figure-img img-responsive img-rounded" alt="Image of Seth Etter" />
+      <figcaption class="figure-caption">Seth Etter - President<br /><a href="https://devict.slack.com/messages/@sethetter">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
-      <img src="/images/leadership/seth-etter.jpg" class="figure-img img-responsive img-rounded" alt="Image of Seth Etter" />
-      <figcaption class="figure-caption">Seth Etter - Director<br /><a href="https://devict.slack.com/messages/@sethetter">Contact on Slack</a></figcaption>
+      <img src="/images/leadership/kevin-elledge.jpg" class="figure-img img-responsive img-rounded" alt="Image of Kevin Elledge" />
+      <figcaption class="figure-caption">Kevin Elledge - Vice President<br /><a href="https://devict.slack.com/messages/@kelledge">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
       <img src="/images/leadership/nic-wentling.jpg" class="figure-img img-responsive img-rounded" alt="Image of Nic Wentling" />
       <figcaption class="figure-caption">Nic Wentling - Director<br /><a href="https://devict.slack.com/messages/@nwentling5">Contact on Slack</a></figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <figure class="figure">
-      <img src="/images/leadership/kevin-elledge.jpg" class="figure-img img-responsive img-rounded" alt="Image of Kevin Elledge" />
-      <figcaption class="figure-caption">Kevin Elledge - Director<br /><a href="https://devict.slack.com/messages/@kelledge">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
@@ -123,6 +118,12 @@ generally keep things running.
     <figure class="figure">
       <img src="/images/leadership/jacob-walker.png" class="figure-img img-responsive img-rounded" alt="Image of Jacob Walker" />
       <figcaption class="figure-caption">Jacob Walker</figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-2">
+    <figure class="figure">
+      <img src="/images/leadership/george-shaw.jpg" class="figure-img img-responsive img-rounded" alt="Image of George Shaw" />
+      <figcaption class="figure-caption">George Shaw</figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-2">
