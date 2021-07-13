@@ -41,8 +41,20 @@ The devICT Institute is ran by this Board of Directors:
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
-      <img src="/images/leadership/nic-wentling.jpg" class="figure-img img-responsive img-rounded" alt="Image of Nic Wentling" />
-      <figcaption class="figure-caption">Nic Wentling - Director<br /><a href="https://devict.slack.com/messages/@nwentling5">Contact on Slack</a></figcaption>
+      <img src="/images/leadership/jacob-hobbie.png" class="figure-img img-responsive img-rounded" alt="Image of Jacob Hobbie" />
+      <figcaption class="figure-caption">Jacob Hobbie - Treasurer<br /><a href="https://devict.slack.com/messages/@hobbiej">Contact on Slack</a></figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <figure class="figure">
+      <img src="/images/leadership/jake-suellentrop.png" class="figure-img img-responsive img-rounded" alt="Image of Jake Suellentrop" />
+      <figcaption class="figure-caption">Jake Suellentrop - Secretary<br /><a href="https://devict.slack.com/messages/@jake">Contact on Slack</a></figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <figure class="figure">
+      <img src="/images/leadership/christen-lofland.jpg" class="figure-img img-responsive img-rounded" alt="Image of Christen Lofland" />
+      <figcaption class="figure-caption">Christen Lofland - Director<br /><a href="https://devict.slack.com/messages/@chrisl8">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-4">
@@ -53,32 +65,8 @@ The devICT Institute is ran by this Board of Directors:
   </div>
   <div class="col-sm-6 col-md-4">
     <figure class="figure">
-      <img src="/images/leadership/christen-lofland.jpg" class="figure-img img-responsive img-rounded" alt="Image of Christen Lofland" />
-      <figcaption class="figure-caption">Christen Lofland - Webmaster<br /><a href="https://devict.slack.com/messages/@chrisl8">Contact on Slack</a></figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <figure class="figure">
       <img src="/images/leadership/michael-dorian.jpg" class="figure-img img-responsive img-rounded" alt="Image of Michael Dorian" />
-      <figcaption class="figure-caption">Michael Dorian - Botmaster<br /><a href="https://devict.slack.com/messages/@doby162">Contact on Slack</a></figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <figure class="figure">
-      <img src="/images/leadership/jacob-hobbie.png" class="figure-img img-responsive img-rounded" alt="Image of Jacob Hobbie" />
-      <figcaption class="figure-caption">Jacob Hobbie - Treasurer, GSuite Administrator<br /><a href="https://devict.slack.com/messages/@hobbiej">Contact on Slack</a></figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <figure class="figure">
-      <img src="/images/leadership/andrew-siegman.jpg" class="figure-img img-responsive img-rounded" alt="Image of Andrew Siegman" />
-      <figcaption class="figure-caption">Andrew Siegman - Volunteer Coordinator<br /><a href="https://devict.slack.com/messages/@blunket">Contact on Slack</a></figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <figure class="figure">
-      <img src="/images/leadership/jake-suellentrop.jpg" class="figure-img img-responsive img-rounded" alt="Image of Jake Suellentrop" />
-      <figcaption class="figure-caption">Jake Suellentrop - Secretary<br /><a href="https://devict.slack.com/messages/@jake">Contact on Slack</a></figcaption>
+      <figcaption class="figure-caption">Michael Dorian - Director<br /><a href="https://devict.slack.com/messages/@doby162">Contact on Slack</a></figcaption>
     </figure>
   </div>
 </div>
