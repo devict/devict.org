@@ -27,43 +27,43 @@ Minutes of our meetings are kept on our [meetings page](/meetings/).
 The devICT Institute is ran by this Board of Directors:
 
 <div class="leadership row">
-  <div class="col-sm-6 col-md-4">
+  <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/seth-etter.jpg" class="figure-img img-responsive img-rounded" alt="Image of Seth Etter" />
       <figcaption class="figure-caption">Seth Etter - President<br /><a href="https://devict.slack.com/messages/@sethetter">Contact on Slack</a></figcaption>
     </figure>
   </div>
-  <div class="col-sm-6 col-md-4">
+  <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/kevin-elledge.jpg" class="figure-img img-responsive img-rounded" alt="Image of Kevin Elledge" />
       <figcaption class="figure-caption">Kevin Elledge - Vice President<br /><a href="https://devict.slack.com/messages/@kelledge">Contact on Slack</a></figcaption>
     </figure>
   </div>
-  <div class="col-sm-6 col-md-4">
+  <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/jacob-hobbie.png" class="figure-img img-responsive img-rounded" alt="Image of Jacob Hobbie" />
       <figcaption class="figure-caption">Jacob Hobbie - Treasurer<br /><a href="https://devict.slack.com/messages/@hobbiej">Contact on Slack</a></figcaption>
     </figure>
   </div>
-  <div class="col-sm-6 col-md-4">
+  <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/jake-suellentrop.png" class="figure-img img-responsive img-rounded" alt="Image of Jake Suellentrop" />
       <figcaption class="figure-caption">Jake Suellentrop - Secretary<br /><a href="https://devict.slack.com/messages/@jake">Contact on Slack</a></figcaption>
     </figure>
   </div>
-  <div class="col-sm-6 col-md-4">
+  <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/christen-lofland.jpg" class="figure-img img-responsive img-rounded" alt="Image of Christen Lofland" />
       <figcaption class="figure-caption">Christen Lofland - Director<br /><a href="https://devict.slack.com/messages/@chrisl8">Contact on Slack</a></figcaption>
     </figure>
   </div>
-  <div class="col-sm-6 col-md-4">
+  <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/michael-neth.jpg" class="figure-img img-responsive img-rounded" alt="Image of Michael Neth" />
       <figcaption class="figure-caption">Michael Neth - Director<br /><a href="https://devict.slack.com/messages/@infernocloud">Contact on Slack</a></figcaption>
     </figure>
   </div>
-  <div class="col-sm-6 col-md-4">
+  <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/michael-dorian.jpg" class="figure-img img-responsive img-rounded" alt="Image of Michael Dorian" />
       <figcaption class="figure-caption">Michael Dorian - Director<br /><a href="https://devict.slack.com/messages/@doby162">Contact on Slack</a></figcaption>
