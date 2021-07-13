@@ -1,4 +1,4 @@
-baseurl = "http://devict.org/"
+baseurl = "https://devict.org/"
 languageCode = "en-us"
 title = "devICT"
 buildFuture = true

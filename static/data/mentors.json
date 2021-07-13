@@ -2,9 +2,14 @@
   {
     "name": "Jacob Walker",
     "username": "jcbwlkr",
-    "avatar": "http://www.gravatar.com/avatar/0ee0ed1d5c1b450c2c76651dd62f38c4.png?s=500",
+    "avatar": "https://www.gravatar.com/avatar/0ee0ed1d5c1b450c2c76651dd62f38c4.png?s=500",
     "skills": [
-      "go", "php", "api", "sql", "linux", "docker"
+      "go",
+      "php",
+      "api",
+      "sql",
+      "linux",
+      "docker"
     ],
     "available": true
   },
@@ -13,7 +18,10 @@
     "username": "juliabwinegeart",
     "avatar": "https://avatars1.githubusercontent.com/u/6324914?v=3&s=466",
     "skills": [
-      "C#", ".NET", "MSSSQL", "coffee"
+      "C#",
+      ".NET",
+      "MSSSQL",
+      "coffee"
     ],
     "available": true
   },
@@ -22,16 +30,18 @@
     "username": "br0xen",
     "avatar": "https://avatars0.githubusercontent.com/u/1273280?v=3&s=466",
     "skills": [
-      "go", "php"
+      "go",
+      "php"
     ],
     "available": true
   },
   {
     "name": "Sandip Southekal",
     "username": "sandip",
-    "avatar": "http://www.gravatar.com/avatar/f20e1f9ae9598ca5d6b1181298f3f787.png?s=500",
+    "avatar": "https://www.gravatar.com/avatar/f20e1f9ae9598ca5d6b1181298f3f787.png?s=500",
     "skills": [
-      "python", "selenium"
+      "python",
+      "selenium"
     ],
     "available": true
   },
@@ -40,16 +50,28 @@
     "username": "cjprieb",
     "avatar": "https://avatars1.githubusercontent.com/u/13191550?v=3&s=466",
     "skills": [
-      "C#", ".NET", "MSSSQL", "Java", "JavaScript", "CSS", "HTML"
+      "C#",
+      ".NET",
+      "MSSSQL",
+      "Java",
+      "JavaScript",
+      "CSS",
+      "HTML"
     ],
     "available": false
   },
   {
-    "name" :"Seth Etter",
+    "name": "Seth Etter",
     "username": "sethetter",
     "avatar": "https://avatars0.githubusercontent.com/u/655500",
     "skills": [
-      "go", "sql", "aws", "docker", "javascript", "node", "api"
+      "go",
+      "sql",
+      "aws",
+      "docker",
+      "javascript",
+      "node",
+      "api"
     ],
     "available": true
   },
@@ -58,7 +80,10 @@
     "username": "gregg",
     "avatar": "https://avatars2.githubusercontent.com/u/16592?v=3&s=460",
     "skills": [
-      "Java", "Groovy/Grails", "React", "HTML"
+      "Java",
+      "Groovy/Grails",
+      "React",
+      "HTML"
     ],
     "available": true
   },
@@ -67,7 +92,16 @@
     "username": "termleech",
     "avatar": "https://avatars3.githubusercontent.com/u/479722?v=3&s=460",
     "skills": [
-      "java", "javascript", "angular", "html", "less / css", "php", "devops", "software architecture", "linux", "api"
+      "java",
+      "javascript",
+      "angular",
+      "html",
+      "less / css",
+      "php",
+      "devops",
+      "software architecture",
+      "linux",
+      "api"
     ],
     "available": true
   },
@@ -76,7 +110,13 @@
     "username": "mattu",
     "avatar": "https://avatars2.githubusercontent.com/u/1033912?v=3&s=460",
     "skills": [
-      "C#", ".NET", "MSSSQL", "Python", "JavaScript", "CSS", "HTML"
+      "C#",
+      ".NET",
+      "MSSSQL",
+      "Python",
+      "JavaScript",
+      "CSS",
+      "HTML"
     ],
     "available": true
   },
@@ -85,7 +125,13 @@
     "username": "michaelspohn",
     "avatar": "https://avatars2.githubusercontent.com/u/6027057?s=460&v=4",
     "skills": [
-      "javascript", "react", "node", "ruby/rails", "front-end tooling", "css", "html"
+      "javascript",
+      "react",
+      "node",
+      "ruby/rails",
+      "front-end tooling",
+      "css",
+      "html"
     ],
     "available": true
   },
@@ -94,7 +140,13 @@
     "username": "skippotter",
     "avatar": "https://avatars0.githubusercontent.com/u/7039470?s=96&v=4",
     "skills": [
-      "perl", "python", "go", "ruby/rails", "linux", "css", "html"
+      "perl",
+      "python",
+      "go",
+      "ruby/rails",
+      "linux",
+      "css",
+      "html"
     ],
     "available": true
   },
@@ -103,7 +155,11 @@
     "username": "blunket",
     "avatar": "https://avatars1.githubusercontent.com/u/17580512?s=460&v=4",
     "skills": [
-      "php", "javascript", "jquery", "css", "html"
+      "php",
+      "javascript",
+      "jquery",
+      "css",
+      "html"
     ],
     "available": true
   },
@@ -112,7 +168,9 @@
     "username": "justynt",
     "avatar": "https://avatars0.githubusercontent.com/u/7116592?s=96&v=4",
     "skills": [
-      "linux","docker","jQuery"
+      "linux",
+      "docker",
+      "jQuery"
     ],
     "available": true
   },
@@ -121,7 +179,18 @@
     "username": "george.shaw",
     "avatar": "https://avatars0.githubusercontent.com/u/30050545?s=460&v=4,",
     "skills": [
-      "html", "css", "javascript", "postgresql", "MySQL", "jQuery", "wordpress", "php", "go", "C++", "api", "web security"
+      "html",
+      "css",
+      "javascript",
+      "postgresql",
+      "MySQL",
+      "jQuery",
+      "wordpress",
+      "php",
+      "go",
+      "C++",
+      "api",
+      "web security"
     ],
     "available": true
   },
@@ -130,7 +199,15 @@
     "username": "kentonh",
     "avatar": "https://avatars2.githubusercontent.com/u/868295?s=460&v=4,",
     "skills": [
-      "html", "css", "javascript", "ruby", "rails", "wordpress", "php", "Scrum", "Product Management"
+      "html",
+      "css",
+      "javascript",
+      "ruby",
+      "rails",
+      "wordpress",
+      "php",
+      "Scrum",
+      "Product Management"
     ],
     "available": true
   },
@@ -139,7 +216,10 @@
     "username": "mpc",
     "avatar": "https://avatars3.githubusercontent.com/u/9451845?s=460&v=4",
     "skills": [
-      "swift", "iOS", "mobile", "database"
+      "swift",
+      "iOS",
+      "mobile",
+      "database"
     ],
     "available": true
   }

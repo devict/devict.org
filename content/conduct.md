@@ -33,7 +33,7 @@ Members asked to stop any harassing behavior are expected to comply immediately.
 Sponsors, organizers, and speakers are also subject to the anti-harassment policy.
 
 This anti-harassment policy is based on the example policy from the [Geek
-Feminism wiki](http://geekfeminism.wikia.com/wiki/Community_anti-harassment),
+Feminism wiki](https://geekfeminism.wikia.com/wiki/Community_anti-harassment),
 created by the Geek Feminism community.
 
 [Report a Code of Conduct Incident](/report/)

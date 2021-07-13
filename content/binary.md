@@ -24,7 +24,7 @@ scripts = [
     </div>
     <div class="col-xs-5 columns">
       <p><strong>Brought to you by..</strong></p>
-      <a href="http://makeict.org" title="MakeICT"><img src="/images/makeict-logo.png"></a>
+      <a href="https://makeict.org" title="MakeICT"><img src="/images/makeict-logo.png"></a>
     </div>
   </div>
 

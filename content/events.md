@@ -6,7 +6,6 @@ scripts = [
 ]
 +++
 <!-- Meetup official Image asset -->
-<!-- http://www.meetup.com/help/customer/portal/articles/1802998-promotional-materials-for-your-meetup-group/ -->
 # <img src="https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/8/f/1/d/highres_454596637.jpeg" width="75" height="75"> Upcoming Events
 
 <div id="loading" class="text-center">
