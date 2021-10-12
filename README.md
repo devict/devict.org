@@ -15,6 +15,18 @@ something that could be improved.
 To modify the site itself you should fork this repository then clone the repo
 locally. Create a new branch off `master` for your issue such as `fix-link`.
 
+#### With Docker
+
+```
+$ make serve
+```
+
+Then open `https://localhost:1313`!
+
+To just build the site, use `make build`.
+
+#### Without Docker
+
 Download and install Hugo from the [Hugo Getting Started][hugo-release] page.
 There are many versions of Hugo to support a wide variety of users. Pick the
 installation steps that match your operating system. You do **not** need to have
