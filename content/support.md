@@ -9,7 +9,7 @@ scripts = [
 
 ## Our costs
 
-Membership in our organization is free as are most of our events. To keep our
+Membership in our <strong> non-profit organization</strong> is free as are most of our events. To keep our
 services free we depend on donations from the community.
 
 <div id="loading" class="text-center">
@@ -25,6 +25,7 @@ Our recurring donations are about <strong id="donations-sum"></strong> from <str
 </div>
 
 ## Recurring Donations
+
 <p>
   You can create a recurring donation by creating an account on
   Patreon. To donate visit <a href="https://patreon.com/devict"
@@ -32,6 +33,7 @@ Our recurring donations are about <strong id="donations-sum"></strong> from <str
 </p>
 
 ## One-time Donations
+
 <div>
   <p>
     If you want to help but do not want to set up a recurring donation
@@ -46,6 +48,7 @@ Our recurring donations are about <strong id="donations-sum"></strong> from <str
 </div>
 
 ## Referral Codes
+
 <p>
   If you were planning to use Digital Ocean you can try to sign up using our <a
   href="https://www.digitalocean.com/?refcode=0bc5d355b0fe">referral code</a>.

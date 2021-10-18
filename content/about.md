@@ -13,8 +13,8 @@ others.
 
 ## Leadership
 
-The devICT community is lead by The devICT Institute, a non-profit
-organization. Our mission is to
+The devICT community is lead by The devICT Institute, <strong>a non-profit
+organization</strong>. Our mission is to
 
 > Educate, Empower, and Connect software developers in the Wichita, Kansas area.
 
