@@ -3,7 +3,7 @@ date = "2016-07-18T14:52:11-05:00"
 title = "About devICT"
 +++
 
-## A community for Wichita developers
+## An awesome community for Wichita developers
 
 devICT is a community for software developers in Wichita, KS. We are a group of
 like-minded technologists gathering to help each other better ourselves as
