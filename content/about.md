@@ -47,12 +47,6 @@ The devICT Institute is ran by this Board of Directors:
   </div>
   <div class="col-sm-6 col-md-3">
     <figure class="figure">
-      <img src="/images/leadership/jake-suellentrop.png" class="figure-img img-responsive img-rounded" alt="Image of Jake Suellentrop" />
-      <figcaption class="figure-caption">Jake Suellentrop - Secretary<br /><a href="https://devict.slack.com/messages/@jake">Contact on Slack</a></figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <figure class="figure">
       <img src="/images/leadership/christen-lofland.jpg" class="figure-img img-responsive img-rounded" alt="Image of Christen Lofland" />
       <figcaption class="figure-caption">Christen Lofland - Director<br /><a href="https://devict.slack.com/messages/@chrisl8">Contact on Slack</a></figcaption>
     </figure>
@@ -142,6 +136,12 @@ generally keep things running.
     <figure class="figure">
       <img src="/images/leadership/tonya-riepe.jpg" class="figure-img img-responsive img-rounded" alt="Image of Tonya Riepe" />
       <figcaption class="figure-caption">Tonya Riepe</figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-2">
+    <figure class="figure">
+      <img src="/images/leadership/jake-suellentrop.png" class="figure-img img-responsive img-rounded" alt="Image of Jake Suellentrop" />
+      <figcaption class="figure-caption">Jake Suellentrop<br /></figcaption>
     </figure>
   </div>
 </div>
