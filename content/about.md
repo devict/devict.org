@@ -47,6 +47,12 @@ The devICT Institute is ran by this Board of Directors:
   </div>
   <div class="col-sm-6 col-md-3">
     <figure class="figure">
+      <img src="/images/leadership/michael-dorian.jpg" class="figure-img img-responsive img-rounded" alt="Image of Michael Dorian" />
+      <figcaption class="figure-caption">Michael Dorian - Secretary<br /><a href="https://devict.slack.com/messages/@doby162">Contact on Slack</a></figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <figure class="figure">
       <img src="/images/leadership/christen-lofland.jpg" class="figure-img img-responsive img-rounded" alt="Image of Christen Lofland" />
       <figcaption class="figure-caption">Christen Lofland - Director<br /><a href="https://devict.slack.com/messages/@chrisl8">Contact on Slack</a></figcaption>
     </figure>
@@ -55,12 +61,6 @@ The devICT Institute is ran by this Board of Directors:
     <figure class="figure">
       <img src="/images/leadership/michael-neth.jpg" class="figure-img img-responsive img-rounded" alt="Image of Michael Neth" />
       <figcaption class="figure-caption">Michael Neth - Director<br /><a href="https://devict.slack.com/messages/@infernocloud">Contact on Slack</a></figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <figure class="figure">
-      <img src="/images/leadership/michael-dorian.jpg" class="figure-img img-responsive img-rounded" alt="Image of Michael Dorian" />
-      <figcaption class="figure-caption">Michael Dorian - Director<br /><a href="https://devict.slack.com/messages/@doby162">Contact on Slack</a></figcaption>
     </figure>
   </div>
 </div>
