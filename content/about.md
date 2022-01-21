@@ -30,42 +30,42 @@ The devICT Institute is ran by this Board of Directors:
   <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/seth-etter.jpg" class="figure-img img-responsive img-rounded" alt="Image of Seth Etter" />
-      <figcaption class="figure-caption">Seth Etter - President<br /><a href="https://devict.slack.com/messages/@sethetter">Contact on Slack</a></figcaption>
+      <figcaption class="figure-caption">Seth Etter - President<br /><a href="https://slack.com/app_redirect?channel=U02T9190X" target="blank">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/kevin-elledge.jpg" class="figure-img img-responsive img-rounded" alt="Image of Kevin Elledge" />
-      <figcaption class="figure-caption">Kevin Elledge - Vice President<br /><a href="https://devict.slack.com/messages/@kelledge">Contact on Slack</a></figcaption>
+      <figcaption class="figure-caption">Kevin Elledge - Vice President<br /><a href="https://slack.com/app_redirect?channel=U03EGDSPD" target="blank">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/jacob-hobbie.png" class="figure-img img-responsive img-rounded" alt="Image of Jacob Hobbie" />
-      <figcaption class="figure-caption">Jacob Hobbie - Treasurer<br /><a href="https://devict.slack.com/messages/@hobbiej">Contact on Slack</a></figcaption>
+      <figcaption class="figure-caption">Jacob Hobbie - Treasurer<br /><a href="https://slack.com/app_redirect?channel=U0HEH2PGB" target="blank">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/michael-dorian.jpg" class="figure-img img-responsive img-rounded" alt="Image of Michael Dorian" />
-      <figcaption class="figure-caption">Michael Dorian - Secretary<br /><a href="https://devict.slack.com/messages/@doby162">Contact on Slack</a></figcaption>
+      <figcaption class="figure-caption">Michael Dorian - Secretary<br /><a href="https://slack.com/app_redirect?channel=U02U1LBNW" target="blank">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/christen-lofland.jpg" class="figure-img img-responsive img-rounded" alt="Image of Christen Lofland" />
-      <figcaption class="figure-caption">Christen Lofland - Director<br /><a href="https://devict.slack.com/messages/@chrisl8">Contact on Slack</a></figcaption>
+      <figcaption class="figure-caption">Christen Lofland - Director<br /><a href="https://slack.com/app_redirect?channel=U02TG0SGZ" target="blank">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/michael-neth.jpg" class="figure-img img-responsive img-rounded" alt="Image of Michael Neth" />
-      <figcaption class="figure-caption">Michael Neth - Director<br /><a href="https://devict.slack.com/messages/@infernocloud">Contact on Slack</a></figcaption>
+      <figcaption class="figure-caption">Michael Neth - Director<br /><a href="https://slack.com/app_redirect?channel=U02V81GGA" target="blank">Contact on Slack</a></figcaption>
     </figure>
   </div>
 </div>
 
-### Volunteers
+### Event Hosts and Volunteers
 
 In addition to the Board we are supported by volunteers who organize events and
 generally keep things running.
@@ -74,74 +74,21 @@ generally keep things running.
   <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/brian-buller.jpg" class="figure-img img-responsive img-rounded" alt="Image of Brian Buller" />
-      <figcaption class="figure-caption">Brian Buller - Code and Coffee</figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <figure class="figure">
-      <img src="/images/leadership/jim-rice.jpg" class="figure-img img-responsive img-rounded" alt="Image of Jim Rice" />
-      <figcaption class="figure-caption">Jim Rice - ICT Game Jam</figcaption>
+      <figcaption class="figure-caption">Brian Buller - Code and Coffee<br><a href="https://slack.com/app_redirect?channel=U030RD9NU" target="blank">Contact on Slack</a></figcaption>
     </figure>
   </div>
   <div class="col-sm-6 col-md-3">
     <figure class="figure">
       <img src="/images/leadership/brian-foster.jpg" class="figure-img img-responsive img-rounded" alt="Image of Brian Foster" />
-      <figcaption class="figure-caption">Brian Foster - GameDev Potluck</figcaption>
+      <figcaption class="figure-caption">Brian Foster - Game Jam<br><a href="https://slack.com/app_redirect?channel=U03TRPHR0" target="blank">Contact on Slack</a></figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <figure class="figure">
+      <img src="/images/leadership/generic.png" class="figure-img img-responsive img-rounded" alt="Generic Image" />
+      <figcaption class="figure-caption">Michael Campbell - Study Hall<br><a href="https://slack.com/app_redirect?channel=UAB55GYTA" target="blank">Contact on Slack</a></figcaption>
     </figure>
   </div>
 </div>
 
 <hr/>
-
-#### Former Board Members
-
-<div class="leadership row">
-  <div class="col-sm-6 col-md-2">
-    <figure class="figure">
-      <img src="/images/leadership/jacob-walker.png" class="figure-img img-responsive img-rounded" alt="Image of Jacob Walker" />
-      <figcaption class="figure-caption">Jacob Walker</figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-2">
-    <figure class="figure">
-      <img src="/images/leadership/george-shaw.jpg" class="figure-img img-responsive img-rounded" alt="Image of George Shaw" />
-      <figcaption class="figure-caption">George Shaw</figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-2">
-    <figure class="figure">
-      <img src="/images/leadership/sandip-southekal.jpg" class="figure-img img-responsive img-rounded" alt="Image of Sandip Southekal" />
-      <figcaption class="figure-caption">Sandip Southekal</figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-2">
-    <figure class="figure">
-      <img src="/images/leadership/richard-sharp.jpg" class="figure-img img-responsive img-rounded" alt="Image of Richard Sharp" />
-      <figcaption class="figure-caption">Richard Sharp</figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-2">
-    <figure class="figure">
-      <img src="/images/leadership/julia-winegeart.jpg" class="figure-img img-responsive img-rounded" alt="Image of Julia Winegeart" />
-      <figcaption class="figure-caption">Julia Winegeart</figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-2">
-    <figure class="figure">
-      <img src="/images/leadership/casey-woolfolk.jpg" class="figure-img img-responsive img-rounded" alt="Image of Casey Woolfolk" />
-      <figcaption class="figure-caption">Casey Woolfolk</figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-2">
-    <figure class="figure">
-      <img src="/images/leadership/tonya-riepe.jpg" class="figure-img img-responsive img-rounded" alt="Image of Tonya Riepe" />
-      <figcaption class="figure-caption">Tonya Riepe</figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6 col-md-2">
-    <figure class="figure">
-      <img src="/images/leadership/jake-suellentrop.png" class="figure-img img-responsive img-rounded" alt="Image of Jake Suellentrop" />
-      <figcaption class="figure-caption">Jake Suellentrop<br /></figcaption>
-    </figure>
-  </div>
-</div>
