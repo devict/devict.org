@@ -13,7 +13,7 @@ others.
 
 ## Leadership
 
-The devICT community is lead by The devICT Institute, <strong>a non-profit
+The devICT community is led by The devICT Institute, <strong>a non-profit
 organization</strong>. Our mission is to
 
 > Educate, Empower, and Connect software developers in the Wichita, Kansas area.
@@ -24,7 +24,7 @@ Minutes of our meetings are kept on our [meetings page](/meetings/).
 
 ### Board of Directors
 
-The devICT Institute is ran by this Board of Directors:
+The devICT Institute is run by this Board of Directors:
 
 <div class="leadership row">
   <div class="col-sm-6 col-md-3">
@@ -61,6 +61,12 @@ The devICT Institute is ran by this Board of Directors:
     <figure class="figure">
       <img src="/images/leadership/michael-neth.jpg" class="figure-img img-responsive img-rounded" alt="Image of Michael Neth" />
       <figcaption class="figure-caption">Michael Neth - Director<br /><a href="https://slack.com/app_redirect?channel=U02V81GGA" target="blank">Contact on Slack</a></figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <figure class="figure">
+      <img src="/images/leadership/josh-dutcher.jpg" class="figure-img img-responsive img-rounded" alt="Image of Josh Dutcher" />
+      <figcaption class="figure-caption">Josh Dutcher - Director<br /><a href="https://slack.com/app_redirect?channel=U02U2QUAL" target="blank">Contact on Slack</a></figcaption>
     </figure>
   </div>
 </div>
