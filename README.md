@@ -12,7 +12,7 @@ something that could be improved.
 
 ### Development
 
-To modify the site itself you should fork this repository then clone the repo
+To modify the site itself you should fork this repository and then clone the repo
 locally. Create a new branch off `master` for your issue such as `fix-link`.
 
 #### With Docker
@@ -42,14 +42,14 @@ You may also [create a GitHub Codespace][create-codespace] and run the `Hugo Bui
 
 ### Deployment
 
-Merges/commits to the `master` branch trigger a build on [Travis CI][travis].
+Merges/commits to the `master` branch trigger a built on [Travis CI][travis].
 The build parameters are defined in `.travis.yml`. That file defines the build
 environment, decrypts an SSH key for deployment (`.travis.key.enc`), installs
 Hugo, then runs the script `.travis.sh`.
 
 That script clones, builds, commits, and pushes the website to a separate
 repository [devict.github.io][deploy-repo]. That repo is a "GitHub Pages" site
-which serves the generated HTML content.
+that serves the generated HTML content.
 
 
 [hugo]: https://gohugo.io "Hugo"
