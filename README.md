@@ -8,7 +8,8 @@ using [Hugo][hugo].
 ## Contributing
 
 A great way to contribute is to [file an issue][issues] if you notice a bug or
-something that could be improved.
+something that could be improved. Note that the [devICT Code of Conduct](https://devict.org/conduct)
+applies to collaboration in this space.
 
 ### Development
 
@@ -50,7 +51,6 @@ Hugo, then runs the script `.travis.sh`.
 That script clones, builds, commits, and pushes the website to a separate
 repository [devict.github.io][deploy-repo]. That repo is a "GitHub Pages" site
 which serves the generated HTML content.
-
 
 [hugo]: https://gohugo.io "Hugo"
 [hugo-release]: https://gohugo.io/getting-started/installing/ "Hugo Installation"
