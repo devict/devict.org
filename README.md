@@ -1,59 +1,47 @@
-[![Build Status](https://travis-ci.org/devict/devict.org.svg)][travis]
-
 # devict.org
 
-This is the source repository for [devict.org](http://devict.org). It is built
-using [Hugo][hugo].
+This is the source repository for [devict.org](http://devict.org). It is built using [Lume][lume], which is powered by [Deno][deno].
 
 ## Contributing
 
-A great way to contribute is to [file an issue][issues] if you notice a bug or
-something that could be improved. Note that the [devICT Code of Conduct](https://devict.org/conduct)
-applies to collaboration in this space.
+A great way to contribute is to [file an issue][issues] if you notice a bug or something that could be improved. Note that the [devICT Code of Conduct](https://devict.org/conduct) applies to collaboration in this space.
 
-### Development
+To modify the site itself you should fork this repo then clone your fork locally. Create a new branch off `main` for your issue such as `fix-link`. When your changes are ready, push up your branch to your fork and submit a PR to this repo for review.
 
-To modify the site itself you should fork this repository then clone the repo
-locally. Create a new branch off `master` for your issue such as `fix-link`.
+## Local development
 
-#### With Docker
+### Set up your IDE
 
-```
-$ make serve
-```
+- VSCode: install the recommended extensions (cmd+shift+p -> "show recommended extensions")
+- Otherwise, [deno has docs on setting up other IDEs][deno-ide-setup]
 
-Then open `https://localhost:1313`!
+### Install and run
 
-To just build the site, use `make build`.
+- [Install deno][deno-install]
+- `deno task cache` to install dependencies
+- `deno task serve` to serve the site
+- Visit http://localhost:3000
 
-#### Without Docker
+### Make changes
 
-Download and install Hugo from the [Hugo Getting Started][hugo-release] page.
-There are many versions of Hugo to support a wide variety of users. Pick the
-installation steps that match your operating system. You do **not** need to have
-Go installed to use Hugo.
+- Site config is stored at `_config.ts`, [here is a reference to available options](https://lume.land/docs/advanced/cheatsheet/).
+- Page files are stored in the root directory, and are generally `md` files.
+  - `index.md`, `about.md`, etc.
+  - Just about any other extension works too (`njk`, or `js` for example).
+    - [Additional format support](https://lume.land/docs/getting-started/page-formats/) can be added with plugins.
+- Global data variables are in `_data.json`.
+  - These values can be overridden in individual pages with [frontmatter](https://lume.land/docs/getting-started/page-data/).
+  - Here is more information on [page data](https://lume.land/docs/getting-started/shared-data/).
+- Static assets are stored in `static`.
 
-With hugo installed run `hugo server`. The site will be visible at
-http://localhost:1313 with LiveReload enabled so changes will be built
-and displayed instantly.
 
-You may also [create a GitHub Codespace][create-codespace] and run the `Hugo Build` task from the dev environment. Ports will forward automatically, so you can visit http://localhost:1313 as with other methods.
+## Deployment
 
-[create-codespace]: https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/creating-a-codespace "Creating a Codespace"
+This repo is deployed to [Netlify][netlify]. Commits to the `main` branch are autodeployed there. Our netlify deploy configuration is stored in repo at `netlify.toml`.
 
-### Deployment
-
-Merges/commits to the `master` branch trigger a build on [Travis CI][travis].
-The build parameters are defined in `.travis.yml`. That file defines the build
-environment, decrypts an SSH key for deployment (`.travis.key.enc`), installs
-Hugo, then runs the script `.travis.sh`.
-
-That script clones, builds, commits, and pushes the website to a separate
-repository [devict.github.io][deploy-repo]. That repo is a "GitHub Pages" site
-which serves the generated HTML content.
-
-[hugo]: https://gohugo.io "Hugo"
-[hugo-release]: https://gohugo.io/getting-started/installing/ "Hugo Installation"
+[lume]: https://lume.land "Lume"
+[deno]: https://deno.land "Deno"
+[netlify]: https://netlify.com "Netlify"
 [issues]: https://github.com/devict/devict.org/issues "devICT.org issues"
-[travis]: https://travis-ci.org/github/devict/devict.org "Travis CI"
-[deploy-repo]: https://github.com/devict/devict.github.io "deploy repository"
+[deno-ide-setup]: https://docs.deno.com/runtime/manual/getting_started/setup_your_environment#using-an-editoride "Deno IDE setup"
+[deno-install]: https://docs.deno.com/runtime/manual/getting_started/installation "Install Deno"

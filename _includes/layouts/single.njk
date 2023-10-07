@@ -1,0 +1,34 @@
+---
+title: Page
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include "partials/head.njk" %}
+</head>
+
+<body>
+  {% include "partials/header.njk" %}
+  <div class="title-header">
+    <div class="container">
+      <h1 class="page-title">{{ title }}</h1>
+    </div>
+  </div>
+
+  <div class="container main">
+
+    <div class="content">
+      {{ content | safe }}
+    </div>
+
+  </div>
+  {% include "partials/footer.njk" %}
+  {% if scripts %}
+    {% for script in scripts %}
+      <script src="{{ script }}"></script>
+    {% endfor %}
+  {% endif %}
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "site": {
+    "title": "devICT"
+  },
+  "layout": "layouts/single.njk"
+}
