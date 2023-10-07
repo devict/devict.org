@@ -6,12 +6,14 @@ const site = lume();
 
 site.ignore(
   "README.md",
+  // Old hugo files
   "newsletter",
   "resources",
   "static",
   "public",
   "content",
-  "layouts"
+  "layouts",
+  "archetypes"
 );
 
 site.copy("static", ".");
