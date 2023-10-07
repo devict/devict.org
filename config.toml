@@ -1,8 +1,0 @@
-baseurl = "https://devict.org/"
-languageCode = "en-us"
-title = "devICT"
-buildFuture = true
-[taxonomies]
-tag = "tags"
-[markup.goldmark.renderer]
-unsafe= true

@@ -4,17 +4,7 @@ import attributes from "lume/plugins/attributes.ts";
 
 const site = lume();
 
-site.ignore(
-  "README.md",
-  // Old hugo files
-  "newsletter",
-  "resources",
-  "static",
-  "public",
-  "content",
-  "layouts",
-  "archetypes"
-);
+site.ignore("README.md", "static");
 
 site.copy("static", ".");
 
