@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "ronnidc.nunjucks",
+    "denoland.vscode-deno",
+    "esbenp.prettier-vscode"
+  ]
+}
