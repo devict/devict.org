@@ -1,4 +1,4 @@
-public/
 .DS_store
 .idea/
 _site
+.netlify

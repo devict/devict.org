@@ -4,7 +4,7 @@ import attributes from "lume/plugins/attributes.ts";
 
 const site = lume();
 
-site.ignore("README.md", "static");
+site.ignore("README.md", "static", "netlify.toml");
 
 site.copy("static", ".");
 
