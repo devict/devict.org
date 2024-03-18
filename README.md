@@ -1,3 +1,7 @@
+**Our website now lives in the [devict/website](https://github.com/devict/website) repo!**
+
+---
+
 # devict.org
 
 This is the source repository for [devict.org](http://devict.org). It is built using [Lume][lume], which is powered by [Deno][deno].
